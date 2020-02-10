@@ -98,7 +98,7 @@ class HomeContainer extends Component {
                             <p>Cursos, botocamps, eventos y más.
                             </p>
                             <br />
-                            <Link to="">
+                            <Link to="/bootcamp">
                                 <Button ico=">_" text="Aplicar" />
                             </Link>
                         </div>
