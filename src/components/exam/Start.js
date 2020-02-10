@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import styles from './exam.module.css'
 import FontAwesome from "react-fontawesome"
+import moment from 'moment'
 
 
 let song = require('../../assets/start.wav')
 
-export default function Start({ title, onStart }) {
+export default function Start({ startDate, attempts, title, onStart }) {
     let [audio, setAudio] = useState(new Audio())
     let [paused, setPaused] = useState(false)
+
+    let available = false
+
+    if (moment(startDate) < moment(Date.now())) available = true
+
     useEffect(() => {
         audio.src = song
         // audio.play()
@@ -38,15 +44,17 @@ export default function Start({ title, onStart }) {
             <div className={styles.startArea}>
                 <div className={styles.flexRow}>
                     <p className={styles.flexColumn}>
-                        <strong>0/2</strong>
+                        <strong>{attempts ? attempts : 0}/2</strong>
                         <span>Intentos</span>
                     </p>
                     <h2>
-                        Estas listx?
+                        Estas listo(a)?
                     </h2>
-                    <button onClick={onStart}>
+                    {available ? <button onClick={onStart}>
                         Comenzar
-                    </button>
+                    </button> : <button >
+                            Examen disponible: {moment(startDate).format('ll')}
+                        </button>}
                 </div>
                 <div>
                     <p style={{ textAlign: "justify", marginTop: 30 }}>
