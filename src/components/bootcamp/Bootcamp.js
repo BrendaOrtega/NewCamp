@@ -32,12 +32,14 @@ class Bootcamp extends Component {
                         <div className="invite-aply">
                             <h2 className="white-subtitulos">Conviértete en desarrollador en 4 semanas</h2>
                             <p>Sumergéte en el mundo del desarrollo de software de forma <strong>Online</strong> o <strong>Presencial</strong></p>
-                          {/*  <Button text="Aplicar ahora"/>*/}
+                            <a href="#explorar">
+                                <Button text="Explorar" link/>
+                            </a>
                         </div>
                     </div>
 
                 </section>
-                <section className=" gray">
+                <section id="explorar" className=" gray">
                     <div className="flexin">
 
                             <CardBootcamp
