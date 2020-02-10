@@ -29,7 +29,7 @@ class BootcampDescriptWeb extends Component {
                         <p className="description"> Aprende las bases de la programación y prepárate
                             para incursionar en el mundo del desarrollo Web utilizando uno de los lenguajes más utilizados: JavaScript.</p>
                         <Link to="/apply/?b=5d632e4c339a1b379df68a74">
-                            <button className="btn-float">Inscribirme</button>
+                            <button className="btn-float">INSCRIBIRME</button>
                         </Link>
 
                         <div className="nivel">
@@ -71,13 +71,13 @@ class BootcampDescriptWeb extends Component {
 
                         <hr/>
                         <p>Más de 24 hrs de ejercicios en</p>
-                        <h3> 5 semanas</h3>
+                        <h3> 4 semanas</h3>
 
                         <hr/>
                         <p>Aprende con la práctica</p>
                         <h3>1 exámen final</h3>
                         <hr/>
-                        <p>Precio especial diciembre <span style={{fontSize:"10px"}}>(hasta 6 MSI)</span></p>
+                        <p>Precio <span style={{fontSize:"10px"}}>(hasta 6 MSI)</span></p>
                         <h3>$ 1,999.00</h3>
 
                         <hr/>

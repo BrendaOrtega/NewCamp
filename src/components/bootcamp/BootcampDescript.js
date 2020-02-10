@@ -45,7 +45,7 @@ class BootcampDescript extends Component {
                         <h2 className="name-descript">Fundamentos de Programación con Python</h2>
                         <hr className="line-red"/>
                         <p className="description"> Aprende las bases de la programación, y prepárate
-                            para este programa creado especialmente para principiantes que quieren incursionar en el mundo de Python
+                            para este programa, creado especialmente para principiantes que quieren incursionar en el mundo de Python:
                             tanto para análisis de datos como para desarrollo web. </p>
                         <Link to="/apply/?b=5dc1db06cd0b842984edca7c">
                             <button className="btn-float">Inscribirme</button>
@@ -60,27 +60,7 @@ class BootcampDescript extends Component {
                     </div>
                     <div id="python" className="container-content">
                         <div className="background">
-                       {/* <div className="week">
-                            <h3>5 semanas</h3>
-                            <p>48 horas de actividades</p> </div>
-                        <div className="week">
-                            <h3></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Ipsam nam natus optio
-                                pariatur perferendis rerum suscipit, voluptates.
-                                Beatae consectetur distinctio excepturi molestias
-                                perferendis provident sapiente totam voluptates.
-                                Cumque, quam quis.</p>
-                        </div>
-                        <div className="week">
-                            <h3>Semana 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Ipsam nam natus optio
-                                pariatur perferendis rerum suscipit, voluptates.
-                                Beatae consectetur distinctio excepturi molestias
-                                perferendis provident sapiente totam voluptates.
-                                Cumque, quam quis.</p>
-                        </div>*/}
+
                     </div>
 
                     </div>
@@ -108,13 +88,13 @@ class BootcampDescript extends Component {
 
                         <hr/>
                         <p>Más de 24 hrs de ejercicios en</p>
-                        <h3> 5 semanas</h3>
+                        <h3> 4 semanas</h3>
 
                         <hr/>
                         <p>Aprende con la práctica</p>
                         <h3>1 examen final</h3>
                         <hr/>
-                        <p>Precio especial <span style={{fontSize:"10px"}}>(hasta 6 MSI)</span></p>
+                        <p>Precio <span style={{fontSize:"10px"}}>(hasta 6 MSI)</span></p>
                         <h3>$ 1,999.00</h3>
 
                         <hr/>

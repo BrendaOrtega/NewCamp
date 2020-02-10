@@ -27,7 +27,7 @@ class Backend extends Component {
                     <div className="container-summary">
                         <h2 className="name-descript">Backend API con NodeJs y ExpressJs</h2>
                         <hr className="line-red"/>
-                        <p className="description"> Aprende a construir un backend y tus propias API con NodeJs y ExpressJs</p>
+                        <p className="description">En este curso te convertirás en un desarrollador backend y aprenderás a desarrollar una API con node js, es decir, estarás usando las mismas herramientas que  aplicaciones como Netflix, LinkedIn Y PAYPAL para desarrollar una aplición poderosa</p>
                         <Link to="/apply/?b=5de52ae9734c4163308b63fd">
                             <button className="btn-float">Inscribirme</button>
                         </Link>
@@ -69,11 +69,11 @@ class Backend extends Component {
                     </div>
                     <div className="box-data">
                         <p>Próxima edición</p>
-                        <h3>3 de Febrero 2020</h3>
+                        <h3>10 de Febrero 2020</h3>
 
                         <hr/>
                         <p>Más de 24 hrs de ejercicios en</p>
-                        <h3> 5 semanas</h3>
+                        <h3> 4 semanas</h3>
 
                         <hr/>
                         <p>Aprende con la práctica</p>

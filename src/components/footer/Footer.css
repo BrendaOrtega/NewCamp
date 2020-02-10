@@ -8,14 +8,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-family: Avenir;
+    font-family: "Avenir";
 
 }
+.box-one{
+     width: 240px;
+   }
 
 .footer h2, .footer h3{
     color: rgba(204,204,204,.5);
     font-size: 20px;
     font-weight: bold;
+    font-family: "ProximaRegular";
 }
 .footer p{
     color: rgba(204,204,204,.5);

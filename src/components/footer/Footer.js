@@ -9,8 +9,9 @@ class Footer extends Component {
         return (
             <div className="footer">
                 <div className="box-one">
-                    <img src={geeki} alt="logo-fixter"/>
-                    <h3 style={{color:"white", marginLeft:"18px"}}>FixterGeek</h3>
+                  {/*  <img src={geeki} alt="logo-fixter"/>*/}
+                    <h3 >FixterGeek</h3>
+                    <p>La plataforma donde aprenderás de profesionales las herramientas y frameworks más utilizados para el desarrollo de software..</p>
                 </div>
                 <div>
                     <h3>Sobre Nosotros</h3>

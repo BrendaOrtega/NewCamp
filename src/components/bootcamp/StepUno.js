@@ -10,7 +10,7 @@ export const StepUno = ({ selected }) => {
     return (
         <div className="step">
             <h2>{title}</h2>
-            <p>{moment(startDate).format("ll")}</p>
+          {/*  <p>{moment(startDate).format("ll")}</p>*/}
             <p><strong>$ {price}.00MXN</strong></p>
             <br />
             <p>

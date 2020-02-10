@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import "./Home.css"
 import Button from "../common/Button";
+import FontAwesome from "react-fontawesome"
+
 import { CourseCard } from "../card/CourseCard";
 import { Carousel } from 'antd';
 import uno from "../../assets/icono3_version2.png"
@@ -22,7 +24,8 @@ import rea from "../../assets/badget-3.png"
 import { connect } from 'react-redux'
 import { getBootcampsAction } from '../../redux/bootcampDuck'
 import {CardBootcamp} from "../card/CardBootcamp";
-
+import polygon from "../../assets/polygon.svg"
+import laptop from "../../assets/laptop.png"
 
 let react = require("../../assets/react.png")
 let vue = require("../../assets/vue.png")
@@ -104,7 +107,127 @@ class HomeContainer extends Component {
                     content="cursos, capacitación, react, angular, tecnología, programación, javascript, python, php, online, fixtergeek"
                 />
                 <title>FixterGeek</title>
-                <section className="slide">
+                <section className="back-home">
+                    <div className="cover">
+                        <div>
+                            <h2>Aprende las <strong>herramientas</strong> y <strong>frameworks</strong> que usan los profesionales de la industria</h2>
+                            <p>Cursos, botocamps, eventos y más.
+                            </p>
+                            <br />
+                            <Link to="">
+                                <Button ico=">_" text="Aplicar" />
+                            </Link>
+                        </div>
+                    </div>
+                </section>
+                <img className="form" src={polygon} alt="polygono"/>
+                <section className="box-home">
+
+                    <h2 className="subtitulo">Una nueva experiencia de aprendizaje <div className="backline"></div></h2>
+                    <p>  </p>
+
+                    <div className="flexbox">
+                        <div className="card-type">
+                            <div className="info uno"></div>
+                            <div className="card-type-text">
+                                <h3 style={{fontSize:"20px"}}>Cursos Online</h3>
+                                <p> Si quieres aprender una herramienta o framework específico, encontrarás en nuestro catálogo cursos desde fundamentos, hasta GraphQL, React Native y más. </p>
+                            </div>
+                        </div>
+                        <div className="card-type">
+                            <div className="info dos"></div>
+                            <div className="card-type-text">
+                                <h3 style={{fontSize:"20px"}}>Bootcamp Online</h3>
+                                <p> Aprende a programar bajo esta modalidad 100% en línea, con acceso permanente al contenido y mentoría individual por parte de nuestros expertos. </p>
+                            </div>
+                        </div>
+                        <div className="card-type">
+                            <div className="info tres"></div>
+                            <div className="card-type-text">
+                                <h3 style={{fontSize:"20px"}}>Bootcamp Presencial</h3>
+                                <p> Si eres de los que prefiere aprender de forma presencial, tenemos esta modalidad intensiva, en donde además, tendrás acceso a contenido exclusivo en línea.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+                <section className="why">
+                    <h2 className="subtitulo" style={{textAlign:"center"}}>Tu partner no solo en coding  </h2>
+                    <p style={{textAlign:"center"}}> Aprender a programar puede ser díficil, pero al unirte a nuestra a Fixter contarás con el apoyo de nuestra comunidad  </p>
+                    <div className="info-section">
+                        <div className="containers">
+                            <h3 style={{fontSize:"24px"}} className="subtitulo">Teamwork </h3>
+                            <p>
+                                Convertirse en desarrollador de software no se trata solo de programar, sino de aprender una forma de pensar. No sólo enseñamos
+                                un lenguaje de programación, desarrollamos habilidades de lógica y diseño de software, mejores prácticas, algoritmia,
+                                estructura de datos y más.
+                            </p>
+
+                            <p>
+                                Nuestro equipo trabaja día a día para ofrecerte un curso de calidad, en donde
+                                resolverán tus preguntas y te orientarán para conducir tu carrera como desarrollador.
+                            </p>
+
+
+                        </div>
+                        <div className="containers">
+                            <img src={laptop} alt="laptop"/>
+                        </div>
+                    </div>
+                </section>
+                <section className="why" style={{backgroundColor:"white"}}>
+                    <div className="flexbox" style={{alignItems:"center"}}>
+                        <div className="containers">
+                            <h2 className="subtitulo" style={{textAlign:"center"}}>Un currículum de clase mundial</h2>
+                            <br/>
+                            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="laptop"/><div className="tag"><FontAwesome name="spinner"/></div>
+                        </div>
+                        <div className="containers">
+                            <p> Nuestro equipo de educación prepara un Curriculum adoc para cada herramienta y para cada modalidad, en donde cada uno de nuestros estudiantes
+                                pueda aprender las habilidades más demandadas en el desarrollo de software, y así mejorar sus skills profesionales o conseguir un mejorar trabajo sin importar
+                                en donde se encuentre.
+                            </p>
+                            <p>
+                                Durante cada curso, como alumno, desarrollarás varios proyectos y ejercicios, además de tener acceso a recursos extra que te ayudarán a
+                                mejorar e impulsar tu aprendizaje. Además de recibir mentoría de nuestros expertos, profesionales del desarollo de software con años de experiencia
+                                en el área.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div className="box-framework">
+                        <div className="sticker" />
+                        <div className="sticker" />
+                        <div className="sticker" />
+                        <div className="sticker" />
+                        <div className="sticker" />
+                        <div className="sticker" />
+                        <div className="sticker" />
+                        <div className="sticker" />
+                        <div className="sticker" />
+                        <div className="sticker" />
+                        <div className="sticker" />
+                        <div className="sticker" />
+                        <div className="sticker" />
+                        <div className="sticker" />
+                        <div className="sticker" />
+                        <div className="sticker" />
+                    </div>
+                </section>
+                <section className="newsletter">
+                    <h2 style={{fontFamily:"ProximaRegular"}} >¿Quieres mantenerte al día sobre los próximos cursos y eventos? <br /> Inscríbete a nuestro newsletter
+                    </h2>
+                    <br />
+                    <div>
+                        <input type="email" placeholder="contacto@fixter.org" />
+                        <button>Enviar</button>
+                    </div>
+                </section>
+
+
+
+               {/* <section className="slide">
                     <div className="cover">
                         <div className="slogan">
                             <h2>Aprende las <strong>herramientas</strong> y <strong>frameworks</strong> que usan los profesionales de la industria</h2>
@@ -227,7 +350,7 @@ class HomeContainer extends Component {
                         />
 
 
-                      {/*  <CourseCard image={siete} name="Empezando con Firebase Realtime Database"
+                        <CourseCard image={siete} name="Empezando con Firebase Realtime Database"
                         lecciones="12 lecciones" tiempo="35 minutos"
                         />
                         <CourseCard image={cinco} name="Tu primer aplicación con Firebase"
@@ -235,7 +358,7 @@ class HomeContainer extends Component {
                         />
                         <CourseCard image={seis} name="Estructura de Datos Complejos con Realtime DB"
                                     lecciones="10 lecciones" tiempo="40 minutos"
-                        />*/}
+                        />
                     </div>
                 </section>
                 <section className="testimonios">
@@ -278,7 +401,7 @@ class HomeContainer extends Component {
                         <button>Enviar</button>
                     </div>
                 </section>
-
+*/}
             </section>
         )
     }

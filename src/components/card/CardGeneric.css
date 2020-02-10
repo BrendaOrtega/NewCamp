@@ -1,4 +1,4 @@
-.card-video{
+/*.card-video{
     width: 300px;
     height: 20px;
     border: 4px;
@@ -31,22 +31,57 @@
     color:white;
     font-family: Avenir;
     margin: 0;
-}
+}*/
 
 .bootcamp-card{
-    width: 360px;
-    margin: 20px 10px;
+    width: 320px;
+    min-height: 350px;
+    margin: 20px 24px;
     background-color: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    text-align: center;
-    padding: 2% ;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.1);
+    text-align: left;
     box-sizing: border-box;
     transition: all 1s ease;
+    border-radius: 8px;
+    font-family:"ProximaRegular";
+}
+
+.bootcamp-card:hover{
+    box-shadow: 0 15px 16px rgba(0,0,0,0.5);
+}
+.bootcamp-card p{
+    color: #565867;
+}
+.bootcamp-card h3{
+    font-weight: bold;
 }
 .bootcamp-card:hover{
-
     box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
+
+.camp-avatar{
+    width: 56px;
+    height: 56px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top:-20px;
+    left: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.camp-avatar img{
+    width: 48px;
+    height: 48px;
+
+
+}
+#datos{
+    color:#767676;
+    margin: 4px 0;
+}
+
 .h2{
     transition: all .5s ease;
 }
@@ -127,7 +162,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 
@@ -209,8 +244,7 @@
 }
 .btn-float {
     width: 240px;
-    height: 48px;
-    border-radius: 24px;
+    height: 40px;
     border: none;
     background-color: #ca3e47;
     color: white;
@@ -218,6 +252,8 @@
     right: -240px;
     margin: 24px 0 12px 0;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .teacher-camp{
     display: flex;

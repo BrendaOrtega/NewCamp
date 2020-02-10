@@ -23,6 +23,8 @@ import Landing from "./components/home/Landing";
 import ExamPage from './components/exam/ExamPage';
 import Backend from "./components/bootcamp/Backend";
 import BootcampPhp from "./components/bootcamp/BootcampPhp";
+import BootcampDescriptReact from "./components/bootcamp/BootcampDescriptReact";
+import BootcampReactPachuca from "./components/bootcamp/BootcampReactPachuca";
 
 
 let PrivateRoute = ({ component, next, to, ...rest }) => {
@@ -39,11 +41,16 @@ export const Router = () => (
         <Route exact path="/" component={HomeContainer} />
         <Route exact path="/courses" component={Courses} />
         <Route path="/courses/detail" component={CoursesDetail} />
+
+
         <Route exact path="/bootcamp" component={Bootcamp} />
         <Route path="/bootcamp-descript" component={BootcampDescript} />
         <Route path="/bootcamp-descript-laravel" component={BootcampDescriptLaravel} />
         <Route path="/bootcamp-descript-web" component={BootcampDescriptWeb} />
         <Route path="/bootcamp-backend-nodejs" component={Backend} />
+        <Route path="/bootcamp-react-redux" component={BootcampDescriptReact}/>
+        <Route path="/bootcamp-react-pachuca" component={BootcampReactPachuca}/>
+
         <Route path="/bootcamp-php" component={BootcampPhp} />
         <Route path="/bootcamp/detail/:id" component={BootcampDetail} />
         <Route path="/contacto" component={Contacto} />

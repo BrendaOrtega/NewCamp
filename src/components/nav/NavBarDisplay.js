@@ -16,14 +16,14 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
                     <p>Bootcamp</p>
                     <hr className="red-line" />
                 </Link>
-                <Link to="/courses">
+               {/* <Link to="/courses">
                     <p>Cursos</p>
                     <hr className="red-line" />
-                </Link>
+                </Link>*/}
 
-                <Link to="/apply?b=5dc1db06cd0b842984edca7c">
+             {/*   <Link to="/apply?b=5dc1db06cd0b842984edca7c">
                     <button className="btn-aply">Aplicar</button>
-                </Link>
+                </Link>*/}
 
                 <hr className="line" />
                 {loggedIn ?
@@ -51,9 +51,9 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
                     <Link to="/bootcamp">
                         <p>Bootcamp</p>
                     </Link>
-                    <Link to="/courses">
+                 {/*   <Link to="/courses">
                         <p>Cursos</p>
-                    </Link>
+                    </Link>*/}
                     {loggedIn ?
                         <div>
                             <Link to="/profile">
