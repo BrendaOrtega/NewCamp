@@ -431,4 +431,7 @@
     .box-data{
         padding-top: 32px;
     }
+    .flexin{
+        justify-content: center;
+    }
 }

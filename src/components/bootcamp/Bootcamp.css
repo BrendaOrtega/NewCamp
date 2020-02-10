@@ -580,10 +580,15 @@ padding-top: 80px;
     }
     .invite-aply{
         font-size:16px ;
+        margin-top: 24px;
 
     }
     .invite-aply button{
-        margin-top: 24px;
+        margin-top: 12px;
     }
+    .gray{
+        padding: 5% 0%;
+    }
+
 
 }
