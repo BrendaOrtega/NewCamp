@@ -10,12 +10,8 @@
     "firebase": "^6.6.2",
     "font-awesome": "^4.7.0",
     "github-markdown-css": "^3.0.1",
-<<<<<<< HEAD
     "less": "^3.10.3",
-=======
     "jspdf": "^1.5.3",
-    "less": "^3.9.0",
->>>>>>> 905920a50734b9c282db81356c95732f73049cbc
     "less-loader": "^5.0.0",
     "owl.carousel": "^2.3.4",
     "query-string": "^6.9.0",

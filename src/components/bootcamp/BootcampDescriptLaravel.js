@@ -66,7 +66,7 @@ class BootcampDescriptLaravel extends Component {
                     </div>
                     <div className="box-data">
                         <p>Próxima edición</p>
-                        <h3>10 de Febrero 2020</h3>
+                        <h3>9 de Marzo 2020</h3>
 
                         <hr/>
                         <p>Más de 24 hrs de ejercicios en</p>
@@ -107,7 +107,7 @@ class BootcampDescriptLaravel extends Component {
                                 Descarga el temario completo en PDF
                             </p>
                             <br/>
-                            <a href="" target="blank" >
+                            <a href="/" target="blank" >
                                 <img src={download} alt=""/>
                             </a>
                         </div>

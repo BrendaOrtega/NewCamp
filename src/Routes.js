@@ -15,9 +15,7 @@ import Login from './components/login/Login';
 import AdminPage from './components/admin/AdminPage';
 import BootcampDescript from "./components/bootcamp/BootcampDescript";
 import BootcampDescriptWeb from "./components/bootcamp/BootcampDescriptWeb";
-import Python from './components/bootcamp/Python';
-import BuyForGift from './components/bootcamp/BuyForGift';
-import PromoCiberMonday from './components/bootcamp/PromoCiberMonday';
+
 import BootcampDescriptLaravel from "./components/bootcamp/BootcampDescriptLaravel";
 import Landing from "./components/home/Landing";
 import ExamPage from './components/exam/ExamPage';

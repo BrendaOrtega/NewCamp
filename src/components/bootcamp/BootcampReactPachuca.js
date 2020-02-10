@@ -10,23 +10,7 @@ class BootcampReactPachuca extends Component {
         window.scroll(0, 0)
     }
     render() {
-        const options = {
-            autoplay: true,
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
-        };
+
         return (
             <section className="bootcamp">
                 <meta
@@ -44,7 +28,7 @@ class BootcampReactPachuca extends Component {
                         <h2 className="name-descript">Desarrollo Frontend con ReactJs </h2>
                         <hr className="line-red"/>
                         <p className="description"> En este curso presencial de 4 semanas aprenderás lo necesario para convertirte en un desarrollador frontend con uno de los frameworks más populares, utilizado por Facebook, Tesla y Twitter.</p>
-                        <Link to="/apply/?b=5de52ac8734c4163308b63fc">
+                        <Link to="/apply/?b=5e40aae2650cfd265fba7bc7">
                             <button className="btn-float">INSCRIBIRME</button>
                         </Link>
                         <div className="nivel">
@@ -116,7 +100,7 @@ class BootcampReactPachuca extends Component {
                                 Descarga el temario completo en PDF
                             </p>
                             <br/>
-                            <a href="" target="blank" >
+                            <a href="/" target="blank" >
                                 <img src={download} alt="descarga"/>
                             </a>
                         </div>

@@ -2,23 +2,7 @@ import React, { Component } from 'react';
 import "./Home.css"
 import Button from "../common/Button";
 import FontAwesome from "react-fontawesome"
-
-import { CourseCard } from "../card/CourseCard";
-import { Carousel } from 'antd';
-import uno from "../../assets/icono3_version2.png"
-import dos from "../../assets/icono4_version2.png"
-import tres from "../../assets/icono2_version2.png"
-import cuatro from "../../assets/icono1_version2.png"
 import { Link } from "react-router-dom";
-import oscar from "../../assets/ossscar.jpg"
-import carlitos from "../../assets/carlitos.jpg"
-import jorge from "../../assets/jorge.jpg"
-import siete from "../../assets/badget1.png"
-import cinco from "../../assets/badget2.png"
-import seis from "../../assets/badget-3.png"
-import pyth from "../../assets/badgePYTHON_TTLBLCK_Mesa_de_trabajo_1.png"
-import web from "../../assets/badge3D_Mesa_de_trabajo_1.png"
-import rea from "../../assets/badget-3.png"
 
 // redux
 import { connect } from 'react-redux'

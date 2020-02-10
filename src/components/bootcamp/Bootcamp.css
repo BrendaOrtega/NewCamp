@@ -575,6 +575,15 @@ padding-top: 80px;
     .ant-form-item-control{
         line-height: 20px !important;
     }
+    .white-subtitulos{
+        font-size: 24px;
+    }
+    .invite-aply{
+        font-size:16px ;
 
+    }
+    .invite-aply button{
+        margin-top: 24px;
+    }
 
 }
