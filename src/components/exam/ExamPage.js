@@ -55,6 +55,10 @@ function ExamPage({ user, error, result, fetching, gradeExamAction, getExamActio
         }
     }, [answers, finish])
 
+    useEffect(() => {
+        if (result && result.approved) setStep(4)
+    }, [result])
+
     function startExam() {
         setStep(1)
         setQuestion({ ...exam.questions[0] })

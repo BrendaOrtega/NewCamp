@@ -4,10 +4,12 @@ import styles from './exam.module.css'
 import { certificateGenerator } from './Cert'
 
 let web = require('../../assets/ConstanciaWeb.png')
+let python = require('../../assets/ConstanciaPy.png')
 
 export default function Grading({ user, fetching, waiting, result }) {
     function generateCert() {
-        certificateGenerator(web, null, user.displayName)
+        let img = result.bootcamp === "5dc1db06cd0b842984edca7c" ? python : web
+        certificateGenerator(img, null, user.displayName)
     }
 
     if (!fetching && !waiting && result) {
