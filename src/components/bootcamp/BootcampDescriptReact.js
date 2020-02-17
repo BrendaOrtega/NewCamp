@@ -65,7 +65,7 @@ class BootcampDescriptReact extends Component {
                     </div>
                     <div className="box-data">
                         <p>Próxima edición</p>
-                        <h3>17 de Febrero de 2020</h3>
+                        <h3>24 de Febrero de 2020</h3>
 
                         <hr/>
                         <p>Más de 24 hrs de ejercicios en</p>
