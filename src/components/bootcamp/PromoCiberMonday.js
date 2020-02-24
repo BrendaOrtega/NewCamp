@@ -12,7 +12,7 @@ const { Option } = Select;
 const PromoCiberMonday = ({ bootcamps, error, makeBootcampPurchasePromoAction }) => {
 
     let [errors, setError] = useState({})
-    let [total, setTotal] = useState(250)
+    let [total, setTotal] = useState(1250)
     let [loading, setLoading] = useState(false)
     let [form, setForm] = useState({ bootcampId: "5de52b17734c4163308b63fe" })
     let [success, setSuccess] = useState(false)
@@ -151,22 +151,22 @@ const PromoCiberMonday = ({ bootcamps, error, makeBootcampPurchasePromoAction })
         <div style={{ minHeight: "72vh", display: "flex", justifyContent: "center", alignItems: "center" }} className="preorder-form">
 
             <div className="step apply-box">
-                <h2 style={{fontSize:"28px"}}>¡Aparta tu lugar en cualquiera de nuestros bootcamps de 2020!</h2>
-                <h4>Con solo <strong style={{color:"#ca3e47"}}>$250.00MXN</strong> y paga el resto hasta que inicie el curso.</h4>
+                <h2 style={{fontSize:"28px"}}>¡Continua aprendiendo!</h2>
+                <h4>Paga los <strong style={{color:"#ca3e47"}}>$1,250.00MXN</strong> restantes del costo total de tu bootcamp.</h4>
 
-                <h5><em>Costo real del bootcamp en 2020: $3,000 Tú sólo pagarás: $1,500 (en total)</em></h5>
+                <h5><em>Recuerda que el acceso al bootcamp es permanente</em></h5>
                 <br/>
 {/*
                 <p style={{ color: "green" }}>Esta promoción es válida para cualqueir curso</p>
 */}
                 <div>
-                    <label htmlFor="">Nombre</label>
+                    {/* <label htmlFor="">Nombre</label>
                     <Input
                         name="fullName"
                         value={form.fullName}
                         onChange={onChange}
                         placeholder="Tu nombre completo"
-                    />
+                    /> */}
 
                     <label className="marg" htmlFor="">Teléfono</label>
                     <Input
@@ -175,15 +175,15 @@ const PromoCiberMonday = ({ bootcamps, error, makeBootcampPurchasePromoAction })
                         onChange={onChange}
                         placeholder="55 555 55 55"
                     />
-                    <label className="marg" htmlFor="">Email</label>
+                    {/* <label className="marg" htmlFor="">Email</label>
                     <Input
                         name="email"
                         value={form.email}
                         onChange={onChange}
                         placeholder="ejemplo@fixter.camp"
-                    />
+                    /> */}
                     <p style={{ color: "red" }}>{errors.general}</p>
-                    <p>¿A qué bootcamp te gustaría inscribirte para 2020?</p>
+                    <p>¿Cual es el bootcamp que liquidarás?</p>
                     <Select style={{ width: "100%" }} defaultValue={form.bootcampId} onChange={handleChange}>
                         {bootcamps.map((b, i) => {
                             return <option key={i} value={b._id} >{b.title}</option>

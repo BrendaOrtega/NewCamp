@@ -141,7 +141,7 @@ export function makeBootcampPurchasePromoAction({ total, tokenId, tel, email, fu
         dispatch({ type: MAKE_BOOTCAMP_PURCHASE })
         return axios.post(`${baseURL}/pay/bootcamp/promo`, data, { headers: { Authorization: token } })
             .then(res => {
-                dispatch({ type: MAKE_BOOTCAMP_PURCHASE_SUCCESS, payload: { ...res.data } })
+                dispatch({ type: MAKE_BOOTCAMP_PURCHASE_SUCCESS, payload: { ...res.data.user } })
                 return res
             })
             .catch(err => {

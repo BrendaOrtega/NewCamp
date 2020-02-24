@@ -23,6 +23,7 @@ import Backend from "./components/bootcamp/Backend";
 import BootcampPhp from "./components/bootcamp/BootcampPhp";
 import BootcampDescriptReact from "./components/bootcamp/BootcampDescriptReact";
 import BootcampReactPachuca from "./components/bootcamp/BootcampReactPachuca";
+import PromoCiberMonday from './components/bootcamp/PromoCiberMonday';
 
 
 let PrivateRoute = ({ component, next, to, ...rest }) => {
@@ -65,7 +66,7 @@ export const Router = () => (
         {/* Examen */}
         <Route path="/exam/:id" component={ExamPage} />
         {/* Redirecting everything */}
-        {/* <PrivateRoute next="/preorden" to="/preorden" component={PromoCiberMonday} /> */}
+        <PrivateRoute next="/preorden" to="/preorden" component={PromoCiberMonday} />
         {/* <Route to="/gift" component={BuyForGift} /> */}
 
 
