@@ -28,7 +28,7 @@ class Bootcamp extends Component {
                 />
                 <title>Bootcamp | FixterGeek</title>
                 <section className="bootcamps">
-                    <div className="cover">
+                    <div className="cover2">
                         <div className="invite-aply">
                             <h2 className="white-subtitulos">Conviértete en desarrollador en 4 semanas</h2>
                             <p>Sumergéte en el mundo del desarrollo de software de forma <strong>Online</strong> o <strong>Presencial</strong></p>
@@ -105,17 +105,7 @@ class Bootcamp extends Component {
                             link="/bootcamp-descript-laravel"
                             modalidad="100% Online"
                         />
-                        <CardBootcamp
-                            image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fphoto.jpg?alt=media&token=cbbffbc4-d321-4e8c-bc20-abcc83bc8710"
-                            badge="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fbadges_Mesa_de_trabajo_1_copia_3.png?alt=media&token=e91625bc-6438-4eb4-9fd0-abe6761bfd25"
-                            name="Desarrollo Frontend con ReactJs"
-                            descript="En este curso presencial aprenderás JavaScript y ES6, para sumergirte en el desarrollo Frontend con ReactJs 👨🏻‍💻👩🏻‍💻🔥"
-                            lecciones="20 lecciones"
-                            tiempo="4 semanas"
-                            link="/bootcamp-react-pachuca"
-                            modalidad="Presencial - 9 de Marzo"
-                            lugar="Pachuca, Hidalgo"
-                        />
+
                     </div>
                 </section>
 

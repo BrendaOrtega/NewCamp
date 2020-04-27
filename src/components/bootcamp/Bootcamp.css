@@ -1,10 +1,21 @@
 .bootcamps{
     width: 100%;
-    height: 400px;
-    background-image: url('https://images.pexels.com/photos/7066/man-relax-couch-study.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 550px;
+    background-image: url('../../assets/bootcamp-img.svg');
     background-size: cover;
-    background-position:top;
+    background-position:bottom;
 }
+.cover2{
+    width: 100%;
+    height: 100%;
+    padding: 0 15%;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.4);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .invite-aply{
     color: white;
     font-size: 20px;
@@ -22,6 +33,146 @@
     padding: 5% 10%;
     background-color: #f2f2f2;
 }
+
+.camp-portada{
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.camp-intro{
+    width: 50%;
+}
+.camp-intro h2{
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 12px;
+    font-family: "ProximaNovaB";
+    line-height: 120%;
+}
+.camp-intro p{
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.btn-ghost{
+    margin-left: 24px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    font-family: "Avenir";
+    color:#767676;
+    font-size: 18px;
+}
+
+.sylabuss{
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 80px 10%;
+}
+
+.week-card{
+    width: 240px;
+    height: 240px;
+    background-color: #962f35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    box-sizing: border-box;
+    color: white;
+    margin: 0 12px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.lessions{
+    display: none;
+    opacity: 0;
+}
+
+.week-card:hover .lessions{
+    display: block;
+    transition: all 1s ease;
+    opacity: .7;
+}
+.modules{
+    display: flex;
+    justify-content: space-between;
+}
+
+.week-card h3{
+    color: white;
+    font-size: 24px;
+    font-family: "ProximaNovaB";
+}
+
+.contain{
+    width: 100%;
+    padding: 80px 10%;
+}
+
+.fbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.adds{
+    font-size: 16px;
+    width: 600px;
+    margin: 10px;
+
+}
+.adds img{
+    height: 36px;
+    margin-right: 16px;
+
+}
+.adds h3{
+    font-family: ProximaRegular;
+    font-weight: bolder;
+    font-size: 24px;
+}
+.instructor_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.instructor_photo{
+    border: 12px solid white;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    transition: all 1s ease;
+
+}
+.instructor_photo img{
+    width: 100%;
+    cursor: pointer;
+}
+.instructor_photo img:hover{
+    transform: scale(1.3);
+}
+.instructor_info{
+    width: 600px;
+    flex-grow: 1;
+    padding: 0 4%;
+}
+.redes-instructor span{
+    margin-right: 16px;
+    font-size: 24px;
+}
+
+
+
+
+
 
 
 

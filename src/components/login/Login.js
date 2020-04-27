@@ -64,10 +64,12 @@ class Login extends Component {
         let { auth } = this.state
         return (
             <div >
-                <div className="black"></div>
                 <div className="login">
                     <div className="login-box">
-                        <h3 className="sub">Inicia Sesión</h3>
+                        <div>
+                        <h3 className="sub">Iniciar Sesión</h3>
+                            <br/>
+
                         <Form className="login-form">
                             {/* <div className="redes_login">
                                 <div className="circle_f" >
@@ -81,23 +83,24 @@ class Login extends Component {
                                 <hr className="line_log" /> or <hr className="line_log" />
                             </div> */}
                             <Form.Item>
+                                <label style={{fontSize:"18px"}} htmlFor="">Email</label>
                                 <Input
                                     value={auth.email}
                                     name="email"
                                     onChange={this._onChange}
                                     prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                                    placeholder="Email"
+                                    placeholder="ejemplo@fixter.org"
                                 />
                             </Form.Item>
                             <Form.Item>
-
+                                <label style={{fontSize:"18px"}} htmlFor="">Contraseña</label>
                                 <Input
                                     value={auth.password}
                                     onChange={this._onChange}
                                     name="password"
                                     prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
                                     type="password"
-                                    placeholder="Contraseña"
+                                    placeholder="Al menos 8 dígitos"
                                 />
                             </Form.Item>
                             <Form.Item style={{ textAlign: "center", marginTop:"24px" }}>
@@ -109,14 +112,17 @@ class Login extends Component {
                                 <div>
                                     <button
                                         onClick={this.signIn}
-                                        className="btn-login">
-                                        {this.props.fetching ? <Spin /> : "Iniciar"}
+                                        className="btn-explore">
+                                        {this.props.fetching ? <Spin /> : "Entrar"}
                                     </button>
                                 </div>
 
                                 <Link to={"/registro?next=" + this.state.next} className="regist" >Crea una cuenta</Link>
                             </Form.Item>
                         </Form>
+                    </div></div>
+                    <div className="login-img">
+                        <div className="cover2"></div>
                     </div>
                 </div>
                 <Modal

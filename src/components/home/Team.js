@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import "./Home.css"
 import FontAwesome from "react-fontawesome"
+import Button from "../common/Button";
+import brenda from "../../assets/21105859_1384283821667002_3656915529923068437_n.jpg"
+import bliss from "../../assets/67460673_10220365825273658_6972567135163777024_n.jpg"
+import david from "../../assets/50226136_2192976174151067_1003654992885710848_o.jpg"
+import osw from "../../assets/18891870_1543998225611670_8032322982945740932_o.jpg"
+import carlitos from "../../assets/carlitos.jpg"
 
 class Team extends Component {
     componentDidMount () {
@@ -19,26 +25,30 @@ class Team extends Component {
                     content="cursos, capacitación, react, angular, tecnología, programación, javascript, python, php, online, fixtergeek"
                 />
                 <title>Fixter Team</title>
-                <div className="black"></div>
-                <div className="team">
-                <h2 className="subtitulos">Conoce a nuestro equipo</h2>
-                <p>En FixterGeek estamos comprometidos con la educación tecnológica,
-                    estamos comprometidos con contribuir a la formación de desarrolladores en México.
+                <section className="bootcamps">
+                    <div className="cover2">
+                        <div className="invite-aply">
+                            <p className="slogan">"Work <strong>hard</strong> or go <strong>home</strong>"</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <div className="box-home">
+                <h2 className="subtitulo">Conoce a nuestro equipo</h2>
+                <p className="text">En FixterGeek estamos comprometidos con la educación tecnológica y con contribuir a la formación de desarrolladores en México.
                 </p>
                     <br/>
-                <div className="box-line">
-                    <div className="team-line">
-                    <h3>Founders</h3></div>
-                    <div className="team-members">
+                    <h3 className="sub3">Founders</h3>
 
-                    <hr/>
-                    </div>
-                </div>
+
+
                 <div className="box-miembros">
                     <div className="box_team">
-                        <div className="cuadro brenda">
+                        <div className="cuadro" style={{backgroundImage:`url("${brenda}")`}}>
                         </div>
                         <h4>Brenda Ortega</h4>
+                        <p>CEO & UX/UI Designer</p>
                         <a href="https://www.facebook.com/brenda.ortega.7121">
                             <FontAwesome name="facebook-square" />
                         </a>
@@ -47,7 +57,7 @@ class Team extends Component {
                         </a>
                     </div>
                     <div className="box_team">
-                        <div className="cuadro bliss">
+                        <div className="cuadro" style={{backgroundImage:`url("${bliss}")`}}>
                         </div>
                         <h4>Héctor Bliss</h4>
                         <a href="https://www.facebook.com/hector.bliss">
@@ -59,18 +69,12 @@ class Team extends Component {
                     </div>
 
                 </div>
-
-                    <div className="box-miembros just">
-                    <div className="box-line">
-                        <div className="team-line">
-                            <h3>Miembros</h3></div>
-                        <div className="team-members">
-
-                            <hr/>
-                        </div>
-                    </div>
+                    <br/>
+                    <br/>
+                    <h3 className="sub3">Collaborators</h3>
+                    <div className="box-miembros">
                     <div className="box_team">
-                        <div className="cuadro david">
+                        <div className="cuadro" style={{backgroundImage:`url("${david}")`}}>
                         </div>
                         <h4>David Zavala</h4>
                         <a href="https://www.facebook.com/david.pzmck">
@@ -81,7 +85,7 @@ class Team extends Component {
                         </a>
                     </div>
                     <div className="box_team ">
-                        <div className="cuadro oswaldo">
+                        <div className="cuadro" style={{backgroundImage:`url("${osw}")`}}>
                         </div>
                         <h4>Oswaldo Martinez</h4>
                         <a href="https://www.facebook.com/oswwaldom">
@@ -91,25 +95,15 @@ class Team extends Component {
                             <FontAwesome name="linkedin"/>
                         </a>
                     </div>
+
                         <div className="box_team">
-                            <div className="cuadro martin">
+                            <div className="cuadro" style={{backgroundImage:`url("${carlitos}")`}}>
                             </div>
-                            <h4>Martin Melo</h4>
-                            <a href="https://www.facebook.com/david.pzmck">
+                            <h4>Carlos Mendoza</h4>
+                            <a href="https://www.facebook.com/fernando.mendoza.7146">
                                 <FontAwesome name="facebook-square" />
                             </a>
-                            <a href="https://www.linkedin.com/in/david-zavala-bartolome/" target="blank">
-                                <FontAwesome name="linkedin"/>
-                            </a>
-                        </div>
-                        <div className="box_team">
-                            <div className="cuadro oso">
-                            </div>
-                            <h4>Oscar Villeda</h4>
-                            <a href="https://www.facebook.com/oscaruve">
-                                <FontAwesome name="facebook-square" />
-                            </a>
-                            <a href="https://www.linkedin.com/in/david-zavala-bartolome/" target="blank">
+                            <a href="https://www.linkedin.com/in/reloadercf/" target="blank">
                                 <FontAwesome name="linkedin"/>
                             </a>
                         </div>

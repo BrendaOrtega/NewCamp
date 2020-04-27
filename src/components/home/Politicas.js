@@ -8,7 +8,7 @@ class Politicas extends Component {
         return (
             <section>
                 <div className="black"></div>
-                <div className="politicas">
+                <div className="politicas box-home">
                 <h3>Políticas de Privacidad</h3>
                 <p>Aviso de privacidad El presente documento constituye el Aviso de privacidad de Privacidad
                     para efectos de lo dispuesto en la Ley Federal de Protección de Datos Personales en Posesión

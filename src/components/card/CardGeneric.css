@@ -38,11 +38,11 @@
     min-height: 350px;
     margin: 20px 24px;
     background-color: white;
-    box-shadow: 0 5px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 8px 1px rgba(215, 215, 215, 0.5);
     text-align: left;
     box-sizing: border-box;
     transition: all 1s ease;
-    border-radius: 8px;
+    border-radius: 4px;
     font-family:"ProximaRegular";
 }
 
@@ -162,7 +162,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -179,7 +179,7 @@
 }
 .contenedor{
     width: 100%;
-    padding: 80px 15%;
+    padding: 80px 10%;
    box-sizing: border-box;
 }
 
@@ -292,18 +292,22 @@
     flex-grow: 1;
     padding: 0 2%;
     box-sizing: border-box;
-    padding-top: 150px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
 }
 .camp-programa h2, .contenedor h2{
     color:#323232;
     font-size: 36px;
+    font-family: ProximaNovaB;
 }
 .camp-programa h3{
-    color:#45424c;
+    color:#222222;
     font-size: 24px;
 }
 .box-data h3{
     color:#323232;
+    font-family: "ProximaNovaB";
 }
 .box-data p {
     font-size: 14px;
