@@ -18,11 +18,11 @@
     background-position: center;
     background-size: contain;
     transition: all 1s ease;
-    cursor: help;
+    cursor: pointer;
     border: 3px solid white;
 }
 .user-photo:hover{
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 .fl{

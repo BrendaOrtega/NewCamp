@@ -48,12 +48,16 @@ class BootcampDescript extends Component {
           content="cursos, capacitación, react, angular, tecnología, programación, javascript, python, php, online, fixtergeek"
         />
         <title>Bootcamp Python | FixterGeek</title>
-        <section className="camp-portada" style={{backgroundImage:`url("${photo1}")`}}>
+        <section className="camp-portada" style={{backgroundImage:`url("https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F20200427_204700.jpg?alt=media&token=0e15bd6c-2602-473e-a5a0-b2e6a604b264")`}}>
             <div className="camp-intro">
               <h2>Fundamentos de Programación con Python</h2>
               <p>Aprende las bases de la programación, y prepárate para este programa, creado especialmente para principiantes que quieren incursionar en el mundo de Python: tanto para análisis de datos como para desarrollo web.</p>
               <br/>
-              <Button text="Inscribirme"/><button className="btn-ghost"><img style={{marginRight:"12px"}} src={download} alt=""/>Descargar temario</button>
+
+              <Button text="Inscribirme"/>
+                <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FFundamentos_de_Programacio%CC%81n_Python.pdf?alt=media&token=cc9e4b75-1366-4a35-bf9a-79a221ed85d6" target="_blank">
+                    <button className="btn-ghost"><img style={{marginRight:"12px"}} src={download} alt=""/>Descargar temario</button>
+                </a>
           </div>
         </section>
 
@@ -165,28 +169,28 @@ class BootcampDescript extends Component {
           <section className="contain">
               <h2 className="subtitulo">Coumunidad y herramientas</h2>
               <p className="text">Nuestros bootcamps y cursos, solo son el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad internacional,
-                  y tendrás acceso a nuestra plataforma digital para seguir aprendiendo online y profundizando en los temas mas relevantes.</p>
+                  y tendrás acceso a nuestra plataforma digital para seguir aprendiendo online y profundizando en los temas más relevantes.</p>
               <br/>
               <div className="fbox">
                   <div className="adds">
-                      <h3><img src={people} alt=""/>Comunidad</h3>
+                      <h3><img src={people} alt="icon-comunidad"/>Comunidad</h3>
                       <p>Al ser parte de la comunidad tendrás acceso a la plataforma de forma permanente, a grupos privados de facebook y slack, y
                           serás de los primeros en saber de nuestros eventos.
                       </p>
                   </div>
                   <div className="adds">
-                      <h3><img src={event} alt=""/>Eventos</h3>
+                      <h3><img src={event} alt="icon-eventos"/>Eventos</h3>
                       <p>También serás de los primeros en saber sobre nuestros eventos y meetups, además de recibir entradas para eventos locales.
                       </p>
                   </div>
                   <div className="adds">
-                      <h3><img src={message} alt=""/>Mentoría</h3>
+                      <h3><img src={message} alt="icon-mentoria"/>Mentoría</h3>
                       <p>Sabemos que aprender a programar puede ser abrumador, así que si tienes algún problema a los largo del curso,
                           contarás con el apoyo de nuestros expertos, que podrán brindarte recursos extra o resolver tus dudas directamente.
                       </p>
                   </div>
                   <div className="adds">
-                      <h3><img src={graduated} alt=""/>Diploma</h3>
+                      <h3><img src={graduated} alt="icon-diploma"/>Diploma</h3>
                       <p>Al concluir el bootcamp y aprobar el examen final, podrás descargar tu reconocimeinto, por haber concluido
                           satisfactoriamente el bootcamp.
                       </p>
@@ -200,7 +204,7 @@ class BootcampDescript extends Component {
               <br/>
               <div className="instructor_box">
                     <div className="instructor_photo">
-                        <img src={katia} alt=""/>
+                        <img src={katia} alt="photo-katia"/>
                     </div>
                   <div className="instructor_info">
                       <h2 style={{fontSize:"24px"}} className="subtitulo">Katia Lira </h2>
@@ -210,11 +214,18 @@ class BootcampDescript extends Component {
                       <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital jdhkjwhdkqwhdjwhdjkhwkjdhkjwhdkjw.
 
                           Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital.</p>
-                        <div className="redes-instructor">
-                            <FontAwesome name="facebook-f"/>
-                            <FontAwesome name="linkedin"/>
-                            <FontAwesome name="twitter"/>
-                        </div>
+                      <div className="redes-instructor">
+                          <a href="https://github.com/katialira" target="_blank">
+                              <FontAwesome name="github"/>
+                          </a>
+                          <a href="https://www.linkedin.com/in/katia-lira-engineer/" target="_blank">
+                              <FontAwesome name="linkedin"/>
+                          </a>
+                          <a href="https://twitter.com/lakatialira" target="_blank">
+                              <FontAwesome name="twitter"/>
+                          </a>
+
+                      </div>
                   </div>
               </div>
           </section>

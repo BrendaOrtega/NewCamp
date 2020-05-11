@@ -2,8 +2,15 @@ import React, { Component } from 'react';
 import "./Bootcamp.css"
 import pactive from "../../assets/barra-de-progreso 2.svg";
 import pinactive from "../../assets/barra-de-progreso_inactive.svg";
-import download from "../../assets/iconos100x100DWN-05.png";
+import download from "../../assets/download.svg"
 import {Link} from "react-router-dom";
+import Button from "../common/Button";
+import people from "../../assets/Shape.svg";
+import event from "../../assets/event.svg";
+import message from "../../assets/message.svg";
+import graduated from "../../assets/graduated.svg";
+import katia from "../../assets/Jk6JaJzJ_400x400.jpg";
+import FontAwesome from "react-fontawesome";
 
 class BootcampDescriptReact extends Component {
     componentDidMount () {
@@ -22,34 +29,28 @@ class BootcampDescriptReact extends Component {
                     name="keywords"
                     content="cursos, capacitación, react, angular, tecnología, programación, javascript, python, php, online, fixtergeek"
                 />
-                <title>Bootcamp React + Redux | FixterGeek</title>
-                <section  className="container-bootcamp">
-                    <div className="container-summary">
-                        <h2 className="name-descript">Desarrollo Frontend con ReactJs + Redux</h2>
-                        <hr className="line-red"/>
-                        <p className="description"> Ahora que tienes conocimientos en JavaScript, da el siguiente paso para convertirte en un desarrollador frontend con uno de los frameworks más populares, utilizado por Facebook, Tesla y Twitter.</p>
-                        <Link to="/apply/?b=5de52ac8734c4163308b63fc">
-                            <button className="btn-float">INSCRIBIRME</button>
+                <title>Bootcamp Python | FixterGeek</title>
+                <section className="camp-portada" style={{backgroundImage:`url("https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F20200427_204634.jpg?alt=media&token=dacbdd8b-040f-49ac-999e-b614a2e4f890")`}}>
+                    <div className="camp-intro">
+                        <h2>Desarrollo Frontend con ReactJs + Redux</h2>
+                        <p>Ahora que tienes conocimientos en JavaScript, da el siguiente paso para convertirte en un desarrollador frontend con uno de los frameworks más populares, utilizado por Facebook, Tesla y Twitter.</p>
+                        <br/>
+                        <Link to="/apply/?b=5d632e4c339a1b379df68a74">
+                            <Button text="Inscribirme"/>
                         </Link>
-                        <div className="nivel">
-                            <p>Nivel <span style={{fontSize:"10px"}}>(intermedio)</span></p>
-                            <img src={pactive} alt="nivel"/>
-                            <img  src={pactive} alt="nivel"/>
-                            <img style={{opacity:".3"}} src={pinactive} alt="nivel"/>
-                            <img style={{opacity:".3"}} src={pinactive} alt="nivel"/>
-                        </div>
-                    </div>
-                    <div id="contain" className="container-content">
-                        <div className="background">
-
-                        </div>
-
+                        <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FFundamentos_Desarrollo_Web.pdf?alt=media&token=80e68013-45be-429d-b9c8-5b58bc9a3615" target="_blank">
+                            <button className="btn-ghost"><img style={{marginRight:"12px"}} src={download} alt=""/>Descargar temario</button>
+                        </a>
                     </div>
                 </section>
-                <section style={{backgroundColor:"#f5f5f5"}} className="contenedor camp-programa">
+
+                <section
+
+                    className="contenedor camp-programa"
+                >
                     <div className="box-programa">
                         <h2>
-                            ¡Explora el poder del desarrollo web front-end con ReactJs!</h2>
+                            ¡Explora el desarrollo front-end con ReactJs!</h2>
                         <br/>
                         <h3>Por qué ReactJs...</h3>
                         <p>
@@ -64,49 +65,151 @@ class BootcampDescriptReact extends Component {
                         </p>
                     </div>
                     <div className="box-data">
-                        <p>Próxima edición</p>
-                        <h3>24 de Febrero de 2020</h3>
-
-                        <hr/>
-                        <p>Más de 24 hrs de ejercicios en</p>
-                        <h3> 6 semanas</h3>
-
-                        <hr/>
-                        <p>Aprende con la práctica</p>
-                        <h3>1 exámen final</h3>
-                        <hr/>
-                        <p>Precio especial edición cero</p>
-                        <h3>$ 1,999.00</h3>
-
-                        <hr/>
-                    </div>
-                </section >
-                <section className="contenedor download-t">
-                    <div className="temario">
-                        <h2>¿Qué vas a aprender?</h2>
-                        <p>Algunas cosas que aprenderás ene ste curso son:</p>
-                        <p><span>&bull;</span> RecatJs</p>
-                        <p><span>&bull;</span> Entornos de desarrollo</p>
-                        <p><span>&bull;</span> Componentes</p>
-                        <p><span>&bull;</span> Props y State</p>
-                        <p><span>&bull;</span> Redux</p>
-                        <p><span>&bull;</span> Integración Redux con React</p>
-                        <p><span>&bull;</span> Login y Autenticación</p>
-                    </div>
-                    <div className="downl">
                         <div>
-                            <h3>TEMARIO</h3>
-                            <p>¿Quieres saber más sobre lo que aprenderás en el bootcamp?
-                                Descarga el temario completo en PDF
+                            <p>Próxima edición</p>
+                            <h3>Ya disponible</h3>
+
+                            <hr />
+                            <p>Más de 24 hrs de ejercicios en</p>
+                            <h3> 4 semanas</h3>
+
+                            <hr />
+                            <p>Aprende con la práctica</p>
+                            <h3>1 examen final</h3>
+                            <hr />
+                            <p>
+                                Precio <span style={{ fontSize: "10px" }}>(hasta 6 MSI)</span>
                             </p>
-                            <br/>
-                            <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FSyllabus_FixterBOOTCAMP.pdf?alt=media&token=aa1ebddb-ee67-4a8f-8771-514b0eb13059" target="blank" >
-                                <img src={download} alt="descarga"/>
-                            </a>
+                            <h3>$ 1,999.00</h3>
+
+                            <hr />
+                        </div>
+                    </div>
+                </section>
+                <section className="sylabuss">
+                    <h2 className="subtitulo">¿Qué vas a aprender?</h2>
+                    <br/>
+                    <div className="modules">
+                        <div className="week-card">
+                            <div>
+                                <h3>Prework</h3>
+                                <div className="lessions">
+                                    <p><span>&bull;</span> Conceptos básicos</p>
+                                    <p><span>&bull;</span> Node.Js, NPM y NVM</p>
+                                    <p><span>&bull;</span> Git y Github</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="week-card">
+                            <div>
+                                <h3>Semana 1</h3>
+                                <div className="lessions">
+                                    <p><span>&bull;</span> React.Js </p>
+                                    <p><span>&bull;</span> Componentes y Circlos de vida</p>
+                                    <p><span>&bull;</span> Props y state</p>
+                                    <p><span>&bull;</span> Hooks</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="week-card">
+                            <div>
+                                <h3>Semana 2</h3>
+                                <div className="lessions">
+                                    <p><span>&bull;</span> Yarn </p>
+                                    <p><span>&bull;</span> Create-React-App </p>
+                                    <p><span>&bull;</span> Estilos y componentes</p>
+                                    <p><span>&bull;</span> Router</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="week-card">
+                            <div>
+                                <h3>Semana 3</h3>
+                                <div className="lessions">
+                                    <p><span>&bull;</span> Redux</p>
+                                    <p><span>&bull;</span> Actions - Reducers - Store</p>
+                                    <p><span>&bull;</span> State - Redux</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="week-card">
+                            <div>
+                                <h3>Semana 4</h3>
+                                <div className="lessions">
+                                    <p><span>&bull;</span> Login y Autenticación</p>
+                                    <p><span>&bull;</span> Hooks con Redux</p>
+                                    <p><span>&bull;</span> Hosting</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="contain">
+                    <h2 className="subtitulo">Coumunidad y herramientas</h2>
+                    <p className="text">Nuestros bootcamps y cursos, solo son el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad internacional,
+                        y tendrás acceso a nuestra plataforma digital para seguir aprendiendo online y profundizando en los temas más relevantes.</p>
+                    <br/>
+                    <div className="fbox">
+                        <div className="adds">
+                            <h3><img src={people} alt="icon-comunidad"/>Comunidad</h3>
+                            <p>Al ser parte de la comunidad tendrás acceso a la plataforma de forma permanente, a grupos privados de facebook y slack, y
+                                serás de los primeros en saber de nuestros eventos.
+                            </p>
+                        </div>
+                        <div className="adds">
+                            <h3><img src={event} alt="icon-eventos"/>Eventos</h3>
+                            <p>También serás de los primeros en saber sobre nuestros eventos y meetups, además de recibir entradas para eventos locales.
+                            </p>
+                        </div>
+                        <div className="adds">
+                            <h3><img src={message} alt="icon-mentoria"/>Mentoría</h3>
+                            <p>Sabemos que aprender a programar puede ser abrumador, así que si tienes algún problema a los largo del curso,
+                                contarás con el apoyo de nuestros expertos, que podrán brindarte recursos extra o resolver tus dudas directamente.
+                            </p>
+                        </div>
+                        <div className="adds">
+                            <h3><img src={graduated} alt="icon-diploma"/>Diploma</h3>
+                            <p>Al concluir el bootcamp y aprobar el examen final, podrás descargar tu reconocimeinto, por haber concluido
+                                satisfactoriamente el bootcamp.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </section>
+                <section className="sylabuss">
+                    <h2 className="subtitulo">Acerca del instructor</h2>
+                    <br/>
+                    <div className="instructor_box">
+                        <div className="instructor_photo">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F56414061_10219388463320220_4036709091425386496_o.jpg?alt=media&token=4f7dc5f3-04fd-4006-837f-d3216557bee9" alt="photo-bliss"/>
+                        </div>
+                        <div className="instructor_info">
+                            <h2 style={{fontSize:"24px"}} className="subtitulo">Héctor Bliss </h2>
+                            <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital jdhkjwhdkqwhdjwhdjkhwkjdhkjwhdkjw.
+
+                                Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital.</p>
+                            <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital jdhkjwhdkqwhdjwhdjkhwkjdhkjwhdkjw.
+
+                                Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital.</p>
+                            <div className="redes-instructor">
+                                <a href="https://github.com/HectorBlisS" target="_blank">
+                                    <FontAwesome name="github"/>
+                                </a>
+                                <a href="https://www.linkedin.com/in/hectorbliss/" target="_blank">
+                                    <FontAwesome name="linkedin"/>
+                                </a>
+                                <a href="https://twitter.com/HectorBlisS" target="_blank">
+                                    <FontAwesome name="twitter"/>
+                                </a>
+
+                            </div>
                         </div>
                     </div>
                 </section>
             </section>
+
         )
     }
 }

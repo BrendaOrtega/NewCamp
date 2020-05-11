@@ -7,6 +7,7 @@ import bliss from "../../assets/67460673_10220365825273658_6972567135163777024_n
 import david from "../../assets/50226136_2192976174151067_1003654992885710848_o.jpg"
 import osw from "../../assets/18891870_1543998225611670_8032322982945740932_o.jpg"
 import carlitos from "../../assets/carlitos.jpg"
+import katia from "../../assets/Jk6JaJzJ_400x400.jpg"
 
 class Team extends Component {
     componentDidMount () {
@@ -49,8 +50,8 @@ class Team extends Component {
                         </div>
                         <h4>Brenda Ortega</h4>
                         <p>CEO & UX/UI Designer</p>
-                        <a href="https://www.facebook.com/brenda.ortega.7121">
-                            <FontAwesome name="facebook-square" />
+                        <a href="https://github.com/BrendaOrtega" target="_blank">
+                            <FontAwesome name="github"/>
                         </a>
                         <a href="https://www.linkedin.com/in/brenda-ort/" target="blank">
                             <FontAwesome name="linkedin"/>
@@ -60,8 +61,9 @@ class Team extends Component {
                         <div className="cuadro" style={{backgroundImage:`url("${bliss}")`}}>
                         </div>
                         <h4>Héctor Bliss</h4>
-                        <a href="https://www.facebook.com/hector.bliss">
-                            <FontAwesome name="facebook-square" />
+                        <p>CTO & Software Engineer</p>
+                        <a href="https://github.com/HectorBlisS" target="_blank">
+                            <FontAwesome name="github"/>
                         </a>
                         <a href="https://www.linkedin.com/in/hectorbliss/" target="blank">
                             <FontAwesome name="linkedin"/>
@@ -77,8 +79,9 @@ class Team extends Component {
                         <div className="cuadro" style={{backgroundImage:`url("${david}")`}}>
                         </div>
                         <h4>David Zavala</h4>
-                        <a href="https://www.facebook.com/david.pzmck">
-                            <FontAwesome name="facebook-square" />
+                        <p>Sr Frontend Developer</p>
+                        <a href="https://github.com/DeividZavala" target="_blank">
+                            <FontAwesome name="github"/>
                         </a>
                         <a href="https://www.linkedin.com/in/david-zavala-bartolome/" target="blank">
                             <FontAwesome name="linkedin"/>
@@ -88,8 +91,9 @@ class Team extends Component {
                         <div className="cuadro" style={{backgroundImage:`url("${osw}")`}}>
                         </div>
                         <h4>Oswaldo Martinez</h4>
-                        <a href="https://www.facebook.com/oswwaldom">
-                            <FontAwesome name="facebook-square" />
+                        <p>Sr Fullstack Developer</p>
+                        <a href="https://github.com/Oswaldinho24k" target="_blank">
+                            <FontAwesome name="github"/>
                         </a>
                         <a href="https://www.linkedin.com/in/oswaldinho24k/" target="blank">
                             <FontAwesome name="linkedin"/>
@@ -100,10 +104,23 @@ class Team extends Component {
                             <div className="cuadro" style={{backgroundImage:`url("${carlitos}")`}}>
                             </div>
                             <h4>Carlos Mendoza</h4>
-                            <a href="https://www.facebook.com/fernando.mendoza.7146">
-                                <FontAwesome name="facebook-square" />
+                            <p>Fullstack Developer</p>
+                            <a href="https://github.com/reloadercf" target="_blank">
+                                <FontAwesome name="github"/>
                             </a>
                             <a href="https://www.linkedin.com/in/reloadercf/" target="blank">
+                                <FontAwesome name="linkedin"/>
+                            </a>
+                        </div>
+                        <div className="box_team">
+                            <div className="cuadro" style={{backgroundImage:`url("${katia}")`}}>
+                            </div>
+                            <h4>Katia Lira</h4>
+                            <p>Web Engineerr</p>
+                            <a href="https://github.com/katialira" target="_blank">
+                                <FontAwesome name="github"/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/katia-lira-engineer/" target="_blank">
                                 <FontAwesome name="linkedin"/>
                             </a>
                         </div>

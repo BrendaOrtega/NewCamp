@@ -192,7 +192,7 @@ class HomeContainer extends Component {
                                         <span>1</span>
                                     </div>
                                     <div className="ilustrate-photo">
-                                        <img src={student1} alt=""/>
+                                        <img src="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fpexels-photo-269323.jpeg?alt=media&token=46319af1-7b01-47eb-9a82-602ca2cda967" alt=""/>
                                     </div>
                                 </section>
                             </div>
@@ -210,7 +210,7 @@ class HomeContainer extends Component {
                                         <span>2</span>
                                     </div>
                                     <div className="ilustrate-photo">
-                                        <img src={student1} alt=""/>
+                                        <img src="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fpexels-photo-1051075.jpeg?alt=media&token=5b3eb252-c207-46ed-a8ac-902ab67ce48f" alt=""/>
                                     </div>
                                 </section>
                             </div>
@@ -228,7 +228,7 @@ class HomeContainer extends Component {
                                         <span>3</span>
                                     </div>
                                     <div className="ilustrate-photo">
-                                        <img src={student1} alt=""/>
+                                        <img src="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fpexels-photo-301926.jpeg?alt=media&token=d48c9409-947e-4af0-81d4-f6949dc51214" alt=""/>
                                     </div>
 
                                 </section>

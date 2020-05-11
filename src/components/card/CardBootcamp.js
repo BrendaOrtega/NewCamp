@@ -21,8 +21,8 @@ export const CardBootcamp = ({image, name, descript, lecciones, tiempo, link, li
                 <div style={{ padding: "0 6%", marginTop:"-12px" }}>
                     <h3>{name}</h3>
                     <p>{descript}️</p>
-                    <p id="datos"> <FontAwesome  name="history" /> {tiempo} <span>&bull;</span> {lecciones}</p>
-                    <p id="datos"> <FontAwesome name="lock" />  { lugar || "Examen final"}</p>
+                    <p id="datos"> <FontAwesome  name="calendar" />  {tiempo} <span>&bull;</span> {lecciones}</p>
+                    <p id="datos"> <FontAwesome name="copy" />  { lugar || "Examen final"}</p>
                     <p id="datos"> <FontAwesome name="tv" /> {modalidad} </p>
                 </div>
             </div>

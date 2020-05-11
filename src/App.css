@@ -10,7 +10,15 @@
   font-family: "ProximaNovaB";
   src: url("./assets/fonts/NovaBold.otf");
 }
-
+a{
+  cursor: pointer;
+}
+.redes-instructor a{
+  color: rgba(0, 0, 0, 0.4);
+}
+.redes-instructor a:hover{
+  color:#962f35;
+}
 
 /*
 body{

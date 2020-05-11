@@ -6,6 +6,7 @@ import { UserBootcamp } from "./UserBootcamp";
 import { UserBooks } from "./UserBooks";
 import { UserEvents } from "./UserEvents";
 import { storage } from "../../firebase";
+import FontAwesome from "react-fontawesome"
 
 const { TabPane } = Tabs;
 
@@ -73,14 +74,13 @@ export const Profile = ({
             className="user-photo"
           >
             <div onClick={() => input.current.click()} className="img-overlay">
-              EDITAR IMAGEN
+              <FontAwesome name="camera"/>
             </div>
           </div>
         </div>
-        <button onClick={() => updateProfile(profile)} style={styles.button}>
-          Actualizar Perfil
-        </button>
+
         <div className="user-descript">
+          <p style={{ marginTop: 10 }}>{email}</p>
           <Input
             name="displayName"
             onChange={onChange}
@@ -88,6 +88,10 @@ export const Profile = ({
             className="user-descript-input"
             placeholder="Nombre de usuario"
           />
+          <br/>
+          <div onClick={() => updateProfile(profile)} >
+            Guardar
+          </div>
           {changePass && (
             <div>
               <h2 style={{ color: "red" }}>Debes actualizar tu contraseña:</h2>
@@ -117,7 +121,7 @@ export const Profile = ({
                         className="user-descript-input"
                         placeholder="Correo electrónico para notificaciones"
                     /> */}
-          <p style={{ marginTop: 10 }}>{email}</p>
+
         </div>
       </div>
       <section className="contenido">
