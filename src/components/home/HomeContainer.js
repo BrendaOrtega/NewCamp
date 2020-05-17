@@ -307,7 +307,7 @@ class HomeContainer extends Component {
 
                 </Carousel>
                   </div>
-             
+
 
 
               <div className="common inf" style={{ alignItems: "center" }}>

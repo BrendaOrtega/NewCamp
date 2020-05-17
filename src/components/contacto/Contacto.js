@@ -30,7 +30,8 @@ class Contacto extends Component {
     })
       .then((r) => {
         console.log(r);
-        toastr.success("Recibido!");
+        toastr.success("Tu mensaje ha sido enviado. Nos pondremos en contacto contigo lo antes posible.");
+        this.setState({form:{}})
       })
       .catch((e) => toastr.error("Vuelve a intentar"));
   };
@@ -96,7 +97,7 @@ class Contacto extends Component {
             <br />
             <br />
             <div style={{ textAlign: "center" }}>
-              <ButtonWhite onClick={this.sendForm} text="ENVIAR" />
+              <ButtonWhite onClick={this.sendForm} text="Enviar" />
             </div>
           </div>
         </div>
