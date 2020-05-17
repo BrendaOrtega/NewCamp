@@ -3,9 +3,16 @@ import "./Contacto.css";
 import ButtonWhite from "../common/ButtonWhite";
 import toastr from "toastr";
 
+let f = {
+  displayName: "",
+  tel: "",
+  email: "",
+  text: "",
+};
+
 class Contacto extends Component {
   state = {
-    form: {},
+    form: { ...f },
   };
 
   componentDidMount() {
@@ -16,7 +23,7 @@ class Contacto extends Component {
     let { form } = this.state;
     form[name] = value;
     this.setState({ form });
-    this.setState({ form });
+    // this.setState({ form });
   };
 
   sendForm = () => {
@@ -29,13 +36,22 @@ class Contacto extends Component {
       },
     })
       .then((r) => {
-        console.log(r);
-        toastr.success("Recibido!");
+        // console.log(r);
+        toastr.success(
+          "Tu mensaje ha sido enviado. Nos pondremos en contacto contigo lo antes posible."
+        );
+        this.setState({ form: { ...f } }, () => {
+          console.log(this.state.form);
+        });
       })
       .catch((e) => toastr.error("Vuelve a intentar"));
   };
 
   render() {
+    let {
+      form: { displayName, email, tel, text },
+    } = this.state;
+    console.log(displayName);
     return (
       <div className="">
         <meta
@@ -73,6 +89,7 @@ class Contacto extends Component {
               placeholder="Nombre"
               type="text"
               required={true}
+              value={displayName}
             />
             <input
               onChange={this.onChange}
@@ -80,23 +97,27 @@ class Contacto extends Component {
               placeholder="Email"
               type="text"
               required={true}
+              value={email}
             />
             <input
               onChange={this.onChange}
               name="tel"
               placeholder="Teléfono"
               type="number"
+              value={tel}
             />
             <textarea
               onChange={this.onChange}
               name="text"
               placeholder="Mensaje"
               type="text"
+              value={text}
             />
+
             <br />
             <br />
             <div style={{ textAlign: "center" }}>
-              <ButtonWhite onClick={this.sendForm} text="ENVIAR" />
+              <ButtonWhite onClick={this.sendForm} text="Enviar" />
             </div>
           </div>
         </div>

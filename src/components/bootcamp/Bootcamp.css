@@ -109,6 +109,7 @@
 }
 .modules{
     display: flex;
+
     justify-content: space-between;
 }
 
@@ -566,19 +567,15 @@ CARD*/
     outline: none;
     width: 100%;
     height: 32px;
-    background-color: white;
     border-radius: 16px;
     border: 1px solid #ca3e47;
-    cursor: crosshair;
+    cursor: pointer;
     color:white;
     transition: all 1s ease;
     background-color: #ca3e47;
 }
 .btn-in:hover{
-    background-color: #ca3e47;
-    border: #ca3e47;
-    color:white;
-    cursor: pointer;
+    box-shadow: inset 0 -70px 0 0 #962f35;
 }
 
 .btn-pre{
@@ -603,12 +600,12 @@ CARD*/
     border-radius: 16px;
     border: 1px solid #cccccc;
     cursor: pointer;
-    color:darkslateblue;
+    color:#767676;
     margin-top: 10px;
 }
 .btn-pre-exam:hover{
-    background-color: lightskyblue;
-    color:white;
+    border-color: #ca3e47;
+    color:#ca3e47;
 }
 .btn-pre:hover{
      background-color: #cccccc;
@@ -655,7 +652,6 @@ padding-top: 80px;
         width: 70%;
         height: auto;
         margin: 100px 0 30px 0;
-
     }
     .camp-descript{
         display: flex;
@@ -668,8 +664,43 @@ padding-top: 80px;
     .camp-dates{
         margin-top: 0px;
     }
+    .camp-intro h2{
+        font-size: 36px;
+    }
+    .camp-intro{
+        width: 80%;
+        font-size: 16px;
+    }
+    .camp-portada{
+        height: 55vh;
+        font-size: 16px;
+    }
+    .box-programa h2{
+        font-size: 24px;
+    }
+    .modules{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .week-card{
+        width: 180px;
+        margin: 12px;
+    }
+    .adds h3{
+        font-size: 20px;
+    }
+    .instructor_box{
+        justify-content: inherit;
+    }
+    .instructor_photo{
+        margin-bottom: 24px;
+    }
+    .instructor_info{
+        padding: 0;
+    }
 
 }
+/*
 
 @media (max-width: 550px) {
     .intro-bootcamp{
@@ -749,4 +780,4 @@ padding-top: 80px;
     }
 
 
-}
+}*/

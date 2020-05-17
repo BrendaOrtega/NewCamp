@@ -78,7 +78,10 @@ const BD = ({
   let [hModal, showHmodal] = useState(false);
   let [visible, setVisible] = useState(false);
 
+  //   window.scroll(0, 0);
+
   useEffect(() => {
+    window.scroll(0, 0);
     // get bootcmp with or without learnings
     let { id } = match.params;
     if (id)
@@ -157,7 +160,14 @@ const BD = ({
             style={{ backgroundImage: `url(${img})` }}
           ></div>
           <div className="camp-avatar">
-            <img src={js} alt="logo-javascript" />
+            <img
+              style={{
+                height: "auto",
+                width: "60%",
+              }}
+              src={js}
+              alt="logo-javascript"
+            />
           </div>
           <div style={{ padding: "0 4%" }}>
             <h3>Bootcamp Online: {bootcamp.title}</h3>
@@ -175,13 +185,6 @@ const BD = ({
               {" "}
               <FontAwesome name="file" /> Exámen final{" "}
             </p>
-            {subscribed ? (
-              <button className="btn-in">Inscrito</button>
-            ) : (
-              <button onClick={() => history.push("/apply")} className="btn-in">
-                Inscríbete
-              </button>
-            )}
           </div>
         </div>
         <div className="camp-dates">

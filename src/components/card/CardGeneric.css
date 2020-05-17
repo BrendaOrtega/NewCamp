@@ -406,6 +406,28 @@
     .contenedor{
         padding: 40px 10%;
     }
+    .camp-programa{
+        font-size: 16px;
+    }
+    .camp-programa h3{
+        font-size: 20px;
+    }
+    .camp-programa h2, .contenedor h2{
+        font-size: 24px;
+    }
+    .ipad-fl{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .ipad-fl div{
+        width: 250px;
+    }
+    .box-data{
+        padding: 4% 0;
+    }
+
+
 }
 @media (max-width: 680px) {
     .container-summary{

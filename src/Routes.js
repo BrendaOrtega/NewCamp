@@ -15,7 +15,6 @@ import Login from './components/login/Login';
 import AdminPage from './components/admin/AdminPage';
 import BootcampDescript from "./components/bootcamp/BootcampDescript";
 import BootcampDescriptWeb from "./components/bootcamp/BootcampDescriptWeb";
-
 import BootcampDescriptLaravel from "./components/bootcamp/BootcampDescriptLaravel";
 import Landing from "./components/home/Landing";
 import ExamPage from './components/exam/ExamPage';
@@ -24,6 +23,7 @@ import BootcampPhp from "./components/bootcamp/BootcampPhp";
 import BootcampDescriptReact from "./components/bootcamp/BootcampDescriptReact";
 import BootcampReactPachuca from "./components/bootcamp/BootcampReactPachuca";
 import PromoCiberMonday from './components/bootcamp/PromoCiberMonday';
+import Ask from "./components/home/Ask"
 
 
 let PrivateRoute = ({ component, next, to, ...rest }) => {
@@ -43,6 +43,7 @@ export const Router = () => (
 
 
         <Route exact path="/bootcamp" component={Bootcamp} />
+        <Route path="/preguntas-frecuentes" component={Ask} />
         <Route path="/bootcamp-descript" component={BootcampDescript} />
         <Route path="/bootcamp-descript-laravel" component={BootcampDescriptLaravel} />
         <Route path="/bootcamp-descript-web" component={BootcampDescriptWeb} />
