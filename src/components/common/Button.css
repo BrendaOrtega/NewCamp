@@ -32,7 +32,7 @@
     height: 50px;
     background-color: white;
     border: 1px solid #ca3e47;
-    text-transform: uppercase;
+   /* text-transform: uppercase;*/
     color: #ca3e47;
     font-weight: bolder;
     cursor: pointer;
@@ -55,7 +55,7 @@
     width: 180px;
     height: 40px;
     border: 1px solid #5b5764;
-    text-transform: uppercase;
+  /*  text-transform: uppercase;*/
     color: white;
     font-weight: bolder;
     cursor: pointer;

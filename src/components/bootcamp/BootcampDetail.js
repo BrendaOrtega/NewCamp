@@ -127,7 +127,7 @@ const BD = ({ user, uHomeworks, history, getBootcampAction, subscribed, match, b
 
                     </div>
                     <div className="camp-avatar">
-                        <img src={js} alt="logo-javascript" />
+                        <img style={{width:"60%", height:"auto"}} src={js} alt="logo-javascript" />
                     </div>
                     <div style={{ padding: "0 4%" }}>
                         <h3>Bootcamp Online: {bootcamp.title}</h3>
@@ -135,7 +135,7 @@ const BD = ({ user, uHomeworks, history, getBootcampAction, subscribed, match, b
                         <p> <FontAwesome name="user" /> {bootcamp.students.length + 195} Estudiantes</p>
                         <p> <FontAwesome name="calendar" /> 5 semanas </p>
                         <p> <FontAwesome name="file" /> Exámen final  </p>
-                        {subscribed ? <button className="btn-in">Inscrito</button> : <button onClick={() => history.push('/apply')} className="btn-in">Inscríbete</button>}
+                       {/* {subscribed ? <button className="btn-in">Inscrito</button> : <button onClick={() => history.push('/apply')} className="btn-in">Inscríbete</button>}*/}
                     </div>
                 </div>
                 <div className="camp-dates">

@@ -53,8 +53,9 @@ class BootcampDescript extends Component {
               <h2>Fundamentos de Programación con Python</h2>
               <p>Aprende las bases de la programación, y prepárate para este programa, creado especialmente para principiantes que quieren incursionar en el mundo de Python: tanto para análisis de datos como para desarrollo web.</p>
               <br/>
-
-              <Button text="Inscribirme"/>
+                <Link to="">
+                    <Button text="Inscribirme"/>
+                </Link>
                 <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FFundamentos_de_Programacio%CC%81n_Python.pdf?alt=media&token=cc9e4b75-1366-4a35-bf9a-79a221ed85d6" target="_blank">
                     <button className="btn-ghost"><img style={{marginRight:"12px"}} src={download} alt=""/>Descargar temario</button>
                 </a>
@@ -62,7 +63,6 @@ class BootcampDescript extends Component {
         </section>
 
         <section
-
           className="contenedor camp-programa"
         >
           <div className="box-programa">
@@ -85,24 +85,33 @@ class BootcampDescript extends Component {
               </p>
             </div>
             <div className="box-data">
-              <div>
-              <p>Próxima edición</p>
-              <h3>Ya disponible</h3>
+              <div className="ipad-fl">
+                  <div>
+                      <p>Próxima edición</p>
+                      <h3>Ya disponible</h3>
 
-              <hr />
-              <p>Más de 24 hrs de ejercicios en</p>
-              <h3> 4 semanas</h3>
+                      <hr />
+                  </div>
+                 <div>
+                     <p>Más de 24 hrs de ejercicios en</p>
+                     <h3> 4 semanas</h3>
 
-              <hr />
-              <p>Aprende con la práctica</p>
-              <h3>1 examen final</h3>
-              <hr />
-              <p>
-                Precio <span style={{ fontSize: "10px" }}>(hasta 6 MSI)</span>
-              </p>
-              <h3>$ 1,999.00</h3>
+                     <hr />
+                 </div>
+                  <div>
+                      <p>Aprende con la práctica</p>
+                      <h3>1 examen final</h3>
+                      <hr />
+                  </div>
+                  <div>
+                      <p>
+                          Precio <span style={{ fontSize: "10px" }}>(hasta 6 MSI)</span>
+                      </p>
+                      <h3>$ 1,999.00</h3>
 
-              <hr />
+                      <hr />
+                  </div>
+
             </div>
           </div>
         </section>
