@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e39a7cb-4630-4942-9b82-40d018257a32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/bootcamp/LearningNoModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/bootcamp/BootcampDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bootcamp/BootcampDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/bootcamp/Learning.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bootcamp/Learning.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contacto/Contacto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacto/Contacto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/NavBarDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/NavBarDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,7 @@
       <workItem from="1579064784710" duration="2234000" />
       <workItem from="1580367237768" duration="219000" />
       <workItem from="1581211738856" duration="37000" />
-      <workItem from="1589683647939" duration="11508000" />
+      <workItem from="1589683647939" duration="11727000" />
     </task>
     <servers />
   </component>

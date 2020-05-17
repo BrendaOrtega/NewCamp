@@ -153,6 +153,10 @@ const BD = ({
 
   console.log(activeWeek);
   return (
+      <section>
+          <div className="black"></div>
+
+
     <section className="camp">
       <div className="camp-descript">
         <div className="camp-info">
@@ -376,6 +380,7 @@ const BD = ({
         />
       </Modal>
     </section>
+      </section>
   );
 };
 
