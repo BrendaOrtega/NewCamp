@@ -7,9 +7,16 @@ const CodeBlock = ({ language = "javascript", value }) => (
   <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>
 );
 
-let portada = require("../../assets/portada.jpg");
+// let portada = require("../../assets/portada.jpg");
+let portada =
+  "https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fportada2.png?alt=media&token=25f6504f-b14c-472d-b6e6-950fe22ab077&fbclid=IwAR2zn5dz3893S2_bqCRyn4KKIXvnolIJ4GPtZFmUgJz-PytF8_mY8eqF3UI";
 
-export default function Learning({ onOk, onCancel, learning, visible = true }) {
+export default function LearningNoModal({
+  onOk,
+  onCancel,
+  learning,
+  visible = true,
+}) {
   let { title, description, link } = learning;
   let video = useRef();
 
@@ -24,8 +31,8 @@ export default function Learning({ onOk, onCancel, learning, visible = true }) {
   }
 
   return (
-    <Modal
-      style={{ minWidth: "80vw" }}
+    <div
+      style={null}
       onCancel={ok}
       footer={
         <Button type="primary" onClick={ok}>
@@ -54,6 +61,6 @@ export default function Learning({ onOk, onCancel, learning, visible = true }) {
           escapeHtml={false}
         />
       </div>
-    </Modal>
+    </div>
   );
 }
