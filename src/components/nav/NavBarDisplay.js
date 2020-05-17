@@ -9,7 +9,6 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
   let [toggle, setToggle] = useState(false);
 
   window.onscroll = (e) => {
-    console.log(e);
     window.requestAnimationFrame(function () {
       if (window.scrollY > 100) {
         setToggle(true);
