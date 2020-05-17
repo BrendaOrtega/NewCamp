@@ -1,7 +1,6 @@
 import React from 'react';
 import "./CourseCard.css"
-import badge from "../../assets/badget1.png"
-import {Link} from "react-router-dom";
+
 
 export const CourseCard = ({image, name, lecciones, tiempo}) => {
 

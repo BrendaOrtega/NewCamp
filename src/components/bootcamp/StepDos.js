@@ -13,7 +13,7 @@ const StepDos = ({ student, onChangeStudentAction }) => {
 
     return (
         <div className="step">
-            <p>Escribe tu nombre completo, ya que así aparecerá en tu certificado</p>
+            <p>Escribe tu nombre completo, recuerda que así aparecerá en tu certificado.</p>
 
             <Form.Item>
                 <Input

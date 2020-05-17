@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "./Bootcamp.css";
-import pactive from "../../assets/barra-de-progreso 2.svg";
-import pinactive from "../../assets/barra-de-progreso_inactive.svg";
 import download from "../../assets/download.svg"
 import { Link } from "react-router-dom";
 import Button from "../common/Button";
@@ -9,7 +7,6 @@ import people from "../../assets/Shape.svg";
 import event from "../../assets/event.svg";
 import message from "../../assets/message.svg";
 import graduated from "../../assets/graduated.svg";
-import katia from "../../assets/Jk6JaJzJ_400x400.jpg";
 import FontAwesome from "react-fontawesome";
 class BootcampDescriptWeb extends Component {
   componentDidMount() {
@@ -36,8 +33,8 @@ class BootcampDescriptWeb extends Component {
               <Link to="/apply/?b=5d632e4c339a1b379df68a74">
                 <Button text="Inscribirme"/>
               </Link>
-              <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FFundamentos_Desarrollo_Web.pdf?alt=media&token=80e68013-45be-429d-b9c8-5b58bc9a3615" target="_blank">
-              <button className="btn-ghost"><img style={{marginRight:"12px"}} src={download} alt=""/>Descargar temario</button>
+              <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FFundamentos_Desarrollo_Web.pdf?alt=media&token=80e68013-45be-429d-b9c8-5b58bc9a3615" target="blank" rel="noopener noreferrer">
+              <button className="btn-ghost"><img style={{marginRight:"12px"}} src={download} alt="download-icon"/>Descargar temario</button>
               </a>
             </div>
           </section>
@@ -183,7 +180,7 @@ class BootcampDescriptWeb extends Component {
             <br/>
             <div className="instructor_box">
               <div className="instructor_photo">
-                <img src="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F56414061_10219388463320220_4036709091425386496_o.jpg?alt=media&token=4f7dc5f3-04fd-4006-837f-d3216557bee9" alt="photo-bliss"/>
+                <img src="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F56414061_10219388463320220_4036709091425386496_o.jpg?alt=media&token=4f7dc5f3-04fd-4006-837f-d3216557bee9" alt="bliss"/>
               </div>
               <div className="instructor_info">
                 <h2 style={{fontSize:"24px"}} className="subtitulo">Héctor Bliss </h2>
@@ -194,13 +191,13 @@ class BootcampDescriptWeb extends Component {
 
                   Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital.</p>
                 <div className="redes-instructor">
-                  <a href="https://github.com/HectorBlisS" target="_blank">
+                  <a href="https://github.com/HectorBlisS" target="_blank" rel="noopener noreferrer">
                     <FontAwesome name="github"/>
                   </a>
-                  <a href="https://www.linkedin.com/in/hectorbliss/" target="_blank">
+                  <a href="https://www.linkedin.com/in/hectorbliss/" target="_blank" rel="noopener noreferrer">
                     <FontAwesome name="linkedin"/>
                   </a>
-                  <a href="https://twitter.com/HectorBlisS" target="_blank">
+                  <a href="https://twitter.com/HectorBlisS" target="_blank" rel="noopener noreferrer">
                     <FontAwesome name="twitter"/>
                   </a>
 

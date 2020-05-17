@@ -25,7 +25,7 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
         toggle
           ? {
               transition: "all .3s",
-              background: "#323232",
+              background: "rgba(50,50,50,.3)",
               margin: 0,
               width: "100%",
             }

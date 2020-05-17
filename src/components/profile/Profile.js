@@ -93,7 +93,7 @@ export const Profile = ({
               <span style={styles.email}>{email}</span>
               <br />
               <div style={styles.buttons}>
-                <div
+                <div className="message-actions"
                   style={{
                     marginRight: "10px",
                     borderRight: "1px solid #323232",
@@ -105,7 +105,7 @@ export const Profile = ({
                 >
                   Cancelar
                 </div>
-                <div
+                <div className="message-actions"
                   style={{
                     cursor: "pointer",
                     marginTop: 10,

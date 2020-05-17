@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import "./Login.css";
 import { Form, Icon, Input, Modal, Spin } from 'antd';
-import FontAwesome from "react-fontawesome";
 import { Link } from "react-router-dom";
 import queryString from 'query-string'
 import { connect } from 'react-redux'

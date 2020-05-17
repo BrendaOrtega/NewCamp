@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import "./Home.css"
 import FontAwesome from "react-fontawesome"
-import Button from "../common/Button";
 import brenda from "../../assets/21105859_1384283821667002_3656915529923068437_n.jpg"
 import bliss from "../../assets/67460673_10220365825273658_6972567135163777024_n.jpg"
 import david from "../../assets/50226136_2192976174151067_1003654992885710848_o.jpg"
@@ -50,10 +49,10 @@ class Team extends Component {
                         </div>
                         <h4>Brenda Ortega</h4>
                         <p>CEO & UX/UI Designer</p>
-                        <a href="https://github.com/BrendaOrtega" target="_blank">
+                        <a href="https://github.com/BrendaOrtega" target="_blank" rel="noopener noreferrer">
                             <FontAwesome name="github"/>
                         </a>
-                        <a href="https://www.linkedin.com/in/brenda-ort/" target="blank">
+                        <a href="https://www.linkedin.com/in/brenda-ort/" target="blank" rel="noopener noreferrer">
                             <FontAwesome name="linkedin"/>
                         </a>
                     </div>
@@ -62,10 +61,10 @@ class Team extends Component {
                         </div>
                         <h4>Héctor Bliss</h4>
                         <p>CTO & Software Engineer</p>
-                        <a href="https://github.com/HectorBlisS" target="_blank">
+                        <a href="https://github.com/HectorBlisS" target="_blank" rel="noopener noreferrer">
                             <FontAwesome name="github"/>
                         </a>
-                        <a href="https://www.linkedin.com/in/hectorbliss/" target="blank">
+                        <a href="https://www.linkedin.com/in/hectorbliss/" target="blank" rel="noopener noreferrer">
                             <FontAwesome name="linkedin"/>
                         </a>
                     </div>
@@ -80,10 +79,10 @@ class Team extends Component {
                         </div>
                         <h4>David Zavala</h4>
                         <p>Sr Frontend Developer</p>
-                        <a href="https://github.com/DeividZavala" target="_blank">
+                        <a href="https://github.com/DeividZavala" target="_blank" rel="noopener noreferrer">
                             <FontAwesome name="github"/>
                         </a>
-                        <a href="https://www.linkedin.com/in/david-zavala-bartolome/" target="blank">
+                        <a href="https://www.linkedin.com/in/david-zavala-bartolome/" target="blank" rel="noopener noreferrer">
                             <FontAwesome name="linkedin"/>
                         </a>
                     </div>
@@ -92,10 +91,10 @@ class Team extends Component {
                         </div>
                         <h4>Oswaldo Martinez</h4>
                         <p>Sr Fullstack Developer</p>
-                        <a href="https://github.com/Oswaldinho24k" target="_blank">
+                        <a href="https://github.com/Oswaldinho24k" target="_blank" rel="noopener noreferrer">
                             <FontAwesome name="github"/>
                         </a>
-                        <a href="https://www.linkedin.com/in/oswaldinho24k/" target="blank">
+                        <a href="https://www.linkedin.com/in/oswaldinho24k/" target="blank" rel="noopener noreferrer">
                             <FontAwesome name="linkedin"/>
                         </a>
                     </div>
@@ -105,10 +104,10 @@ class Team extends Component {
                             </div>
                             <h4>Carlos Mendoza</h4>
                             <p>Fullstack Developer</p>
-                            <a href="https://github.com/reloadercf" target="_blank">
+                            <a href="https://github.com/reloadercf" target="_blank" rel="noopener noreferrer">
                                 <FontAwesome name="github"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/reloadercf/" target="blank">
+                            <a href="https://www.linkedin.com/in/reloadercf/" target="blank" rel="noopener noreferrer">
                                 <FontAwesome name="linkedin"/>
                             </a>
                         </div>
@@ -116,23 +115,16 @@ class Team extends Component {
                             <div className="cuadro" style={{backgroundImage:`url("${katia}")`}}>
                             </div>
                             <h4>Katia Lira</h4>
-                            <p>Web Engineerr</p>
-                            <a href="https://github.com/katialira" target="_blank">
+                            <p>Web Engineer</p>
+                            <a href="https://github.com/katialira" target="_blank" rel="noopener noreferrer">
                                 <FontAwesome name="github"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/katia-lira-engineer/" target="_blank">
+                            <a href="https://www.linkedin.com/in/katia-lira-engineer/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesome name="linkedin"/>
                             </a>
                         </div>
-                </div>
-                {/*<p>Fixter crea productos digitales, desde sitios
-                    web y aplicaciones móviles, hasta servicios y herramientas empresariales.
-                    Somos un equipo de desarrolladores enfocado en ofrecer productos digitales a la medida,
-                    y comprometido con la satisfacciónd e nuetsros clientes.</p>*/}
-
-
-
-            </div>
+                        </div>
+                    </div>
             </section>
         )
     }

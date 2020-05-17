@@ -120,8 +120,14 @@ const BD = ({ user, uHomeworks, history, getBootcampAction, subscribed, match, b
     order = bootcamp.weeks[activeWeek].itemsOrder
     let homeworks = bootcamp.weeks[activeWeek].homeworks
     return (
+        <section>
+            <div className="black"></div>
+
+
         <section className="camp">
+
             <div className="camp-descript">
+
                 <div className="camp-info">
                     <div className="camp-banner" style={{ backgroundImage: `url(${img})` }}>
 
@@ -248,7 +254,7 @@ footer={<Button onClick={()=>history.push("/preorder")} type="danger">Pagar</But
 <img style={{opacity:".3", width:"40%", marginLeft:"30%"}} src="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fpay.png?alt=media&token=e17aef6d-014a-4c07-807b-652312295388" />
 </Modal>
 
-        </section>
+        </section>    </section>
     );
 };
 

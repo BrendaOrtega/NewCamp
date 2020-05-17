@@ -18,7 +18,7 @@ class Ask extends Component {
                     name="keywords"
                     content="cursos, capacitación, react, angular, tecnología, programación, javascript, python, php, online, fixtergeek"
                 />
-                <title>Contacto | FixterGeek</title>
+                <title>Preguntas Frecuentes | FixterGeek</title>
                 <div className="black"></div>
                 <div className="qa">
                     <h2 className="subtitulo space">Preguntas Frecuentes</h2>

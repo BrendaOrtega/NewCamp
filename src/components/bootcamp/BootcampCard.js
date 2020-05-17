@@ -52,7 +52,7 @@ function BootcampCard({
         <h3>Bootcamp Online: {title}</h3>
         <p>
           Crea las bases que necesitas para convertirte en desarrollador web y
-          comenzar tu carrera profesional. ⚛️
+          comenzar tu carrera profesional. {"⚛️"}
         </p>
         <p>
           {" "}

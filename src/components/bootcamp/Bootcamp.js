@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import Button from "../common/Button"
 import "./Bootcamp.css"
 import {CardBootcamp} from "../card/CardBootcamp";
-import image from "../../assets/17834072_1542858145778019_3295799447117516700_o.jpg"
-import image2 from "../../assets/28698604_1973144766082686_589124668727305128_o.jpg"
-import image3 from "../../assets/17855548_1542769892453511_1377015286894108471_o.jpg"
-import image4 from "../../assets/25438830_1861335307263633_2930730188315941572_o.jpg"
-import image5 from "../../assets/ember.jpg"
 import pyth from "../../assets/badgePYTHON_TTLBLCK_Mesa_de_trabajo_1.png";
 import web from "../../assets/badge3D_Mesa_de_trabajo_1.png";
 
@@ -85,26 +80,7 @@ class Bootcamp extends Component {
                             modalidad="100% Online"
                         />
 
-                        <CardBootcamp
-                            image={image4}
-                            badge="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fbadges_Mesa_de_trabajo_1_copia_2%20(1).png?alt=media&token=b104bae1-992f-4924-85aa-55aaa98a08ba"
-                            name="Aprende a usar PHP correctamente"
-                            descript="Aprende a programar con uno de los lenguajes más populares de forma fácil y eficiente, pero sobre todo con buenas prácticas"
-                            lecciones="53 lecciones"
-                            tiempo="4 semanas"
-                            link="/bootcamp-php"
-                            modalidad="100% Online"
-                        />
-                        <CardBootcamp
-                            image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F14435022_1302624693134700_4836530304569751852_o.jpg?alt=media&token=c54eb24c-0233-459b-9a88-ecd83d84a0e5"
-                            badge="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FbadgePHP_Prueba_Mesa_de_trabajo_1.png?alt=media&token=15556e2b-3ba4-4c1d-b675-ab681d9c4775"
-                            name="Aplicaciones web fullstack con Laravel"
-                            descript="Domina PHP y Laravel, para despúes crear una aplicación web de 0 a 100... y con VueJs en el frontend. 🔥"
-                            lecciones="83 lecciones"
-                            tiempo="6 semanas"
-                            link="/bootcamp-descript-laravel"
-                            modalidad="100% Online"
-                        />
+
 
                     </div>
                 </section>

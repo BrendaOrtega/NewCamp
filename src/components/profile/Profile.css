@@ -99,6 +99,9 @@
     margin: 20px auto;
 }
 
+.message-actions:hover{
+    color: #ca3e47;
+}
 
 
 @media(max-width: 550px) {

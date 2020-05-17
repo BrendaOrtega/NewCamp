@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import "./Home.css";
 import Button from "../common/Button";
-import FontAwesome from "react-fontawesome";
 import { Link } from "react-router-dom";
 import toastr from "toastr";
-
 // redux
 import { connect } from "react-redux";
 import { getBootcampsAction } from "../../redux/bootcampDuck";
@@ -113,7 +111,7 @@ class HomeContainer extends Component {
                 />
                 <meta
                     name="keywords"
-                    content="cursos, capacitación, react, angular, tecnología, programación, javascript, python, php, online, fixtergeek"
+                    content="cursos, capacitación, react, angular, tecnología, programación, javascript, python, php, online, fixtergeek, bootcamp"
                 />
                 <title>FixterGeek</title>
                 <section className="back-home">
@@ -134,7 +132,7 @@ class HomeContainer extends Component {
                   <h2 className="subtitulo">A life-changing experience</h2>
                   <p className="text">
                     {" "}
-                    En cada curso, aprenderás las skills más demandadas de la mano de
+                    En cada curso, aprenderás las skills más demandadas en el mundo del desarrollo de software, de la mano de
                     apasionados maestros y un plan de estudios práctico y actualizado.
                     Si apenas estas iniciando o ya eres experto en programación, no te
                     preocupes, encontrarás cursos de nivel básico, intermedio y
@@ -180,10 +178,10 @@ class HomeContainer extends Component {
                   <h2 className="subtitulo">Meet our students</h2>
                   <p className="text">
                     {" "}
-                    Conoce la experiencia de algunos de nuestros estudiantes. Cada uno
-                    de ellos decidio aprender a programar o especificializarse en una
-                    herramienta, y agregar este skill a su desarrollo profesional a
-                    pesar de tener un background completamente diferente.
+                    Conoce la experiencia de algunos de nuestros estudiantes, cada uno
+                    de ellos decidió aprender a programar o especializarse en una
+                    herramienta, y agregar esta skill a su desarrollo profesional, a
+                    pesar de tener en ocasiones un background completamente diferente.
                   </p>
                   <br />
                   <div className="comment_box">
@@ -222,7 +220,7 @@ class HomeContainer extends Component {
                   <h2 className="subtitulo">Reach your own goals</h2>
                   <p className="text">
                     La programación es una de las habilidades con mayor demanda en los
-                    últimos años, así que ya sea para comunicarte mejor con tu equipo de
+                    últimos años, así que, ya sea para comunicarte mejor con tu equipo de
                     desarrollo, cambiar drásticamente tu carrera profesional, completar
                     tu educación o simplemente por curiosidad, no pierdas más tiempo y
                     ¡Empieza ya!
@@ -249,7 +247,7 @@ class HomeContainer extends Component {
                           <div className="ilustrate-photo">
                             <img
                               src="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fpexels-photo-269323.jpeg?alt=media&token=46319af1-7b01-47eb-9a82-602ca2cda967"
-                              alt=""
+                              alt="ilustracion1"
                             />
                           </div>
                         </section>
@@ -260,8 +258,8 @@ class HomeContainer extends Component {
                             <h3 className="names">Alcanza tus objetivos</h3>
                             <p>
                               Si ya sabes programar pero quieres ampliar tus
-                              conocimientos o especializarte para obtener una mejor
-                              posición, o si tienes una empresa o puesto de managemente
+                              conocimientos o especializarte para obtener un mejor empleo,
+                              o si tienes una empresa o puesto de managemente
                               que requiere una línea de comunicación directa con
                               desarrolladores, aprende lo necesario para lograrlo de
                               manera efectiva.
@@ -274,7 +272,7 @@ class HomeContainer extends Component {
                           <div className="ilustrate-photo">
                             <img
                               src="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fpexels-photo-1051075.jpeg?alt=media&token=5b3eb252-c207-46ed-a8ac-902ab67ce48f"
-                              alt=""
+                              alt="ilustracion2"
                             />
                           </div>
                         </section>
@@ -284,8 +282,8 @@ class HomeContainer extends Component {
                           <div id="pad">
                             <h3 className="names">Complementa tu educación</h3>
                             <p>
-                              Al terminar la universidades, muchos profesionistan
-                              sienten que no tienes las habilidades necesarias para
+                              Al terminar la universidad, muchos profesionistan
+                              sienten que no tienen las habilidades necesarias para
                               cubrir una posición e integrarse a un equipo de
                               desarrollo, así que, si queires adquirir habilidades
                               técnicas que te permitan iniciar tu carrera como
@@ -299,7 +297,7 @@ class HomeContainer extends Component {
                           <div className="ilustrate-photo">
                             <img
                               src="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fpexels-photo-301926.jpeg?alt=media&token=d48c9409-947e-4af0-81d4-f6949dc51214"
-                              alt=""
+                              alt="ilustracion3"
                             />
                           </div>
                         </section>

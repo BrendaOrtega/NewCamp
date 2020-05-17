@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import "./Bootcamp.css";
-import { Tabs } from "antd";
 import { Link } from "react-router-dom";
-import pactive from "../../assets/barra-de-progreso 2.svg";
-import pinactive from "../../assets/barra-de-progreso_inactive.svg";
 import Button from "../common/Button"
-import photo1 from "../../assets/photo1.svg"
 import download from "../../assets/download.svg"
 import FontAwesome from "react-fontawesome"
 import people from "../../assets/Shape.svg"
@@ -19,23 +15,6 @@ class BootcampDescript extends Component {
     window.scroll(0, 0);
   }
   render() {
-    const options = {
-      autoplay: true,
-      loop: true,
-      margin: 10,
-      nav: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 5
-        }
-      }
-    };
     return (
       <section className="bootcamp">
         <meta
@@ -53,11 +32,11 @@ class BootcampDescript extends Component {
               <h2>Fundamentos de Programación con Python</h2>
               <p>Aprende las bases de la programación, y prepárate para este programa, creado especialmente para principiantes que quieren incursionar en el mundo de Python: tanto para análisis de datos como para desarrollo web.</p>
               <br/>
-                <Link to="">
+                <Link to="/apply/?b=5dc1db06cd0b842984edca7c">
                     <Button text="Inscribirme"/>
                 </Link>
-                <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FFundamentos_de_Programacio%CC%81n_Python.pdf?alt=media&token=cc9e4b75-1366-4a35-bf9a-79a221ed85d6" target="_blank">
-                    <button className="btn-ghost"><img style={{marginRight:"12px"}} src={download} alt=""/>Descargar temario</button>
+                <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FFundamentos_de_Programacio%CC%81n_Python.pdf?alt=media&token=cc9e4b75-1366-4a35-bf9a-79a221ed85d6" target="_blank" rel="noopener noreferrer">
+                    <button className="btn-ghost"><img style={{marginRight:"12px"}} src={download} alt="download-icon"/>Descargar temario</button>
                 </a>
           </div>
         </section>
@@ -213,7 +192,7 @@ class BootcampDescript extends Component {
               <br/>
               <div className="instructor_box">
                     <div className="instructor_photo">
-                        <img src={katia} alt="photo-katia"/>
+                        <img src={katia} alt="katia"/>
                     </div>
                   <div className="instructor_info">
                       <h2 style={{fontSize:"24px"}} className="subtitulo">Katia Lira </h2>
@@ -224,13 +203,13 @@ class BootcampDescript extends Component {
 
                           Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital.</p>
                       <div className="redes-instructor">
-                          <a href="https://github.com/katialira" target="_blank">
+                          <a href="https://github.com/katialira" target="_blank" rel="noopener noreferrer">
                               <FontAwesome name="github"/>
                           </a>
-                          <a href="https://www.linkedin.com/in/katia-lira-engineer/" target="_blank">
+                          <a href="https://www.linkedin.com/in/katia-lira-engineer/" target="_blank" rel="noopener noreferrer">
                               <FontAwesome name="linkedin"/>
                           </a>
-                          <a href="https://twitter.com/lakatialira" target="_blank">
+                          <a href="https://twitter.com/lakatialira" target="_blank" rel="noopener noreferrer">
                               <FontAwesome name="twitter"/>
                           </a>
 
