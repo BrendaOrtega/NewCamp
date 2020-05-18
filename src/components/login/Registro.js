@@ -91,6 +91,7 @@ class Registro extends Component {
 
                                 />
                             </Form.Item>
+                            <br/>
                             <Form.Item
                                 hasFeedback
                                 validateStatus={error.password ? "error" : error.password === undefined ? "warning" : "success"}
@@ -106,6 +107,7 @@ class Registro extends Component {
                                     placeholder="Almenos 8 caracteres"
                                 />
                             </Form.Item>
+                            <br/>
                             <Form.Item
                                 hasFeedback
                                 validateStatus={error.password2 ? "error" : error.password2 === undefined ? "warning" : "success"}
