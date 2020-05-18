@@ -32,7 +32,7 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
       }
     >
       <Link to="/">
-        <img className="logo" src={logo} alt="" />
+        <img className="logo" src={logo} alt="logo" />
       </Link>
       <div className="pestanas web">
         <Link to="/courses">
@@ -76,7 +76,19 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
         )}
       </div>
       <div className="movil dropdown">
-        <FontAwesome name="bars" />
+        <FontAwesome name="bars"
+                     style={
+                         toggle
+                             ? {
+                                 transition: "all .3s",
+                                 color: "white",
+
+
+                             }
+                             : { transition: "all .3s" }
+                     }
+
+        />
         <div className="dropdown-content">
           <Link to="/bootcamp">
             <p>Bootcamp</p>

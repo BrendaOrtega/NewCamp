@@ -259,6 +259,15 @@ HOME*/
     opacity: 0.9;
 }
 
+.white{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+}
+
+
 
 .slogan{
     font-size: 48px;

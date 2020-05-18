@@ -27,6 +27,7 @@ class BootcampDescript extends Component {
           content="cursos, capacitación, react, angular, tecnología, programación, javascript, python, php, online, fixtergeek"
         />
         <title>Bootcamp Python | FixterGeek</title>
+          <div className="white mobile-display"></div>
         <section className="camp-portada" style={{backgroundImage:`url("https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F20200427_204700.jpg?alt=media&token=0e15bd6c-2602-473e-a5a0-b2e6a604b264")`}}>
             <div className="camp-intro">
               <h2>Fundamentos de Programación con Python</h2>
