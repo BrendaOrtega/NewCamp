@@ -7,7 +7,6 @@
     color: black;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3%;
     box-sizing: border-box;
     position: fixed;
     font-family: Avenir;
@@ -31,7 +30,7 @@
     align-items: center;
 }
 .pestanas p{
-    margin: 0 20px;
+    margin: 0 24px;
     cursor: pointer;
 }
 .btn-aply{
@@ -53,7 +52,7 @@
 
 }
 .nav a{
-    color:white;
+    color:#f6f6f6;
 }
 .nav a:active{
     color:#ca3e47;
@@ -107,7 +106,7 @@
 .avatar{
     width: 54px;
     height: 54px;
-    margin-left: 12px;
+    margin-left: 24px;
 }
 #user-drop{
     top: 54px;

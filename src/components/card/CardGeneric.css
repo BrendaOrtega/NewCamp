@@ -36,7 +36,7 @@
 .bootcamp-card{
     width: 320px;
     min-height: 350px;
-    margin: 20px 24px;
+    margin: 20px 0px;
     background-color: white;
     box-shadow: 0 5px 8px 1px rgba(215, 215, 215, 0.5);
     text-align: left;
@@ -162,7 +162,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 

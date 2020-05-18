@@ -1,6 +1,6 @@
 .course-card{
-    width: 300px;
-    height: auto;
+    width: 320px;
+    height: 340px;
     background-color: white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     color:#666;
@@ -9,7 +9,11 @@
     transition: all 1s ease;
     margin: 20px 0;
     font-family: Avenir;
-
+    border-radius: 8px;
+}
+.opacidad{
+    opacity: .9;
+    transition: all 1s ease;
 }
 .course-card a, .course-card:hover a{
     color:inherit;
@@ -28,7 +32,8 @@
     align-items: center;
 }
 .badge{
-   height: 95%;
+   height: 90%;
+    margin-top: -16px;
 
 }
 
@@ -61,22 +66,31 @@
     color:#ca3e47;
 }
 .price{
-    background-color:#ca3e47;
+    background-color:#962f35;
+    font-weight: 600;
     color:white;
-    width: auto;
+    width: 180px;
+    height: 40px;
     position: absolute;
     right: 0;
     bottom: 0;
     padding: 1%;
     text-align: center;
     opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .course-card:hover{
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    transform: scale(1.1);
+    transform: scale(1);
 
+}
+.course-card:hover .opacidad{
+    opacity: .2;
 }
 .course-card:hover .price{
     opacity: 1;

@@ -2,12 +2,15 @@ import React from 'react';
 import "./CourseCard.css"
 
 
-export const CourseCard = ({image, name, lecciones, tiempo}) => {
+export const CourseCard = ({image, name, lecciones, tiempo, mensaje}) => {
 
 
     return (
         <div className="course-card">
         {/*    <Link to="/courses/detail">*/}
+        <div className="opacidad">
+
+
                 <div className="box-badge">
                     <img className="badge" src={image} alt="badge-curso"/>
                 </div>
@@ -19,9 +22,9 @@ export const CourseCard = ({image, name, lecciones, tiempo}) => {
                         <h4>{name}</h4>
                         <p>{lecciones} <span>&bull;</span> {tiempo}</p>
                     </div>
-                </div>
+                </div>  </div>
                 <div className="price">
-                    <span>Próximamente</span>
+                    <span> Estreno: {mensaje}</span>
                 </div>
 {/*            </Link>*/}
         </div>

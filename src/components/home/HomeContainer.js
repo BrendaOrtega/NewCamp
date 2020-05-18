@@ -53,8 +53,50 @@ class HomeContainer extends Component {
     email: null,
   };
 
+
+
   componentDidMount() {
     window.scroll(0, 0);
+    //console.log('mijo')
+    let div = document.createElement('div')
+    div.id = 'fb-root'
+    document.body.appendChild(div)
+
+    let scripttwo = document.createElement('scriptwo')
+    scripttwo.id = 'bliss'
+    scripttwo.async = true;
+
+    const text = document.createTextNode(`
+            window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v3.2'
+            });
+        };
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+            `)
+    scripttwo.appendChild(text)
+    document.body.appendChild(scripttwo)
+    let div2 = document.createElement('div')
+    //div2.classList = 'fb-customerchat'
+    div2.innerHTML = `
+            <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="446454098751768"
+      theme_color="#ca3e47"
+      logged_in_greeting="¡Hola! Bienvenido a Fixter ¿Cómo podemos ayudarte?"
+      logged_out_greeting="¡Hola! Bienvenido a Fixter ¿Cómo podemos ayudarte?">
+      </div>
+              `
+    document.body.appendChild(div2)
+
+
     let script = document.createElement("script");
     script.src = "https://cdn.jsdelivr.net/gh/cmiscm/stickerjs/sticker.min.js";
     script.async = true;
@@ -365,6 +407,7 @@ class HomeContainer extends Component {
                 <br />
                 <div>
                   <input
+                      style={{paddingLeft:"16px"}}
                     onChange={this.onChange}
                     type="email"
                     placeholder="contacto@fixter.org"

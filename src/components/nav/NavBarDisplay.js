@@ -35,10 +35,15 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
         <img className="logo" src={logo} alt="" />
       </Link>
       <div className="pestanas web">
+        <Link to="/courses">
+          <p>Cursos</p>
+          <hr className="red-line" />
+        </Link>
         <Link to="/bootcamp">
           <p>Bootcamp</p>
           <hr className="red-line" />
         </Link>
+
         {/* <Link to="/courses">
                     <p>Cursos</p>
                     <hr className="red-line" />
@@ -76,9 +81,9 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
           <Link to="/bootcamp">
             <p>Bootcamp</p>
           </Link>
-          {/*   <Link to="/courses">
+             <Link to="/courses">
                         <p>Cursos</p>
-                    </Link>*/}
+             </Link>
           {loggedIn ? (
             <div>
               <Link to="/profile">

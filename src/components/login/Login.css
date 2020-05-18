@@ -132,9 +132,11 @@
     background-position: center;
     background-size: cover;
 }
+.mobile-display{
+    display: none;
+}
 
-
-@media(max-width: 768px){
+@media(max-width: 780px){
     .login-box{
         margin-top: 120px;
     }
@@ -142,16 +144,29 @@
         height: auto;
         padding-bottom: 50px;
     }
+    .mobile-display{
+        display: initial;
+    }
 }
 
 @media (max-width: 550px) {
-    .login-box{
+    .login-box {
         width: 80%;
         margin: 0 auto;
         margin-top: 120px;
+        flex-grow: initial;
     }
-    .forget{
+
+    .forget {
         margin-top: 0px;
+
+    }
+
+
+    .ant-form-item-label, .ant-form-item-control-wrapper {
+        display: block;
+        width: 60% !important;
+        margin-left: 20%;
 
     }
 }

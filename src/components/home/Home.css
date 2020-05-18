@@ -317,7 +317,7 @@ HOME*/
 }
 .newsletter input::-webkit-input-placeholder {
 
-    padding-left: 20px;
+    opacity: .5;
 }
 .newsletter button{
     background-color:  #ca3e47;

@@ -52,7 +52,7 @@ class Bootcamp extends Component {
                                 badge={web}
                                 name="Fundamentos de Desarrollo Web con JavaScript"
                                 descript="Aprende las bases del desarrollo web, y maqueta y hostea tu propio sitio web con JavaScript 🚀"
-                                lecciones="74 lecciones"
+                                lecciones="65 lecciones"
                                 tiempo="4 semanas"
                                 link="/bootcamp-descript-web"
                                 modalidad="100% Online"
@@ -63,7 +63,7 @@ class Bootcamp extends Component {
                             badge="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fbadges_Mesa_de_trabajo_1_copia_3.png?alt=media&token=e91625bc-6438-4eb4-9fd0-abe6761bfd25"
                             name="Desarrollo Frontend con ReactJs + Redux"
                             descript="Crea una aplicación web desde cero utilizando ReactJs y manipulando los estados desde Redux 👾  "
-                            lecciones=" 70 lecciones"
+                            lecciones=" 47 lecciones"
                             tiempo="4 semanas"
                             link="/bootcamp-react-redux"
                             modalidad="100% Online"
@@ -74,9 +74,19 @@ class Bootcamp extends Component {
                             badge="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fnode_BADGE_Mesa_de_trabajo_1.png?alt=media&token=4e3f49d4-f4a2-4572-9e7a-b92d66d2a45a"
                             name="Backend API con NodeJs y ExpressJs"
                             descript="Aprende que es un backend, y a crear tus propias API's con NodeJs y ExpressJs... Herramientas utilizadas por Netflix, Linkedin y más. "
-                            lecciones=" 70 lecciones"
+                            lecciones=" 54 lecciones"
                             tiempo="4 semanas"
                             link="/bootcamp-backend-nodejs"
+                            modalidad="100% Online"
+                        />
+                        <CardBootcamp
+                            image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F20200427_204646.jpg?alt=media&token=534edde1-4cc5-400d-af2e-6f9ed4a1a3bd"
+                            badge="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fnode_BADGE_Mesa_de_trabajo_1.png?alt=media&token=4e3f49d4-f4a2-4572-9e7a-b92d66d2a45a"
+                            name="Testing en React.Js"
+                            descript="Hay muchas herramientas para testing, pero pocas pueden
+                             aprovecharse tanto como la combinación de jest y Enzyme para emular interacción del usuario con la interfaz."
+                            lecciones=" Julio 2020"
+                            tiempo="Estreno"
                             modalidad="100% Online"
                         />
 

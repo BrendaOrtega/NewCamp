@@ -63,6 +63,7 @@ class Login extends Component {
         let { auth } = this.state
         return (
             <div >
+                <div className="black mobile-display"></div>
                 <div className="login">
                     <div className="login-box">
                         <div>
