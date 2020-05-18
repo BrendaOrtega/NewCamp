@@ -3,18 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5e39a7cb-4630-4942-9b82-40d018257a32" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/bootcamp/Bootcamp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bootcamp/Bootcamp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/CardGeneric.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/CardGeneric.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/CourseCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/CourseCard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/CourseCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/CourseCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/courses/Courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/courses/Courses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/HomeContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/NavBarDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/NavBarDisplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/bootcamp/Backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bootcamp/Backend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/bootcamp/BootcampDescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bootcamp/BootcampDescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/bootcamp/BootcampDescriptReact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bootcamp/BootcampDescriptReact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/bootcamp/BootcampDescriptWeb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bootcamp/BootcampDescriptWeb.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +82,7 @@
       <workItem from="1580367237768" duration="219000" />
       <workItem from="1581211738856" duration="37000" />
       <workItem from="1589683647939" duration="12422000" />
-      <workItem from="1589753108298" duration="5908000" />
+      <workItem from="1589753108298" duration="7038000" />
     </task>
     <servers />
   </component>

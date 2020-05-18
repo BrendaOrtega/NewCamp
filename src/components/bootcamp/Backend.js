@@ -189,12 +189,12 @@ class Backend extends Component {
               </div>
               <div className="instructor_info">
                 <h2 style={{fontSize:"24px"}} className="subtitulo">Oswaldo Martínez </h2>
-                <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital jdhkjwhdkqwhdjwhdjkhwkjdhkjwhdkjw.
+                <p>
+                  Oswaldo es Sr Fullstack Developer en Runa HR, una startup orientada al pago de nómina. Anteriormente también coloboró como instructor en Ironhack, en el bootcamp de Análisis de Datos.   </p>
 
-                  Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital.</p>
-                <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital jdhkjwhdkqwhdjwhdjkhwkjdhkjwhdkjw.
-
-                  Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital.</p>
+                <p>
+                  Además de ser un apasionado por la programación, Oswaldo fue futbolista profesional en el Club Pachuca, y es amante del ejercicio y los videojuegos
+                </p>
                 <div className="redes-instructor">
                   <a href="https://github.com/Oswaldinho24k" target="_blank" rel="noopener noreferrer">
                     <FontAwesome name="github"/>

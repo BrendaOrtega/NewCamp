@@ -184,12 +184,16 @@ class BootcampDescriptReact extends Component {
                         </div>
                         <div className="instructor_info">
                             <h2 style={{fontSize:"24px"}} className="subtitulo">Héctor Bliss </h2>
-                            <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital jdhkjwhdkqwhdjwhdjkhwkjdhkjwhdkjw.
-
-                                Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital.</p>
-                            <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital jdhkjwhdkqwhdjwhdjkhwkjdhkjwhdkjw.
-
-                                Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital.</p>
+                            <p>
+                                Héctor es Couch Js en Laboratoria, en donde enseña programación a muejeres para que puedan introducirse al mercado laboral, y Software Engineer en Jaya, compañía estadounidense
+                                de desarrollo de software, en donde trabaja con empresas internacionales utilizando desde React.Js hasta Ruby On Rails, y desde React Native hasta C#.
+                            </p>
+                            <p>Anteriormente también coloboró como instructor en otros bootcamps en la Ciudad de México como: Ironhack y Dev.f, y con cursos en línea para
+                                Dev.code. Héctor es un apasionado por la tecnología y la enseñanza, con más de 5 años de experiencia en el área, y cientos de estudiantes a lo
+                                largo de su carrera.</p>
+                            <p>
+                                Además de ser un amante de la programación, es un apasionado de la literatura, el cine y los videojuegos, como league of legends, en donde es main jungla.
+                            </p>
                             <div className="redes-instructor">
                                 <a href="https://github.com/HectorBlisS" target="_blank" rel="noopener noreferrer">
                                     <FontAwesome name="github"/>

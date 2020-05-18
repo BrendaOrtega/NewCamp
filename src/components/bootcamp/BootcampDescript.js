@@ -196,12 +196,12 @@ class BootcampDescript extends Component {
                     </div>
                   <div className="instructor_info">
                       <h2 style={{fontSize:"24px"}} className="subtitulo">Katia Lira </h2>
-                      <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital jdhkjwhdkqwhdjwhdjkhwkjdhkjwhdkjw.
-
-                          Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital.</p>
-                      <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital jdhkjwhdkqwhdjwhdjkhwkjdhkjwhdkjw.
-
-                          Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital.</p>
+                      <p>
+                          Katia es Python developer desde hace más de 5 años, es co-organizadora de PyCon y DjangoCon.
+                      </p>
+                      <p>
+                          Anteriormente, Katia colaboraba como Software Engineer en Nolte, una empresa de desarrollo de software establecida en New York.
+                      </p>
                       <div className="redes-instructor">
                           <a href="https://github.com/katialira" target="_blank" rel="noopener noreferrer">
                               <FontAwesome name="github"/>
