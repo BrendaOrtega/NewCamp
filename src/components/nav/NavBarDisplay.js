@@ -24,9 +24,11 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
         toggle
           ? {
               transition: "all .3s",
-              background: "rgba(50,50,50,.5)",
+              background: "white",
               margin: 0,
               width: "100%",
+                padding:"0 5%",
+            borderBottom:"1px solid #f2f2f2"
             }
           : { transition: "all .3s" }
       }
@@ -34,13 +36,30 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
       <Link to="/">
         <img className="logo" src={logo} alt="logo" />
       </Link>
-      <div className="pestanas web">
+      <div className="pestanas web"
+
+      >
         <Link to="/courses">
-          <p>Cursos</p>
+          <p style={
+              toggle
+                  ? {
+                      transition: "all .3s",
+                      color: "#525252",
+                  }
+                  : { transition: "all .3s" }
+          }
+          >Cursos</p>
           <hr className="red-line" />
         </Link>
         <Link to="/bootcamp">
-          <p>Bootcamp</p>
+          <p style={
+              toggle
+                  ? {
+                      transition: "all .3s",
+                      color: "#525252",
+                  }
+                  : { transition: "all .3s" }
+          }>Bootcamp</p>
           <hr className="red-line" />
         </Link>
 
@@ -77,7 +96,7 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
       </div>
       <div className="movil dropdown">
         <FontAwesome name="bars"
-                     style={
+                     /*style={
                          toggle
                              ? {
                                  transition: "all .3s",
@@ -86,7 +105,7 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
 
                              }
                              : { transition: "all .3s" }
-                     }
+                     }*/
 
         />
         <div className="dropdown-content">
