@@ -62,7 +62,7 @@ class HomeContainer extends Component {
     div.id = 'fb-root'
     document.body.appendChild(div)
 
-    let scripttwo = document.createElement('scriptwo')
+    let scripttwo = document.createElement('script')
     scripttwo.id = 'bliss'
     scripttwo.async = true;
 
@@ -87,13 +87,13 @@ class HomeContainer extends Component {
     //div2.classList = 'fb-customerchat'
     div2.innerHTML = `
             <div class="fb-customerchat"
-      attribution=setup_tool
-      page_id="446454098751768"
-      theme_color="#ca3e47"
-      logged_in_greeting="¡Hola! Bienvenido a Fixter ¿Cómo podemos ayudarte?"
-      logged_out_greeting="¡Hola! Bienvenido a Fixter ¿Cómo podemos ayudarte?">
-      </div>
-              `
+    attribution=setup_tool
+    page_id="446454098751768"
+    theme_color="#ca3e47"
+    logged_in_greeting="¡Hola! Bienvenido a Fixter ¿Cómo podemos ayudarte?"
+    logged_out_greeting="¡Hola! Bienvenido a Fixter ¿Cómo podemos ayudarte?">
+    </div>
+            `
     document.body.appendChild(div2)
 
 
