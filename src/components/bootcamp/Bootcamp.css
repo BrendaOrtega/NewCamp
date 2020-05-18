@@ -700,16 +700,31 @@ padding-top: 80px;
     }
 
 }
-/*
+
 
 @media (max-width: 550px) {
+    .camp-portada{
+        height: 80vh;
+        padding-top: 120px;
+
+    }
+    .week-card{
+        width: 100%;
+    }
+    .camp-intro{
+        width: 100%;
+    }
+    .btn-ghost{
+        margin-left: 0px;
+        margin-top: 24px;
+    }
     .intro-bootcamp{
         height: auto;
     }
     .bootcamp-img{
         height: 200px;
     }
-    #tp{
+   /* #tp{
         margin-top: 0px !important;
     }
     .summary{
@@ -777,7 +792,7 @@ padding-top: 80px;
     }
     .gray{
         padding: 5% 0%;
-    }
+    }*/
 
 
-}*/
+}

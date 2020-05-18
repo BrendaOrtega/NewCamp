@@ -90,7 +90,6 @@ class BootcampDescript extends Component {
 
                       <hr />
                   </div>
-
             </div>
           </div>
         </section>

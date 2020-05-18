@@ -61,24 +61,32 @@ class BootcampDescriptWeb extends Component {
               </p>
             </div>
             <div className="box-data">
-              <div>
-                <p>Próxima edición</p>
-                <h3>Ya disponible</h3>
+              <div className="ipad-fl">
+                <div>
+                  <p>Próxima edición</p>
+                  <h3>Ya disponible</h3>
 
-                <hr />
-                <p>Más de 24 hrs de ejercicios en</p>
-                <h3> 4 semanas</h3>
+                  <hr />
+                </div>
+                <div>
+                  <p>Más de 24 hrs de ejercicios en</p>
+                  <h3> 4 semanas</h3>
 
-                <hr />
-                <p>Aprende con la práctica</p>
-                <h3>1 examen final</h3>
-                <hr />
-                <p>
-                  Precio <span style={{ fontSize: "10px" }}>(hasta 6 MSI)</span>
-                </p>
-                <h3>$ 1,999.00</h3>
+                  <hr />
+                </div>
+                <div>
+                  <p>Aprende con la práctica</p>
+                  <h3>1 examen final</h3>
+                  <hr />
+                </div>
+                <div>
+                  <p>
+                    Precio <span style={{ fontSize: "10px" }}>(hasta 6 MSI)</span>
+                  </p>
+                  <h3>$ 1,999.00</h3>
 
-                <hr />
+                  <hr />
+                </div>
               </div>
             </div>
           </section>

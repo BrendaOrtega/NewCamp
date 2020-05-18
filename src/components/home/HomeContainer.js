@@ -155,7 +155,14 @@ class HomeContainer extends Component {
                     name="keywords"
                     content="cursos, capacitación, react, angular, tecnología, programación, javascript, python, php, online, fixtergeek, bootcamp"
                 />
-                <title>FixterGeek</title>
+              <meta property="og:url"                content="https://www.fixter.camp/" />
+              <meta property="og:type"               content="website" />
+              <meta property="og:title"              content="FixterGeek" />
+              <meta property="og:description"        content="La plataforma donde aprenderás las herramientas y frameworks más utilizados para el desarrollo de software." />
+              <meta property="og:image"              content="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FCaptura%20de%20Pantalla%202020-05-17%20a%20la(s)%2020.10.15.png?alt=media&token=97c527c2-be22-4409-b721-862e24212c95" />
+              <meta name="Description" content="La plataforma donde aprenderás las herramientas y frameworks más utilizados para el desarrollo de software."/>
+
+              <title>FixterGeek</title>
                 <section className="back-home">
                     <div className="cover">
                         <div>
