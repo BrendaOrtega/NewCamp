@@ -67,7 +67,7 @@ class Login extends Component {
                 <div className="login">
                     <div className="login-box">
                         <div>
-                            <h3 className="sub">Iniciar Sesión 2</h3>
+                            <h3 className="sub">Iniciar Sesión</h3>
                                 <br/>
 
                             <Form className="login-form">
