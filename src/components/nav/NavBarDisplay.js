@@ -7,6 +7,7 @@ import avatar from "../../assets/avatar.png";
 
 export const NavBarDisplay = ({ loggedIn, logOut }) => {
   let [toggle, setToggle] = useState(false);
+    let [show, setShow] = useState(false);
 
   window.onscroll = (e) => {
     window.requestAnimationFrame(function () {
@@ -17,6 +18,11 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
       }
     });
   };
+
+  function toggleMenu(){
+
+  }
+
   return (
     <div
       className="nav"
@@ -27,8 +33,8 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
               background: "white",
               margin: 0,
               width: "100%",
-                padding:"0 5%",
-            borderBottom:"1px solid #f2f2f2"
+              padding:"0 5%",
+              borderBottom:"1px solid #f2f2f2"
             }
           : { transition: "all .3s" }
       }
@@ -94,30 +100,31 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
           </Link>
         )}
       </div>
-      <div className="movil dropdown">
+
+        <div className="movil dropdown">
         <FontAwesome name="bars"
-                     /*style={
-                         toggle
-                             ? {
-                                 transition: "all .3s",
-                                 color: "white",
-
-
-                             }
-                             : { transition: "all .3s" }
-                     }*/
-
+            onClick={()=>setShow(true)}
         />
-        <div className="dropdown-content">
-          <Link to="/bootcamp">
+
+            {show &&<div className="dropdown-content">
+          <Link  to="/bootcamp" onClick={()=>{
+              console.log("aqui")
+              setShow(false)
+          }}>
             <p>Bootcamp</p>
           </Link>
-             <Link to="/courses">
+             <Link onClick={()=>{
+                 console.log("aqui")
+                 setShow(false)
+             }} to="/courses">
                         <p>Cursos</p>
              </Link>
           {loggedIn ? (
             <div>
-              <Link to="/profile">
+              <Link onClick={()=>{
+                  console.log("aqui")
+                  setShow(false)
+              }} to="/profile">
                 <p>Perfil</p>
               </Link>
               <p onClick={logOut} className="linea">
@@ -125,11 +132,16 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
               </p>
             </div>
           ) : (
-            <Link to="/login">
-              <p className="linea">Login - {loggedIn}</p>
+            <Link
+                onClick={()=>{
+                    console.log("aqui")
+                    setShow(false)
+                }}
+                to="/login">
+              <p className="linea">Login  {loggedIn}</p>
             </Link>
           )}
-        </div>
+        </div>}
       </div>
     </div>
   );

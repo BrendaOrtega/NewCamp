@@ -171,8 +171,8 @@
     }
     .ant-form-item-label, .ant-form-item-control-wrapper {
         display: block;
-        width: 95% !important;
-        margin: 0 2.5%;
+        width: 90% !important;
+        margin: 0 5%;
 
 
     }
