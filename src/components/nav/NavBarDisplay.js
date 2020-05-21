@@ -95,7 +95,14 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
           </div>
         ) : (
           <Link to="/login">
-            <p>Login</p>
+            <p style={
+                toggle
+                    ? {
+                        transition: "all .3s",
+                        color: "#525252",
+                    }
+                    : { transition: "all .3s" }
+            }>Login</p>
             <hr className="red-line" />
           </Link>
         )}

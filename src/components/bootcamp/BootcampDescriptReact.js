@@ -36,7 +36,7 @@ class BootcampDescriptReact extends Component {
                         <Link to="/apply/?b=5d632e4c339a1b379df68a74">
                             <Button text="Inscribirme"/>
                         </Link>
-                        <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FFundamentos_Desarrollo_Web.pdf?alt=media&token=80e68013-45be-429d-b9c8-5b58bc9a3615" target="_blank" rel="noopener noreferrer">
+                        <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FTemario_React_Redux.pdf?alt=media&token=8ac6115b-d1df-4653-b4b7-d2c0d2d55b8b" target="_blank" rel="noopener noreferrer">
                             <button className="btn-ghost"><img style={{marginRight:"12px"}} src={download} alt="download-icon" />Descargar temario</button>
                         </a>
                     </div>

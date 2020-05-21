@@ -60,17 +60,16 @@
 }
 .copy p{
     margin: 0px;
+
 }
 
 
 
-@media (max-width: 780px) {
+@media (max-width: 790px) {
     .box-one{
         display: none;
     }
-    .footer div{
-        width: 200px;
-    }
+
     .redes{
         margin-top: 20px;
         text-align: center;
