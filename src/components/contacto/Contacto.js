@@ -73,7 +73,7 @@ class Contacto extends Component {
               style={{ border: "0" }}
               allowFullScreen="true"
             ></iframe>
-          </div>
+          </div>x
           <div className="contact">
             <p>
               {" "}

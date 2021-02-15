@@ -1,6 +1,10 @@
+
+.bootcamp{
+    background-color: #f2f2f2;
+}
 .bootcamps{
     width: 100%;
-    height: 550px;
+    height: 450px;
     background-image: url('../../assets/bootcamp-img.svg');
     background-size: cover;
     background-position:bottom;
@@ -8,16 +12,50 @@
 .cover2{
     width: 100%;
     height: 100%;
-    padding: 0 15%;
+   
     box-sizing: border-box;
     background: rgba(0,0,0,.4);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.search-box{
+    background-color: aqua;   
+    width: 60%;
+    margin: 0 auto;
+}
+.search-bar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+.search-input{
+    width: 80%;
+    height: 60px;
+    border: 1px solid white;
+    padding-left: 12px;
+    box-shadow: 0 5px 8px 1px rgb(215 215 215 / 50%);
+}
+.search-input::placeholder{
+    color: #cccccc;
+}
+.btn-search{
+    width: 20%;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    background-color: #A72E36;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .invite-aply{
-    color: white;
+    color:white;
     font-size: 20px;
     font-family: "ProximaRegular";
 }
@@ -724,6 +762,17 @@ padding-top: 80px;
     .bootcamp-img{
         height: 200px;
     }
+    .search-box{
+    width: 80%;
+    }
+    .search-input{
+        width: 70%;
+    }
+    .btn-search{
+        width: 30%;
+    }
+
+    
    /* #tp{
         margin-top: 0px !important;
     }

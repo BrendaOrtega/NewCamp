@@ -5,7 +5,6 @@ import brenda from "../../assets/21105859_1384283821667002_3656915529923068437_n
 import bliss from "../../assets/67460673_10220365825273658_6972567135163777024_n.jpg"
 import david from "../../assets/50226136_2192976174151067_1003654992885710848_o.jpg"
 import osw from "../../assets/18891870_1543998225611670_8032322982945740932_o.jpg"
-import carlitos from "../../assets/carlitos.jpg"
 import katia from "../../assets/Jk6JaJzJ_400x400.jpg"
 
 class Team extends Component {
@@ -40,9 +39,6 @@ class Team extends Component {
                 </p>
                     <br/>
                     <h3 className="sub3">Founders</h3>
-
-
-
                 <div className="box-miembros">
                     <div className="box_team">
                         <div className="cuadro" style={{backgroundImage:`url("${brenda}")`}}>
@@ -99,7 +95,7 @@ class Team extends Component {
                         </a>
                     </div>
 
-                        <div className="box_team">
+                        {/* <div className="box_team">
                             <div className="cuadro" style={{backgroundImage:`url("${carlitos}")`}}>
                             </div>
                             <h4>Carlos Mendoza</h4>
@@ -110,7 +106,7 @@ class Team extends Component {
                             <a href="https://www.linkedin.com/in/reloadercf/" target="blank" rel="noopener noreferrer">
                                 <FontAwesome name="linkedin"/>
                             </a>
-                        </div>
+                        </div> */}
                         <div className="box_team">
                             <div className="cuadro" style={{backgroundImage:`url("${katia}")`}}>
                             </div>

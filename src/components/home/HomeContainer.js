@@ -7,7 +7,6 @@ import toastr from "toastr";
 import { connect } from "react-redux";
 import { getBootcampsAction } from "../../redux/bootcampDuck";
 import photo from "../../assets/pexels-photo-3626622.svg";
-import student1 from "../../assets/carlitos.jpg";
 import student2 from "../../assets/jorge.jpg";
 import student3 from "../../assets/ossscar.jpg";
 import { Carousel } from "antd";
@@ -207,7 +206,7 @@ class HomeContainer extends Component {
                         <h3>+ 15</h3>
                         <p>
                           Herramientas y/o frameworks que podrás aprender en nuestros
-                          cursos de 2020.
+                          cursos de 2021.
                         </p>
                       </div>
                       <div>
@@ -234,7 +233,7 @@ class HomeContainer extends Component {
                   </p>
                   <br />
                   <div className="comment_box">
-                    <div className="student">
+                    {/* <div className="student">
                       <div style={{ backgroundImage: `url("${student1}")` }}></div>
                       <h4 className="names">Carlos Mendoza</h4>
                       <p>
@@ -242,7 +241,7 @@ class HomeContainer extends Component {
                         acercamiento a mundo real de la tecnología y las grandes ideas,
                         aprendí de forma práctica y dinámica temas complejos...
                       </p>
-                    </div>
+                    </div> */}
                     <div className="student">
                       <div style={{ backgroundImage: `url("${student2}")` }}></div>
                       <h4 className="names">Jorge García</h4>
@@ -266,16 +265,16 @@ class HomeContainer extends Component {
                   </div>
                 </section>
                 <section className="extra">
-                  <h2 className="subtitulo">Reach your own goals</h2>
+                  {/* <h2 className="subtitulo">¿How it works?</h2>
                   <p className="text">
                     La programación es una de las habilidades con mayor demanda en los
                     últimos años, así que, ya sea para comunicarte mejor con tu equipo de
                     desarrollo, cambiar drásticamente tu carrera profesional, completar
-                    tu educación o simplemente por curiosidad, no pierdas más tiempo y
-                    ¡Empieza ya!
+                    tu educación o simplemente por curiosidad, no pierdas más tiempo y <strong>¡Empieza ya!</strong>
                   </p>
+                  */}
 
-                  <div className="card-carrusell">
+                  {/* <div className="card-carrusell">
                     <Carousel afterChange={onChange} autoplay>
                       <div>
                         <section className="flex-box">
@@ -353,7 +352,7 @@ class HomeContainer extends Component {
                       </div>
 
                 </Carousel>
-                  </div>
+                  </div> */}
 
 
 

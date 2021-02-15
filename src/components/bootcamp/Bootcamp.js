@@ -25,18 +25,21 @@ class Bootcamp extends Component {
                 <section className="bootcamps">
                     <div className="cover2">
                         <div className="invite-aply">
-                            <h2 className="white-subtitulos">Conviértete en desarrollador en 4 semanas</h2>
-                            <p>Sumergéte en el mundo del desarrollo de software de forma <strong>Online</strong> o <strong>Presencial</strong></p>
-                            <a href="#explorar">
-                                <Button text="Explorar" link/>
-                            </a>
+                            <h2 className="white-subtitulos">Learn something new everyday</h2>
+                            <p>Elige el bootcamp ideal para ti, y empieza a aprender ya en nuestra modalidad de aprendizaje híbrida.</p>
+                            
                         </div>
                     </div>
 
                 </section>
+                <section className="search-box">
+                    <div className="search-bar">
+                        <input className="search-input" type="text" placeholder="Busca tu curso por lenguaje o herramientra" name="personla-link" />
+                        <button className="btn-search">Buscar</button>
+                    </div>
+                </section>
                 <section id="explorar" className=" gray">
                     <div className="flexin">
-
                             <CardBootcamp
                                 image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F20200427_204700.jpg?alt=media&token=0e15bd6c-2602-473e-a5a0-b2e6a604b264"
                                 badge={pyth}

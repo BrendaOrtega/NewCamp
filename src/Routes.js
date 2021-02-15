@@ -24,6 +24,8 @@ import BootcampDescriptReact from "./components/bootcamp/BootcampDescriptReact";
 import BootcampReactPachuca from "./components/bootcamp/BootcampReactPachuca";
 import PromoCiberMonday from './components/bootcamp/PromoCiberMonday';
 import Ask from "./components/home/Ask"
+import ShareLink from './components/profile/ShareLink';
+import Feedback from './components/profile/Feedback';
 
 
 let PrivateRoute = ({ component, next, to, ...rest }) => {
@@ -61,6 +63,8 @@ export const Router = () => (
         <Route path="/apply" component={Apply} />
         <Redirect path="/preorden" to="/bootcamp"/>
         <Route path="/profile" component={ProfileContainer} />
+        <Route path="/share-link" component={ShareLink} />
+        <Route path="/feedback" component={Feedback} />
         <Route path="/null" component={ProfileContainer} />
         {/* Secciones nuevas por bootcamp */}
         <Redirect path="/python" to="/bootcamp" />
