@@ -7,6 +7,7 @@ import toastr from "toastr";
 import { connect } from "react-redux";
 import { getBootcampsAction } from "../../redux/bootcampDuck";
 import photo from "../../assets/pexels-photo-3626622.svg";
+import student1 from "../../assets/carlitos.jpg";
 import student2 from "../../assets/jorge.jpg";
 import student3 from "../../assets/ossscar.jpg";
 import { Carousel } from "antd";
@@ -233,7 +234,7 @@ class HomeContainer extends Component {
                   </p>
                   <br />
                   <div className="comment_box">
-                    {/* <div className="student">
+                    <div className="student">
                       <div style={{ backgroundImage: `url("${student1}")` }}></div>
                       <h4 className="names">Carlos Mendoza</h4>
                       <p>
@@ -241,7 +242,7 @@ class HomeContainer extends Component {
                         acercamiento a mundo real de la tecnología y las grandes ideas,
                         aprendí de forma práctica y dinámica temas complejos...
                       </p>
-                    </div> */}
+                    </div>
                     <div className="student">
                       <div style={{ backgroundImage: `url("${student2}")` }}></div>
                       <h4 className="names">Jorge García</h4>

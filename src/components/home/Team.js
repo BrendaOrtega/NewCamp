@@ -68,7 +68,7 @@ class Team extends Component {
                 </div>
                     <br/>
                     <br/>
-                    <h3 className="sub3">Collaborators</h3>
+                    <h3 className="sub3">Colaboradores</h3>
                     <div className="box-miembros">
                     <div className="box_team">
                         <div className="cuadro" style={{backgroundImage:`url("${david}")`}}>
@@ -91,6 +91,18 @@ class Team extends Component {
                             <FontAwesome name="github"/>
                         </a>
                         <a href="https://www.linkedin.com/in/oswaldinho24k/" target="blank" rel="noopener noreferrer">
+                            <FontAwesome name="linkedin"/>
+                        </a>
+                    </div>
+                    <div className="box_team ">
+                        <div className="cuadro" style={{backgroundImage:`url("https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F4226221.jpeg?alt=media&token=a852ee83-b7fb-41c8-bb5e-783eab6d1410")`}}>
+                        </div>
+                        <h4>Andrés Quintero Galván</h4>
+                        <p>Software Engineer</p>
+                        <a href="https://github.com/AQUINTERO446" target="_blank" rel="noopener noreferrer">
+                            <FontAwesome name="github"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/andres-quintero-galvan-07812450/" target="blank" rel="noopener noreferrer">
                             <FontAwesome name="linkedin"/>
                         </a>
                     </div>

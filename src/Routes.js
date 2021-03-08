@@ -15,7 +15,6 @@ import Login from './components/login/Login';
 import AdminPage from './components/admin/AdminPage';
 import BootcampDescript from "./components/bootcamp/BootcampDescript";
 import BootcampDescriptWeb from "./components/bootcamp/BootcampDescriptWeb";
-import BootcampDescriptLaravel from "./components/bootcamp/BootcampDescriptLaravel";
 import Landing from "./components/home/Landing";
 import ExamPage from './components/exam/ExamPage';
 import Backend from "./components/bootcamp/Backend";
@@ -26,6 +25,8 @@ import PromoCiberMonday from './components/bootcamp/PromoCiberMonday';
 import Ask from "./components/home/Ask"
 import ShareLink from './components/profile/ShareLink';
 import Feedback from './components/profile/Feedback';
+import BootcampDescriptDocker from './components/bootcamp/BootcampDescriptDocker';
+import Payment from './components/payment/Payment';
 
 
 let PrivateRoute = ({ component, next, to, ...rest }) => {
@@ -47,7 +48,7 @@ export const Router = () => (
         <Route exact path="/bootcamp" component={Bootcamp} />
         <Route path="/preguntas-frecuentes" component={Ask} />
         <Route path="/bootcamp-descript" component={BootcampDescript} />
-        <Route path="/bootcamp-descript-laravel" component={BootcampDescriptLaravel} />
+        <Route path="/bootcamp-descript-docker" component={BootcampDescriptDocker} />
         <Route path="/bootcamp-descript-web" component={BootcampDescriptWeb} />
         <Route path="/bootcamp-backend-nodejs" component={Backend} />
         <Route path="/bootcamp-react-redux" component={BootcampDescriptReact}/>
@@ -61,6 +62,7 @@ export const Router = () => (
         <Route path="/login" component={Login} />
         <Route path="/registro" component={Registro} />
         <Route path="/apply" component={Apply} />
+        <Route path="/payment" component={Payment}/>
         <Redirect path="/preorden" to="/bootcamp"/>
         <Route path="/profile" component={ProfileContainer} />
         <Route path="/share-link" component={ShareLink} />

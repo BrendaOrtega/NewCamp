@@ -5,6 +5,8 @@ import {CardBootcamp} from "../card/CardBootcamp";
 import pyth from "../../assets/badgePYTHON_TTLBLCK_Mesa_de_trabajo_1.png";
 import web from "../../assets/badge3D_Mesa_de_trabajo_1.png";
 
+const photo1 = "https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fphoto.jpg?alt=media&token=cbbffbc4-d321-4e8c-bc20-abcc83bc8710"
+
 class Bootcamp extends Component {
     componentDidMount () {
         window.scroll(0, 0)
@@ -40,37 +42,46 @@ class Bootcamp extends Component {
                 </section>
                 <section id="explorar" className=" gray">
                     <div className="flexin">
-                            <CardBootcamp
-                                image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F20200427_204700.jpg?alt=media&token=0e15bd6c-2602-473e-a5a0-b2e6a604b264"
+                            {/* <CardBootcamp
+                                image={photo1}
                                 badge={pyth}
-                                name="Fundamentos de Programación con Python"
+                                name="Fundamentos de Desarrollo Web con JavaScript"
                                 descript="Aprende las bases de la programación con Python y conoce lo necesario sobre el modelo vista controlador 👨🏻‍💻 "
-                                lecciones="45 lecciones"
-                                tiempo="4 semanas"
+                                tiempo="8 semanas"
                                 link="/bootcamp-descript"
-                                modalidad="100% Online"
-                            />
+                                modalidad="Híbrida"
+                            /> */}
                             <CardBootcamp
-                                image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F20200427_204710.jpg?alt=media&token=9b20756d-028d-46c2-a010-c515fe906cfd"
+                                image={photo1}
                                 badge={web}
                                 name="Fundamentos de Desarrollo Web con JavaScript"
                                 descript="Aprende las bases del desarrollo web, y maqueta y hostea tu propio sitio web con JavaScript 🚀"
-                                lecciones="65 lecciones"
-                                tiempo="4 semanas"
+                                tiempo="8 semanas"
+                                horas="32hrs en vivo"
                                 link="/bootcamp-descript-web"
-                                modalidad="100% Online"
+                                modalidad="Híbrida"
 
                             />
-                        <CardBootcamp
+                             <CardBootcamp
+                                image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fpexels-photo-325229.jpeg?alt=media&token=6be10647-10bf-4fd1-89f2-dfaf9a664359"
+                                badge={web}
+                                name="Aprende microservicios con Docker"
+                                descript="Aprende a utilizarlo en etapas de desarrollo y producción siguiendo practicas de integración continua y despliegue continuo. 💻"
+                                tiempo="8 semanas"
+                                horas="32hrs en vivo"
+                                link="/bootcamp-descript-docker"
+                                modalidad="Híbrida"
+
+                            />
+                        {/* <CardBootcamp
                             image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F20200427_204634.jpg?alt=media&token=dacbdd8b-040f-49ac-999e-b614a2e4f890"
                             badge="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fbadges_Mesa_de_trabajo_1_copia_3.png?alt=media&token=e91625bc-6438-4eb4-9fd0-abe6761bfd25"
                             name="Desarrollo Frontend con ReactJs + Redux"
                             descript="Crea una aplicación web desde cero utilizando ReactJs y manipulando los estados desde Redux 👾  "
-                            lecciones=" 47 lecciones"
-                            tiempo="4 semanas"
+                            tiempo="8 semanas"
                             link="/bootcamp-react-redux"
-                            modalidad="100% Online"
-                        />
+                            modalidad="Híbrida"
+                            />
 
                         <CardBootcamp
                             image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F20200427_204646.jpg?alt=media&token=534edde1-4cc5-400d-af2e-6f9ed4a1a3bd"
@@ -80,8 +91,8 @@ class Bootcamp extends Component {
                             lecciones=" 54 lecciones"
                             tiempo="4 semanas"
                             link="/bootcamp-backend-nodejs"
-                            modalidad="100% Online"
-                        />
+                            modalidad="Híbrida"
+                            />
                         <CardBootcamp
                             image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F20200427_204646.jpg?alt=media&token=534edde1-4cc5-400d-af2e-6f9ed4a1a3bd"
                             badge="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fnode_BADGE_Mesa_de_trabajo_1.png?alt=media&token=4e3f49d4-f4a2-4572-9e7a-b92d66d2a45a"
@@ -90,8 +101,8 @@ class Bootcamp extends Component {
                              aprovecharse tanto como la combinación de jest y Enzyme para emular interacción del usuario con la interfaz."
                             lecciones=" Julio 2020"
                             tiempo="Estreno"
-                            modalidad="100% Online"
-                        />
+                            modalidad="Híbrida"
+                            /> */}
 
 
 

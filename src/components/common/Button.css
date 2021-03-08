@@ -2,7 +2,7 @@
 .btn-explore{
     width: 180px;
     height: 40px;
-    background-color: #ca3e47;
+    background-color: #A72E36;
     border: none;
 
     color: white;
@@ -31,7 +31,7 @@
     width: 180px;
     height: 50px;
     background-color: white;
-    border: 1px solid #ca3e47;
+    border: 1px solid #A72E36;
    /* text-transform: uppercase;*/
     color: #ca3e47;
     font-weight: bolder;
@@ -46,7 +46,7 @@
 }
 
 .btn-apply:hover{
-    background-color:#ca3e47;
+    background-color:#A72E36;
     color:white;
 
 }
@@ -66,4 +66,17 @@
 
 .btn-user:hover{
     background-color: #45424c;
+}
+
+
+/* TAG */
+.tool-tag{
+    padding: 0 16px;
+    height: 32px;
+    background-color: #EEECEC;
+    color: black;
+    border-radius: 16px;
+    font-size: 16px;
+    border: none;
+    margin-right: 16px;
 }

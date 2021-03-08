@@ -33,7 +33,7 @@ class BootcampDescriptReact extends Component {
                         <h2>Desarrollo Frontend con ReactJs + Redux</h2>
                         <p>Ahora que tienes conocimientos en JavaScript, da el siguiente paso para convertirte en un desarrollador frontend con uno de los frameworks más populares, utilizado por Facebook, Tesla y Twitter.</p>
                         <br/>
-                        <Link to="/apply/?b=5d632e4c339a1b379df68a74">
+                        <Link to="/payment">
                             <Button text="Inscribirme"/>
                         </Link>
                         <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FTemario_React_Redux.pdf?alt=media&token=8ac6115b-d1df-4653-b4b7-d2c0d2d55b8b" target="_blank" rel="noopener noreferrer">

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Bootcamp.css";
-import download from "../../assets/download.svg"
 import { Link } from "react-router-dom";
 import Button from "../common/Button";
 import people from "../../assets/Shape.svg";
@@ -8,6 +7,10 @@ import event from "../../assets/event.svg";
 import message from "../../assets/message.svg";
 import graduated from "../../assets/graduated.svg";
 import FontAwesome from "react-fontawesome";
+
+const download = "https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fdownload.svg?alt=media&token=42f25db8-63b8-45ad-a0f8-085bc44c4f4c"
+
+
 class BootcampDescriptWeb extends Component {
   componentDidMount() {
     window.scroll(0, 0);
@@ -26,9 +29,10 @@ class BootcampDescriptWeb extends Component {
           />
           <title>Bootcamp Python | FixterGeek</title>
           <div className="white mobile-display"></div>
-          <section className="camp-portada" style={{backgroundImage:`url("https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F20200427_204710.jpg?alt=media&token=9b20756d-028d-46c2-a010-c515fe906cfd")`}}>
+          <section className="camp-portada" style={{backgroundImage:`url("https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fbanner-camp.png?alt=media&token=05294482-e977-4f81-9ce1-da7e991dc569")`}}>
             <div className="camp-intro">
-              <h2>Fundamentos de <br/> Desarrollo Web</h2>
+              <h2>Fundamentos de Desarrollo Web</h2>
+              <hr className="w-line"/>
               <p>Aprende las bases de la programación y prepárate para incursionar en el mundo del desarrollo Web utilizando uno de los lenguajes más utilizados: JavaScript.</p>
               <br/>
               <Link to="/apply/?b=5d632e4c339a1b379df68a74">
@@ -45,7 +49,7 @@ class BootcampDescriptWeb extends Component {
               className="contenedor camp-programa"
           >
             <div className="box-programa">
-              <h2> ¡Explora el poder del desarrollo web front-end!</h2>
+              <h2> Descripción del curso</h2>
               <br />
               <h3>Por qué JavaScript...</h3>
               <p>
