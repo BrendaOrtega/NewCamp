@@ -62,7 +62,7 @@ export const Router = () => (
         <Route path="/login" component={Login} />
         <Route path="/registro" component={Registro} />
         <Route path="/apply" component={Apply} />
-        <Route path="/payment" component={Payment}/>
+       
         <Redirect path="/preorden" to="/bootcamp"/>
         <Route path="/profile" component={ProfileContainer} />
         <Route path="/share-link" component={ShareLink} />
@@ -73,8 +73,12 @@ export const Router = () => (
         {/* Examen */}
         <Route path="/exam/:id" component={ExamPage} />
         {/* Redirecting everything */}
-        <PrivateRoute next="/preorden" to="/preorden" component={PromoCiberMonday} />
+        {/* <PrivateRoute next="/preorden" to="/preorden" component={PromoCiberMonday} /> */}
         {/* <Route to="/gift" component={BuyForGift} /> */}
+        {/* Fixter hibrid relaunch */}
+        <Route path="/promo/id/:id" component={Payment}/>
+        <Route path="/promo/:slug" component={Payment}/>
+        <Route path="/promo/" component={Payment}/>
 
 
     </Switch>

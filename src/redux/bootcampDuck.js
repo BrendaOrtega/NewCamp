@@ -11,16 +11,28 @@ let initial = {
     loggedIn: false,
     student: { monthly_installments: 1 },
     exam: {},
-    result: null
+    result: null,
+    //2021
+    edition:{},
+    editions:[],
+    discount:2000
 }
 function reducer(state = initial, action) {
     switch (action.type) {
+        case GET_EDITIONS_ERROR:
+        case GRADE_EXAM_ERROR:
+            return { ...state, fetching: false, error: action.payload }
+
+        case GET_EDITION_SUCCESS:
+            return { ...state, fetching:false, edition:action.payload}
+        case GET_EDITIONS_SUCCESS:
+            return { ...state, fetching:false, editions:action.payload}
+
+
         case GRADE_EXAM_SUCCESS:
             return { ...state, fetching: false, result: { ...action.payload } }
         case GRADE_EXAM:
             return { ...state, fetching: true }
-        case GRADE_EXAM_ERROR:
-            return { ...state, fetching: false, error: action.payload }
 
         case GET_EXAM_SUCCESS:
             return { ...state, fetching: false, exam: { ...action.payload }, error: null }
@@ -160,8 +172,91 @@ const GET_BOOTCAMPS = "GET_BOOTCAMPS"
 const GET_BOOTCAMPS_ERROR = "GET_BOOTCAMPS_ERROR"
 const GET_BOOTCAMPS_SUCCESS = "GET_BOOTCAMPS_SUCCESS"
 
+//2021
+const GET_EDITIONS = "GET_EDITIONS"
+const GET_EDITION = "GET_EDITION"
+const GET_EDITIONS_ERROR = "GET_EDITIONS_ERROR"
+const GET_EDITIONS_SUCCESS = "GET_EDITIONS_SUCCESS"
+const GET_EDITION_SUCCESS = "GET_EDITION_SUCCESS"
+
+const VALIDATE_DISCOUNT_CODE = "VALIDATE_DISCOUNT_CODE"
+const VALIDATE_DISCOUNT_CODE_ERROR = "VALIDATE_DISCOUNT_CODE_ERROR"
+const VALIDATE_DISCOUNT_CODE_SUCCESS = "VALIDATE_DISCOUNT_CODE_SUCCESS"
+
 
 //thunks
+
+// 2021
+export const validateDiscountCode = (code) => (dispatch, getState) => {
+
+}
+
+export const getEditionBySlugAction = (editionSlug) => (dispatch, getState) => {
+    console.log("slug called")
+    let { user: { token } } = getState()
+    dispatch({
+        type: GET_EDITION
+    })
+    return axios.get(`${url}/editions?slug=${editionSlug}`, { headers: { Authorization: token } })
+        .then(res => {
+            dispatch({
+                type: GET_EDITION_SUCCESS,
+                payload: { ...res.data[0] }
+            })
+            // getBootcampAction(exam.bootcamp)(dispatch, getState)
+            return res
+        })
+        .catch(err => {
+            if (!err.response) return dispatch({ type: GET_EDITIONS_ERROR, payload: "Algo falló" })
+            dispatch({ type: GET_EDITIONS_ERROR, payload: err.response?.data?.message })
+            return err
+        })
+}
+
+export const getOneEditionAction = (editionId) => (dispatch, getState) => {
+    console.log("id called")
+    let { user: { token } } = getState()
+    dispatch({
+        type: GET_EDITION
+    })
+    return axios.get(`${url}/editions/${editionId}`, { headers: { Authorization: token } })
+        .then(res => {
+            dispatch({
+                type: GET_EDITION_SUCCESS,
+                payload: { ...res.data }
+            })
+            // getBootcampAction(exam.bootcamp)(dispatch, getState)
+            return res
+        })
+        .catch(err => {
+            if (!err.response) return dispatch({ type: GET_EDITIONS_ERROR, payload: "Algo falló" })
+            dispatch({ type: GET_EDITIONS_ERROR, payload: err.response?.data?.message })
+            return err
+        })
+}
+
+export const getEditionsAction = () => (dispatch, getState) => {
+    let { user: { token } } = getState()
+    dispatch({
+        type: GET_EDITIONS
+    })
+    return axios.get(`${url}/editions`, { headers: { Authorization: token } })
+        .then(res => {
+            dispatch({
+                type: GET_EDITIONS_SUCCESS,
+                payload: [...res.data]
+            })
+            // getBootcampAction(exam.bootcamp)(dispatch, getState)
+            return res
+        })
+        .catch(err => {
+            if (!err.response) return dispatch({ type: GET_EDITIONS_ERROR, payload: "Algo falló" })
+            dispatch({ type: GET_EDITIONS_ERROR, payload: err.response?.data?.message })
+            return err
+        })
+}
+
+// 2019
 export function gradeExamAction(answers, bootcampId) {
     return (dispatch, getState) => {
         let { user: { token } } = getState()

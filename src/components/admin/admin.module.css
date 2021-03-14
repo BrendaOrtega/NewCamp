@@ -2,3 +2,29 @@
     display: flex;
     flex-direction: column;
 }
+
+/* 2021 */
+/* Cupones */
+.container {
+    width:100%;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: space-between;
+}
+
+.row:hover .deleteButton{
+    opacity: 1;
+}
+
+.deleteButton {
+    cursor: pointer;
+    opacity: 0;
+}
