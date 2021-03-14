@@ -36,13 +36,13 @@
 .bootcamp-card{
     width: 320px;
     min-height: 350px;
-    margin: 20px 24px;
+    margin: 20px 0px;
     background-color: white;
-    box-shadow: 0 5px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 8px 1px rgba(215, 215, 215, 0.5);
     text-align: left;
     box-sizing: border-box;
     transition: all 1s ease;
-    border-radius: 8px;
+    border-radius: 4px;
     font-family:"ProximaRegular";
 }
 
@@ -162,7 +162,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -179,8 +179,17 @@
 }
 .contenedor{
     width: 100%;
-    padding: 80px 15%;
+    padding: 48px;
    box-sizing: border-box;
+}
+.g-line{
+    width: 100%;
+    background-color: #CCCCCC;
+    height: 2px;
+    border-radius: 1px;
+    border: none;
+    margin: 48px 0;
+    opacity: .3;
 }
 
 .container-summary{
@@ -276,6 +285,9 @@
     margin: 0 10px;
 }
 .camp-programa{
+    width: 80%;
+    margin: -100px auto 0;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -292,18 +304,22 @@
     flex-grow: 1;
     padding: 0 2%;
     box-sizing: border-box;
-    padding-top: 150px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
 }
 .camp-programa h2, .contenedor h2{
     color:#323232;
     font-size: 36px;
+    font-family: ProximaNovaB;
 }
 .camp-programa h3{
-    color:#45424c;
+    color:#222222;
     font-size: 24px;
 }
 .box-data h3{
     color:#323232;
+    font-family: "ProximaNovaB";
 }
 .box-data p {
     font-size: 14px;
@@ -402,6 +418,28 @@
     .contenedor{
         padding: 40px 10%;
     }
+    .camp-programa{
+        font-size: 16px;
+    }
+    .camp-programa h3{
+        font-size: 20px;
+    }
+    .camp-programa h2, .contenedor h2{
+        font-size: 24px;
+    }
+    .ipad-fl{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .ipad-fl div{
+        width: 250px;
+    }
+    .box-data{
+        padding: 4% 0;
+    }
+
+
 }
 @media (max-width: 680px) {
     .container-summary{

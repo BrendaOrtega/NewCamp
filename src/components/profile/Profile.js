@@ -6,6 +6,7 @@ import { UserBootcamp } from "./UserBootcamp";
 import { UserBooks } from "./UserBooks";
 import { UserEvents } from "./UserEvents";
 import { storage } from "../../firebase";
+import FontAwesome from "react-fontawesome";
 
 const { TabPane } = Tabs;
 
@@ -27,13 +28,14 @@ export const Profile = ({
   city,
   email,
   changePass,
-  updatePassword
+  updatePassword,
 }) => {
   // console.log(bootcamps)
 
   let input = useRef();
   let [profile, setProfile] = useState({});
   let [newPass, setNewPass] = useState(null);
+  let [editing, setEditing] = useState(false);
 
   useEffect(() => {
     setProfile({ displayName });
@@ -53,10 +55,10 @@ export const Profile = ({
       .ref("profilePics")
       .child(_id)
       .put(files[0])
-      .then(snap => {
+      .then((snap) => {
         return snap.ref.getDownloadURL();
       })
-      .then(url => {
+      .then((url) => {
         setProfile({ ...profile, photoURL: url });
       });
   }
@@ -68,26 +70,70 @@ export const Profile = ({
         <div className="fl">
           <div
             style={{
-              backgroundImage: `url("${profile.photoURL || photoURL}")`
+              backgroundImage: `url("${profile.photoURL || photoURL}")`,
             }}
             className="user-photo"
           >
             <div onClick={() => input.current.click()} className="img-overlay">
-              EDITAR IMAGEN
+              <FontAwesome name="camera" />
             </div>
           </div>
         </div>
-        <button onClick={() => updateProfile(profile)} style={styles.button}>
-          Actualizar Perfil
-        </button>
+
         <div className="user-descript">
-          <Input
-            name="displayName"
-            onChange={onChange}
-            value={profile.displayName}
-            className="user-descript-input"
-            placeholder="Nombre de usuario"
-          />
+          {editing ? (
+            <div>
+              <Input
+                name="displayName"
+                onChange={onChange}
+                value={profile.displayName}
+                className="user-descript-input"
+                placeholder="Nombre de usuario"
+              />
+              <span style={styles.email}>{email}</span>
+              <br />
+              <div style={styles.buttons}>
+                <div className="message-actions"
+                  style={{
+                    marginRight: "10px",
+                    borderRight: "1px solid #323232",
+                    paddingRight: "10px",
+                    marginTop: 10,
+                    cursor: "pointer",
+                  }}
+                  onClick={() => setEditing(false)}
+                >
+                  Cancelar
+                </div>
+                <div className="message-actions"
+                  style={{
+                    cursor: "pointer",
+                    marginTop: 10,
+                  }}
+                  onClick={() => {
+                    updateProfile(profile);
+                    setEditing(false);
+                  }}
+                >
+                  Guardar
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div>
+              <p style={styles.displayName}>
+                <i>{profile.displayName}</i>
+                <FontAwesome
+                  onClick={() => setEditing(true)}
+                  style={styles.icon}
+                  name="pencil"
+                />
+              </p>
+
+              <span style={styles.email}>{email}</span>
+            </div>
+          )}
+
           {changePass && (
             <div>
               <h2 style={{ color: "red" }}>Debes actualizar tu contraseña:</h2>
@@ -117,7 +163,6 @@ export const Profile = ({
                         className="user-descript-input"
                         placeholder="Correo electrónico para notificaciones"
                     /> */}
-          <p style={{ marginTop: 10 }}>{email}</p>
         </div>
       </div>
       <section className="contenido">
@@ -148,6 +193,22 @@ export const Profile = ({
 };
 
 let styles = {
+  buttons: {
+    display: "flex",
+    justifyContent: "center",
+  },
+  icon: {
+    marginLeft: "15px",
+    cursor: "pointer",
+  },
+  displayName: {
+    padding: "3px 7px",
+    margin: 0,
+  },
+  email: {
+    margin: 0,
+    transform: "translateY(-10px)",
+  },
   button: {
     background: "#962f35",
     color: "white",
@@ -157,6 +218,6 @@ let styles = {
     top: 0,
     left: 0,
     border: "none",
-    padding: "5px 10px"
-  }
+    padding: "5px 10px",
+  },
 };

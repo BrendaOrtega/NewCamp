@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import "./Home.css"
 import FontAwesome from "react-fontawesome"
+import brenda from "../../assets/21105859_1384283821667002_3656915529923068437_n.jpg"
+import bliss from "../../assets/67460673_10220365825273658_6972567135163777024_n.jpg"
+import david from "../../assets/50226136_2192976174151067_1003654992885710848_o.jpg"
+import osw from "../../assets/18891870_1543998225611670_8032322982945740932_o.jpg"
+import katia from "../../assets/Jk6JaJzJ_400x400.jpg"
 
 class Team extends Component {
     componentDidMount () {
@@ -19,109 +24,115 @@ class Team extends Component {
                     content="cursos, capacitación, react, angular, tecnología, programación, javascript, python, php, online, fixtergeek"
                 />
                 <title>Fixter Team</title>
-                <div className="black"></div>
-                <div className="team">
-                <h2 className="subtitulos">Conoce a nuestro equipo</h2>
-                <p>En FixterGeek estamos comprometidos con la educación tecnológica,
-                    estamos comprometidos con contribuir a la formación de desarrolladores en México.
+                <section className="bootcamps">
+                    <div className="cover2">
+                        <div className="invite-aply">
+                            <p className="slogan">"Work <strong>hard</strong> or go <strong>home</strong>"</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <div className="box-home">
+                <h2 className="subtitulo">Conoce a nuestro equipo</h2>
+                <p className="text">En FixterGeek estamos comprometidos con la educación tecnológica y con contribuir a la formación de desarrolladores en México.
                 </p>
                     <br/>
-                <div className="box-line">
-                    <div className="team-line">
-                    <h3>Founders</h3></div>
-                    <div className="team-members">
-
-                    <hr/>
-                    </div>
-                </div>
+                    <h3 className="sub3">Founders</h3>
                 <div className="box-miembros">
                     <div className="box_team">
-                        <div className="cuadro brenda">
+                        <div className="cuadro" style={{backgroundImage:`url("${brenda}")`}}>
                         </div>
                         <h4>Brenda Ortega</h4>
-                        <a href="https://www.facebook.com/brenda.ortega.7121">
-                            <FontAwesome name="facebook-square" />
+                        <p>CEO & UX/UI Designer</p>
+                        <a href="https://github.com/BrendaOrtega" target="_blank" rel="noopener noreferrer">
+                            <FontAwesome name="github"/>
                         </a>
-                        <a href="https://www.linkedin.com/in/brenda-ort/" target="blank">
+                        <a href="https://www.linkedin.com/in/brenda-ort/" target="blank" rel="noopener noreferrer">
                             <FontAwesome name="linkedin"/>
                         </a>
                     </div>
                     <div className="box_team">
-                        <div className="cuadro bliss">
+                        <div className="cuadro" style={{backgroundImage:`url("${bliss}")`}}>
                         </div>
                         <h4>Héctor Bliss</h4>
-                        <a href="https://www.facebook.com/hector.bliss">
-                            <FontAwesome name="facebook-square" />
+                        <p>CTO & Software Engineer</p>
+                        <a href="https://github.com/HectorBlisS" target="_blank" rel="noopener noreferrer">
+                            <FontAwesome name="github"/>
                         </a>
-                        <a href="https://www.linkedin.com/in/hectorbliss/" target="blank">
+                        <a href="https://www.linkedin.com/in/hectorbliss/" target="blank" rel="noopener noreferrer">
                             <FontAwesome name="linkedin"/>
                         </a>
                     </div>
 
                 </div>
-
-                    <div className="box-miembros just">
-                    <div className="box-line">
-                        <div className="team-line">
-                            <h3>Miembros</h3></div>
-                        <div className="team-members">
-
-                            <hr/>
-                        </div>
-                    </div>
+                    <br/>
+                    <br/>
+                    <h3 className="sub3">Colaboradores</h3>
+                    <div className="box-miembros">
                     <div className="box_team">
-                        <div className="cuadro david">
+                        <div className="cuadro" style={{backgroundImage:`url("${david}")`}}>
                         </div>
                         <h4>David Zavala</h4>
-                        <a href="https://www.facebook.com/david.pzmck">
-                            <FontAwesome name="facebook-square" />
+                        <p>Sr Frontend Developer</p>
+                        <a href="https://github.com/DeividZavala" target="_blank" rel="noopener noreferrer">
+                            <FontAwesome name="github"/>
                         </a>
-                        <a href="https://www.linkedin.com/in/david-zavala-bartolome/" target="blank">
+                        <a href="https://www.linkedin.com/in/david-zavala-bartolome/" target="blank" rel="noopener noreferrer">
                             <FontAwesome name="linkedin"/>
                         </a>
                     </div>
                     <div className="box_team ">
-                        <div className="cuadro oswaldo">
+                        <div className="cuadro" style={{backgroundImage:`url("${osw}")`}}>
                         </div>
                         <h4>Oswaldo Martinez</h4>
-                        <a href="https://www.facebook.com/oswwaldom">
-                            <FontAwesome name="facebook-square" />
+                        <p>Sr Fullstack Developer</p>
+                        <a href="https://github.com/Oswaldinho24k" target="_blank" rel="noopener noreferrer">
+                            <FontAwesome name="github"/>
                         </a>
-                        <a href="https://www.linkedin.com/in/oswaldinho24k/" target="blank">
+                        <a href="https://www.linkedin.com/in/oswaldinho24k/" target="blank" rel="noopener noreferrer">
                             <FontAwesome name="linkedin"/>
                         </a>
                     </div>
-                        <div className="box_team">
-                            <div className="cuadro martin">
+                    <div className="box_team ">
+                        <div className="cuadro" style={{backgroundImage:`url("https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F4226221.jpeg?alt=media&token=a852ee83-b7fb-41c8-bb5e-783eab6d1410")`}}>
+                        </div>
+                        <h4>Andrés Quintero Galván</h4>
+                        <p>Software Engineer</p>
+                        <a href="https://github.com/AQUINTERO446" target="_blank" rel="noopener noreferrer">
+                            <FontAwesome name="github"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/andres-quintero-galvan-07812450/" target="blank" rel="noopener noreferrer">
+                            <FontAwesome name="linkedin"/>
+                        </a>
+                    </div>
+
+                        {/* <div className="box_team">
+                            <div className="cuadro" style={{backgroundImage:`url("${carlitos}")`}}>
                             </div>
-                            <h4>Martin Melo</h4>
-                            <a href="https://www.facebook.com/david.pzmck">
-                                <FontAwesome name="facebook-square" />
+                            <h4>Carlos Mendoza</h4>
+                            <p>Fullstack Developer</p>
+                            <a href="https://github.com/reloadercf" target="_blank" rel="noopener noreferrer">
+                                <FontAwesome name="github"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/david-zavala-bartolome/" target="blank">
+                            <a href="https://www.linkedin.com/in/reloadercf/" target="blank" rel="noopener noreferrer">
+                                <FontAwesome name="linkedin"/>
+                            </a>
+                        </div> */}
+                        <div className="box_team">
+                            <div className="cuadro" style={{backgroundImage:`url("${katia}")`}}>
+                            </div>
+                            <h4>Katia Lira</h4>
+                            <p>Web Engineer</p>
+                            <a href="https://github.com/katialira" target="_blank" rel="noopener noreferrer">
+                                <FontAwesome name="github"/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/katia-lira-engineer/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesome name="linkedin"/>
                             </a>
                         </div>
-                        <div className="box_team">
-                            <div className="cuadro oso">
-                            </div>
-                            <h4>Oscar Villeda</h4>
-                            <a href="https://www.facebook.com/oscaruve">
-                                <FontAwesome name="facebook-square" />
-                            </a>
-                            <a href="https://www.linkedin.com/in/david-zavala-bartolome/" target="blank">
-                                <FontAwesome name="linkedin"/>
-                            </a>
                         </div>
-                </div>
-                {/*<p>Fixter crea productos digitales, desde sitios
-                    web y aplicaciones móviles, hasta servicios y herramientas empresariales.
-                    Somos un equipo de desarrolladores enfocado en ofrecer productos digitales a la medida,
-                    y comprometido con la satisfacciónd e nuetsros clientes.</p>*/}
-
-
-
-            </div>
+                    </div>
             </section>
         )
     }

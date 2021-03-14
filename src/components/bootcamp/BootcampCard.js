@@ -46,59 +46,59 @@ function BootcampCard({
         style={{ backgroundImage: `url(${link})` }}
       ></div>
       <div className="camp-avatar">
-        <img src={thumbnail || js} alt="logo-javascript" />
+        <img style={{width:"60%", height:"auto"}} src={thumbnail || js} alt="logo-javascript" />
       </div>
       <div style={{ padding: "0 4%" }}>
         <h3>Bootcamp Online: {title}</h3>
         <p>
           Crea las bases que necesitas para convertirte en desarrollador web y
-          comenzar tu carrera profesional. ⚛️
+          comenzar tu carrera profesional. {"⚛️"}
         </p>
         <p>
           {" "}
           <FontAwesome name="user" /> {students.length + 195} Estudiantes
         </p>
-        <p>
+      {/*  <p>
           {" "}
           <FontAwesome name="calendar" /> Inicia:{" "}
           <strong> 21 Febrero 2020</strong>
-        </p>
+        </p>*/}
         <p>
           {" "}
-          <FontAwesome name="calendar" /> Prework Disponible:{" "}
+         {/* <FontAwesome name="calendar" /> Prework Disponible:{" "}
           {(available && (
             <strong style={{ color: "#689f63" }}>
               {moment(weeks[0].startDate).format("ll")}
             </strong>
-          )) || <strong> 10 Febrero 2020</strong>}
+          )) || <strong> 10 Febrero 2020</strong>}*/}
         </p>
         <p>
           {" "}
-          <FontAwesome name="file" /> Exámen final: <b>11 Marzo 2020 </b>{" "}
+          <FontAwesome name="file" /> Exámen final
         </p>
         <button className="btn-in">
           {week1 ? (
             <span onClick={() => history.push("/bootcamp/detail/" + _id)}>
-              ¡Bootcamp Ya disponible!
+              ¡Empezar ya!
             </span>
           ) : (
             "Inscrito"
           )}
         </button>
-        {available && (
+       {/* {available && (
           <button
             onClick={() => history.push("/bootcamp/detail/" + _id)}
             className="btn-pre"
           >
             Prework ya Disponible
           </button>
-        )}
+        )}*/}
         {examAvailable && (
           <button
             onClick={() => history.push("/exam/" + _id)}
             className="btn-pre-exam"
           >
-            Examen ya Disponible
+            Ir al examen
           </button>
         )}
       </div>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import "./Login.css";
 import { Form, Icon, Input, Modal, Spin } from 'antd';
-import FontAwesome from "react-fontawesome";
 import { Link } from "react-router-dom";
 import queryString from 'query-string'
 import { connect } from 'react-redux'
@@ -64,59 +63,70 @@ class Login extends Component {
         let { auth } = this.state
         return (
             <div >
-                <div className="black"></div>
+                <div className="black mobile-display"></div>
                 <div className="login">
                     <div className="login-box">
-                        <h3 className="sub">Inicia Sesión</h3>
-                        <Form className="login-form">
-                            {/* <div className="redes_login">
-                                <div className="circle_f" >
-                                    <FontAwesome name="facebook" />
-                                </div>
-                                <div className="circle_g" >
-                                    <FontAwesome name="google" />
-                                </div>
-                            </div> */}
-                            {/* <div className="division">
-                                <hr className="line_log" /> or <hr className="line_log" />
-                            </div> */}
-                            <Form.Item>
-                                <Input
-                                    value={auth.email}
-                                    name="email"
-                                    onChange={this._onChange}
-                                    prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                                    placeholder="Email"
-                                />
-                            </Form.Item>
-                            <Form.Item>
+                        <div>
+                            <h3 className="sub">Iniciar Sesión</h3>
+                                <br/>
 
-                                <Input
-                                    value={auth.password}
-                                    onChange={this._onChange}
-                                    name="password"
-                                    prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                                    type="password"
-                                    placeholder="Contraseña"
-                                />
-                            </Form.Item>
-                            <Form.Item style={{ textAlign: "center", marginTop:"24px" }}>
+                            <Form className="login-form">
+                                {/* <div className="redes_login">
+                                    <div className="circle_f" >
+                                        <FontAwesome name="facebook" />
+                                    </div>
+                                    <div className="circle_g" >
+                                        <FontAwesome name="google" />
+                                    </div>
+                                </div> */}
+                                {/* <div className="division">
+                                    <hr className="line_log" /> or <hr className="line_log" />
+                                </div> */}
+                                <Form.Item>
+                                    <label style={{fontSize:"18px"}} htmlFor="">Email</label>
+                                    <Input
+                                        value={auth.email}
+                                        name="email"
+                                        onChange={this._onChange}
+                                        prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                                        placeholder="ejemplo@fixter.org"
+                                    />
+                                </Form.Item>
+                                <br/>
+                                <Form.Item>
+                                    <label style={{fontSize:"18px"}} htmlFor="">Contraseña</label>
+                                    <Input
+                                        value={auth.password}
+                                        onChange={this._onChange}
+                                        name="password"
+                                        prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                                        type="password"
+                                        placeholder="Al menos 8 dígitos"
+                                    />
+                                </Form.Item>
+                                <br/>
+                                <Form.Item style={{ textAlign: "center", marginTop:"24px" }}>
 
-                                <a onClick={() => this.setState({ modal: true })} className="login-form-forgot" href="#">
-                                    <p className="forget">¿Olvidaste tu contraseña?</p>
-                                </a>
-                                <br />
-                                <div>
-                                    <button
-                                        onClick={this.signIn}
-                                        className="btn-login">
-                                        {this.props.fetching ? <Spin /> : "Iniciar"}
-                                    </button>
-                                </div>
+                                    <a onClick={() => this.setState({ modal: true })} className="login-form-forgot" href="#">
+                                        <p className="forget">¿Olvidaste tu contraseña?</p>
+                                    </a>
+                                    <br />
+                                    <br/>
+                                    <div>
+                                        <button
+                                            onClick={this.signIn}
+                                            className="btn-explore">
+                                            {this.props.fetching ? <Spin /> : "Entrar"}
+                                        </button>
+                                    </div>
 
-                                <Link to={"/registro?next=" + this.state.next} className="regist" >Crea una cuenta</Link>
-                            </Form.Item>
-                        </Form>
+                                    <Link to={"/registro?next=" + this.state.next} className="regist" >Crea una cuenta</Link>
+                                </Form.Item>
+                            </Form>
+                        </div>
+                    </div>
+                    <div className="login-img">
+                        <div className="cover2"></div>
                     </div>
                 </div>
                 <Modal

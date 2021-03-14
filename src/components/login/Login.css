@@ -2,21 +2,32 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: #f5f5f5;
 }
 .login-box{
-    width: 400px;
+    width: 500px;
+    height: 100%;
+    flex-grow: 1;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     padding: 2% 3% 0% 3%;
     background-color: white;
-    margin-top: 70px;
+    background:url("../../assets/back.svg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .login h3{
     font-size: 24px;
-    color:#525252;
+    color:#222222;
     text-align: center;
+}
+ label{
+    font-size: 18px;
 }
 .forget{
     margin: 0;
@@ -36,7 +47,7 @@
     color:#ca3e47 !important;
 }
 .btn-login{
-    width: 120px;
+    width: 180px;
     height: 40px;
     background-color: #ca3e47;
     border: none;
@@ -95,6 +106,14 @@
     color: #a7a7a7;
     margin: 20px 0;
 }
+.ant-form-item {
+    width: 400px;
+    height: 40px;
+}
+.ant-input-affix-wrapper {
+    height: 40px;
+
+}
 .ant-input:focus{
     box-shadow: 0 0 0 2px rgba(202, 62, 71, 0.2);
 }
@@ -104,7 +123,29 @@
 .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled){
     border-color: #ca3e47 !important;
 }
-@media(max-width: 768px){
+
+.login-img{
+    width: 700px;
+    height: 100%;
+    flex-grow: 1;
+    background:url("../../assets/img-login.png");
+    background-position: center;
+    background-size: cover;
+}
+.mobile-display{
+    display: none;
+}
+
+@media (max-width: 1025px) {
+    .mobile-display{
+        display: initial;
+    }
+    .login-img{
+        display: none;
+    }
+}
+
+@media(max-width: 780px){
     .login-box{
         margin-top: 120px;
     }
@@ -112,16 +153,36 @@
         height: auto;
         padding-bottom: 50px;
     }
+    .mobile-display{
+        display: initial;
+    }
 }
 
 @media (max-width: 550px) {
-    .login-box{
-        width: 80%;
+    .login-box {
+        width: 90%;
         margin: 0 auto;
         margin-top: 120px;
+        height: 500px;
+        flex-grow: initial;
     }
-    .forget{
+
+    .forget {
         margin-top: 0px;
+
+    }
+    .ant-form-item{
+        width: 320px;
+    }
+
+    .ant-form-item-control{
+        line-height: inherit;
+    }
+    .ant-form-item-label, .ant-form-item-control-wrapper {
+        display: block;
+        width: 90% !important;
+        margin: 0 5%;
+
 
     }
 }

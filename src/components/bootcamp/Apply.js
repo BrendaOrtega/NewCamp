@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./Bootcamp.css"
-import { Steps, Button, message, Spin } from 'antd';
+import { Steps, Button, Spin } from 'antd';
 import { StepUno } from "./StepUno"
 import StepDos from "./StepDos"
 import StepTres from "./StepTres";

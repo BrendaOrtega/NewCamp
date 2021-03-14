@@ -14,13 +14,13 @@ export const StepUno = ({ selected }) => {
             <p><strong>$ {price}.00MXN</strong></p>
             <br />
             <p>
-                Este es nuestro segundo bootcamp online, tú formarás parte de
-                nuestros alumnos pioneros y tendrás acceso a descuentos de por vida
-                además de la oportunidad de inscribirte a ediciones presenciales
-                siempre con un precio mucho menor.
-                El precio de este bootcamp online
-                es simbólico, ya que las siguientes ediciones no tendran este precio.
-                    </p>
+                En cada uno de nuestros botocamps online, aprenderás a programar con las herramientas
+                más  utilizados en el desarrollo de software, tanto para frontend, backend y mobile.
+                Además de la oportunidad de inscribirte a ediciones presenciales
+                siempre con un precio mucho menor, de asisitir a nuestros eventos o meetups, y sobre todo
+                serás parte de nuestra comunidad.
+
+            </p>
         </div>
     );
 };

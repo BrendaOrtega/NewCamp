@@ -83,7 +83,7 @@ const StepTres = ({ selected, student, onChangeStudentAction }) => {
                         name="month"
                         value={student.month}
                         onChange={onChange}
-                        placeholder="Fecha de expiración"
+                        placeholder="MM"
                     />
                     <span style={{ color: "red" }}>{errors.month}</span>
                 </label>
@@ -93,7 +93,7 @@ const StepTres = ({ selected, student, onChangeStudentAction }) => {
                         name="year"
                         value={student.year}
                         onChange={onChange}
-                        placeholder="2020"
+                        placeholder="AAAA"
                     />
                     <span style={{ color: "red" }}>{errors.year}</span>
                 </label>
@@ -103,7 +103,7 @@ const StepTres = ({ selected, student, onChangeStudentAction }) => {
                         name="cvc"
                         value={student.cvc}
                         onChange={onChange}
-                        placeholder="999"
+                        placeholder="CVV"
                     />
                     <span style={{ color: "red" }}>{errors.cvc}</span>
                 </label>

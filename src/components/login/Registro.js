@@ -68,9 +68,9 @@ class Registro extends Component {
         let { error, email, password, password2 } = this.state
         return (
             <div >
-                <div className="black"></div>
                 <div className="login">
                     <div className="login-box">
+                        <div>
                         <h3 className="sub">Completa el registro</h3>
                         <br />
                         <Form className="login-form">
@@ -80,44 +80,47 @@ class Registro extends Component {
                                 validateStatus={error.email ? "error" : error.email === undefined ? "warning" : "success"}
                                 help={error.email}
                             >
+                                <label style={{fontSize:"18px"}} htmlFor="">Email</label>
                                 <Input
                                     name="email"
                                     value={email}
                                     onChange={this._onChange}
                                     prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                                    placeholder="Email"
+                                    placeholder="ejemplo@fixter.org"
 
 
                                 />
                             </Form.Item>
+                            <br/>
                             <Form.Item
                                 hasFeedback
                                 validateStatus={error.password ? "error" : error.password === undefined ? "warning" : "success"}
                                 help={error.password}
                             >
-
+                                <label style={{fontSize:"18px"}} htmlFor="">Contraseña</label>
                                 <Input
                                     name="password"
                                     value={password}
                                     onChange={this._onChange}
                                     prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
                                     type="password"
-                                    placeholder="Contraseña"
+                                    placeholder="Almenos 8 caracteres"
                                 />
                             </Form.Item>
+                            <br/>
                             <Form.Item
                                 hasFeedback
                                 validateStatus={error.password2 ? "error" : error.password2 === undefined ? "warning" : "success"}
                                 help={error.password2}
                             >
-
+                                <label style={{fontSize:"18px"}} htmlFor="">Repite tu contraseña</label>
                                 <Input
                                     name="password2"
                                     value={password2}
                                     onChange={this._onChange}
                                     prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
                                     type="password"
-                                    placeholder="Repite la contraseña"
+                                    placeholder="Almenos 8 caracteres"
                                 />
                             </Form.Item>
                             <br />
@@ -132,7 +135,15 @@ class Registro extends Component {
                             </Form.Item>
                         </Form>
                     </div>
+
+                    </div>
+                    <div className="login-img">
+                    <div className="cover2">
+
+                    </div>
                 </div>
+                </div>
+
             </div>
         )
     }

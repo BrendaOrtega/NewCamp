@@ -1,12 +1,61 @@
+
+.bootcamp{
+    background-color: #f2f2f2;
+}
 .bootcamps{
     width: 100%;
-    height: 400px;
-    background-image: url('https://images.pexels.com/photos/7066/man-relax-couch-study.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 450px;
+    background-image: url('../../assets/bootcamp-img.svg');
     background-size: cover;
-    background-position:top;
+    background-position:bottom;
 }
-.invite-aply{
+.cover2{
+    width: 100%;
+    height: 100%;
+   
+    box-sizing: border-box;
+    background: rgba(0,0,0,.4);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.search-box{
+    background-color: aqua;   
+    width: 60%;
+    margin: 0 auto;
+}
+.search-bar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+.search-input{
+    width: 80%;
+    height: 60px;
+    border: 1px solid white;
+    padding-left: 12px;
+    box-shadow: 0 5px 8px 1px rgb(215 215 215 / 50%);
+}
+.search-input::placeholder{
+    color: #cccccc;
+}
+.btn-search{
+    width: 20%;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    background-color: #A72E36;
     color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.invite-aply{
+    color:white;
     font-size: 20px;
     font-family: "ProximaRegular";
 }
@@ -22,6 +71,179 @@
     padding: 5% 10%;
     background-color: #f2f2f2;
 }
+
+.camp-portada{
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position:top;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.camp-intro{
+    width: 80%;
+    color: white;
+    text-align: left;
+}
+.w-line{
+    width: 8%;
+    margin-left: 0px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: white;
+}
+.camp-intro h2{
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 12px;
+    font-family: "ProximaNovaB";
+    line-height: 120%;
+    color: white;
+}
+.camp-intro p{
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.btn-ghost{
+    margin-left: 24px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    font-family: "Avenir";
+    color:white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.sylabuss{
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 80px 10%;
+}
+
+.week-card{
+    width: 240px;
+    height: 240px;
+    background-color: #962f35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    box-sizing: border-box;
+    color: white;
+    margin: 0 12px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+.lessions{
+    display: none;
+    opacity: 0;
+    transition:all 3s ease;
+}
+
+
+.week-card:hover .lessions{
+    display: block;
+    opacity: .7;
+    transition-delay: 4s;
+
+
+}
+.modules{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.week-card h3{
+    color: white;
+    font-size: 24px;
+    font-family: "ProximaNovaB";
+}
+
+.contain{
+    width: 100%;
+    padding: 80px 10%;
+    background-color: white;
+}
+
+.fbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.adds{
+    font-size: 16px;
+    width: 550px;
+    margin: 10px;
+
+}
+.adds img{
+    height: 36px;
+    margin-right: 16px;
+
+}
+.adds h3{
+    font-family: ProximaRegular;
+    font-weight: bolder;
+    font-size: 24px;
+}
+.instructor_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.instructor_photo{
+    border: 12px solid white;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+
+
+}
+.instructor_photo img{
+    width: 100%;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.instructor_photo img:hover{
+    transform: scale(1.3);
+}
+.instructor_info{
+    width: 600px;
+    flex-grow: 1;
+    padding: 0 4%;
+}
+.redes-instructor span{
+    margin-right: 16px;
+    font-size: 24px;
+}
+
+
+
+.modality{
+    width: 80%;
+    margin: 108px auto;
+    display: flex;
+}
+.modality div{
+    width: 50%;
+    font-size: 16px;
+}
+.modality iframe{
+    margin-left: 64px;
+}
+
+
+
+
 
 
 
@@ -408,19 +630,15 @@ CARD*/
     outline: none;
     width: 100%;
     height: 32px;
-    background-color: white;
     border-radius: 16px;
     border: 1px solid #ca3e47;
-    cursor: crosshair;
+    cursor: pointer;
     color:white;
     transition: all 1s ease;
     background-color: #ca3e47;
 }
 .btn-in:hover{
-    background-color: #ca3e47;
-    border: #ca3e47;
-    color:white;
-    cursor: pointer;
+    box-shadow: inset 0 -70px 0 0 #962f35;
 }
 
 .btn-pre{
@@ -445,12 +663,12 @@ CARD*/
     border-radius: 16px;
     border: 1px solid #cccccc;
     cursor: pointer;
-    color:darkslateblue;
+    color:#767676;
     margin-top: 10px;
 }
 .btn-pre-exam:hover{
-    background-color: lightskyblue;
-    color:white;
+    border-color: #ca3e47;
+    color:#ca3e47;
 }
 .btn-pre:hover{
      background-color: #cccccc;
@@ -497,7 +715,6 @@ padding-top: 80px;
         width: 70%;
         height: auto;
         margin: 100px 0 30px 0;
-
     }
     .camp-descript{
         display: flex;
@@ -510,17 +727,78 @@ padding-top: 80px;
     .camp-dates{
         margin-top: 0px;
     }
+    .camp-intro h2{
+        font-size: 36px;
+    }
+    .camp-intro{
+        width: 80%;
+        font-size: 16px;
+    }
+    .camp-portada{
+        height: 55vh;
+        font-size: 16px;
+    }
+    .box-programa h2{
+        font-size: 24px;
+    }
+    .modules{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .week-card{
+        width: 180px;
+        margin: 12px;
+    }
+    .adds h3{
+        font-size: 20px;
+    }
+    .instructor_box{
+        justify-content: inherit;
+    }
+    .instructor_photo{
+        margin-bottom: 24px;
+    }
+    .instructor_info{
+        padding: 0;
+    }
 
 }
 
+
 @media (max-width: 550px) {
+    .camp-portada{
+        height: 80vh;
+        padding-top: 120px;
+
+    }
+    .week-card{
+        width: 100%;
+    }
+    .camp-intro{
+        width: 100%;
+    }
+    .btn-ghost{
+        margin-left: 0px;
+        margin-top: 24px;
+    }
     .intro-bootcamp{
         height: auto;
     }
     .bootcamp-img{
         height: 200px;
     }
-    #tp{
+    .search-box{
+    width: 80%;
+    }
+    .search-input{
+        width: 70%;
+    }
+    .btn-search{
+        width: 30%;
+    }
+
+    
+   /* #tp{
         margin-top: 0px !important;
     }
     .summary{
@@ -588,7 +866,7 @@ padding-top: 80px;
     }
     .gray{
         padding: 5% 0%;
-    }
+    }*/
 
 
 }

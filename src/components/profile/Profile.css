@@ -18,11 +18,11 @@
     background-position: center;
     background-size: contain;
     transition: all 1s ease;
-    cursor: help;
+    cursor: pointer;
     border: 3px solid white;
 }
 .user-photo:hover{
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 .fl{
@@ -99,7 +99,81 @@
     margin: 20px auto;
 }
 
+.message-actions:hover{
+    color: #ca3e47;
+}
 
+
+
+/* Share Link */
+.box-share{
+    background-color: #f2f2f2;
+    padding: 160px 0 80px 0;
+}
+.card_share{
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    height: auto;
+    text-align: center;
+    padding: 48px 5%;
+}
+.card_share div{
+    width:50%;
+    margin:24px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+.promo{
+    margin-bottom: 0px !important;
+    font-size: 18px;
+    font-family: 'ProximaNovaB';
+    margin-left: 12px;
+}
+.card_share input{
+    width: 75%;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    padding-left: 12px;
+}
+
+.link_share{
+    padding-top: 24px;
+    display: flex;
+}
+.btn-copy{
+    width: 25%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #A72E36;
+    color: white;
+    font-weight: 600;
+}
+.inp_comments{
+    width: 80%;
+    border: 1px solid #CCCCCC;
+    min-height: 300px;
+    padding: 12px;
+    margin-bottom: 40px;
+}
+textarea:focus{
+    border: 2px solid rgba(167,46,54,.7)
+    ;
+}
+
+
+.sub{
+    color:#323232;
+    font-size: 32px;
+    font-family: 'ProximaNovaB';
+}
+.txt{
+    color:#767676;
+    font-size: 16px;
+}
 
 @media(max-width: 550px) {
     .ant-tabs-nav-container{

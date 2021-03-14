@@ -6,7 +6,8 @@ export const CourseDescription = () => {
     return (
         <div className="course-descript">
             <div className="descripcion-text">
-                <iframe  src="https://www.youtube.com/embed/Rux-Q_nPrp0" frameBorder="0"
+                <iframe title="Example"
+                    src="https://www.youtube.com/embed/Rux-Q_nPrp0" frameBorder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen></iframe>
                 <h3>Aprende a utilizar las herramientas de Firebase para vender tu marca de manera profesional</h3>
