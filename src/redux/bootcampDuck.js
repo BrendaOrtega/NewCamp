@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { baseURL as url } from './baseURL'
+import toastr from 'toastr'
 
 const baseURL = url + '/bootcamps'
 
@@ -201,17 +202,23 @@ export const validateDiscountCodeAction = (code) => (dispatch, getState) => {
     })
     return axios.get(`${url}/cupons/${code}/validate`, { headers: { Authorization: token } })
         .then(res => {
+            if(!res.data.isValid) {
+                toastr.info(`El código ${code} ha expirado`)
+                dispatch({type: VALIDATE_DISCOUNT_CODE_ERROR})
+                return false
+            }
             dispatch({
                 type: VALIDATE_DISCOUNT_CODE_SUCCESS,
-                payload: { ...res.data }
+                payload: { ...res.data, ...res.data.coupon }
             })
             // getBootcampAction(exam.bootcamp)(dispatch, getState)
-            return true
+            return {isValid:res.data.isValid}
         })
         .catch(err => {
             console.log("catch", err)
             if (!err.response) return dispatch({ type: VALIDATE_DISCOUNT_CODE_ERROR, payload: "Algo falló" })
             dispatch({ type: VALIDATE_DISCOUNT_CODE_ERROR, payload: err.response?.data?.message })
+            toastr.error('Código no valido')
             return false
         })
 }

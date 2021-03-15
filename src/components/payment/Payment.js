@@ -32,8 +32,8 @@ const Payment = ({match, location:{search}}) => {
             dispatch(getOneEditionAction(id))
         }
         if(!(code === null || code === undefined)){
-            // validateDiscountCode(code)
-            setForm({...form, coupon:code})
+            validateDiscountCode(code)
+            // setForm({...form, coupon:code})
         }
     },[])
 
@@ -51,17 +51,24 @@ const Payment = ({match, location:{search}}) => {
             }
             code = form.coupon
         }
+        setForm({...form, coupon:''})
         dispatch(validateDiscountCodeAction(code))
         .then(res=>{
             if(res){
-                return toastr.success('Código válido y aplicado')
+                console.log("resul: ", res)
+                if(res.isValid===false) toastr.info('El código ha expirado') 
+                else if(res.isValid===undefined)  toastr.error('Código NO valido')
+                else toastr.success(`Código ${code} válido y aplicado`)
+                // setForm({...form, coupon:code})
             }
-            toastr.error('Código NO valido')
-            setForm({...form, coupon:''})
-
         })
-        // if valid
-        // setForm({...form, coupon:code})
+    }
+
+    const calculateDiscount = () => {
+        if(!edition.price) {
+            return 0
+        }
+        return coupon.amount ? Number(coupon.amount) : (Number(edition.price) * Number(coupon.value) ) /100  
     }
 
     const handleSubmit = () => {
@@ -69,8 +76,12 @@ const Payment = ({match, location:{search}}) => {
     }
 
     const handleChange = ({target:{name, value}}) => {
+        if(name==='coupon'){
+            return setForm({...form, [name]:value.toUpperCase()})
+        }
         setForm({...form, [name]:value})
     }
+
 
     return (
         <div className="payment">
@@ -130,7 +141,7 @@ const Payment = ({match, location:{search}}) => {
                                 {" "}[{coupon.name}]
                             </p> 
                             <p style={{color:"#323232"}}>
-                                {formatMoney(discount)}
+                                {formatMoney(calculateDiscount())}
                             </p>
                         </div>
                         {form.months > 1 && <div className="quantity">
@@ -155,7 +166,7 @@ const Payment = ({match, location:{search}}) => {
                                 >Canjear</Button>
                         </div>
                     </div>
-                    <p className="total">Total {formatMoney((edition.price - discount),true)}</p>
+                    <p className="total">Total {formatMoney(edition.price - calculateDiscount(),true)}</p>
                 </div>
             </div>
         </div>
