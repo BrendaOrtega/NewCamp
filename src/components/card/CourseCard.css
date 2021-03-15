@@ -10,6 +10,7 @@
     margin: 20px 0;
     font-family: Avenir;
     border-radius: 8px;
+    margin: 12px 24px;
 }
 .opacidad{
     opacity: .9;
@@ -22,7 +23,7 @@
     background-color: #cccccc;
     height: 1px;
     border: none;
-    opacity: .2;
+    opacity: .4;
 }
 .box-badge{
     height: 190px;
@@ -88,12 +89,6 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     transform: scale(1);
 
-}
-.course-card:hover .opacidad{
-    opacity: .2;
-}
-.course-card:hover .price{
-    opacity: 1;
 }
 
 

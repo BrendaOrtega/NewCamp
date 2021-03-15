@@ -44,6 +44,7 @@
     transition: all 1s ease;
     border-radius: 4px;
     font-family:"ProximaRegular";
+    margin: 12px 24px;
 }
 
 .bootcamp-card:hover{
@@ -162,7 +163,13 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    margin: 24px 0 ;
+}
+.title-m{
+    font-size: 24px;
+    margin-left: 48px;
+    margin-top: 48px;
 }
 
 

@@ -36,7 +36,7 @@ class Bootcamp extends Component {
                 </section>
                 <section className="search-box">
                     <div className="search-bar">
-                        <input className="search-input" type="text" placeholder="Busca tu curso por lenguaje o herramientra" name="personla-link" />
+                        <input className="search-input" type="text" placeholder="Busca tu bootcamp por lenguaje o herramientra" name="personla-link" />
                         <button className="btn-search">Buscar</button>
                     </div>
                 </section>
@@ -59,7 +59,8 @@ class Bootcamp extends Component {
                                 tiempo="8 semanas"
                                 horas="32hrs en vivo"
                                 link="/bootcamp-descript-web"
-                                modalidad="Híbrida"
+                                modalidad="Modalidad Híbrida"
+                                inicio="Inicia 19 de Abril de 2020"
 
                             />
                              <CardBootcamp
@@ -70,7 +71,8 @@ class Bootcamp extends Component {
                                 tiempo="8 semanas"
                                 horas="32hrs en vivo"
                                 link="/bootcamp-descript-docker"
-                                modalidad="Híbrida"
+                                modalidad="Modalidad Híbrida"
+                                inicio="Inicia 19 de Abril de 2020"
 
                             />
                         {/* <CardBootcamp

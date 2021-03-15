@@ -61,13 +61,13 @@ class Ask extends Component {
                                 Puedes pagar con <strong>tarjetas de crédito o débito</strong> (Visa, MasterCard o AMEX). Además de facilidades de pago a 3 o 6 meses
                                 sin intereses.
                                 <br/>
-                                También tenemos la opción de pagos offline como depósito bancario, pago en Oxxo o transferencia. Si quieres hacer uso de esta opciión, escribenos a <strong ><a style={{color:"#ca3e47"}}
+                                También tenemos la opción de pagos offline como depósito bancario, pago en Oxxo o transferencia. Si quieres hacer uso de esta opciión, escríbenos a <strong ><a style={{color:"#ca3e47"}}
                                 href="mailto:brenda@fixter.org">brenda@fixter.org</a></strong>
                             </p>
                         </div>
                         <div className="ask">
                             <h3>¿Entregan factura?</h3>
-                            <p> Claro, al inscribirte a cualqueir curso o bootcamp, envianos un mensaje solicitando tu factura
+                            <p> Claro, al inscribirte a cualqueir curso o bootcamp, envíanos un mensaje solicitando tu factura
                                 con tu email registrado y tus datos fiscales. En un máximo de 48 hrs te haremos llegar la factura. </p>
                         </div>
                     </div>

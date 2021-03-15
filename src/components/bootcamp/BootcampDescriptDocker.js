@@ -27,7 +27,7 @@ class BootcampDescriptDocker extends Component {
           />
           <meta
               name="keywords"
-              content="cursos, capacitación, react, angular, tecnología, programación, javascript, python, php, online, fixtergeek"
+              content="cursos, capacitación, react, angular, tecnología, programación, javascript, python, php, online, fixtergeek, docker, containers"
           />
           <title>Bootcamp Docker | FixterGeek</title>
           <div className="white mobile-display"></div>
@@ -40,7 +40,7 @@ class BootcampDescriptDocker extends Component {
               <Link to="/payment">
                 <Button text="Inscribirme"/>
               </Link>
-              <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FFundamentos_Desarrollo_Web.pdf?alt=media&token=80e68013-45be-429d-b9c8-5b58bc9a3615" target="blank" rel="noopener noreferrer">
+              <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FTemario_Docker.pdf?alt=media&token=5d858c43-1d9b-4896-b366-99492695ef62" target="blank" rel="noopener noreferrer">
               <button className="btn-ghost"><img style={{marginRight:"12px"}} src={download} alt="download-icon"/>Descargar temario</button>
               </a>
             </div>
@@ -79,8 +79,8 @@ class BootcampDescriptDocker extends Component {
                   <hr />
                 </div>
                 <div>
-                  <p>Recursos offline</p>
-                  <h3>Video + Tareas</h3>
+                  <p>Fecha de Inicio</p>
+                  <h3>19 de Abril 2021</h3>
                   <hr />
                 </div>
                 <div>

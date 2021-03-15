@@ -12,6 +12,7 @@
     padding: 32px;
     display: flex;
     flex-wrap: wrap;
+    flex-flow: row wrap-reverse;
 }
 .payment-data{
     width: 400px;
@@ -90,4 +91,25 @@
     float: right;
     margin-top: -48px;
     margin-right: 24px;
+}
+
+@media(max-width: 780px) {
+    .payment-data{
+        padding-right: 0px;
+    }
+    .payment-summary{
+        margin-bottom: 24px;
+    }
+   .summary-box{
+       min-height: 360px;
+   }
+   .payment{
+       min-height: 94vh;
+   }
+}
+@media(max-width: 520px) {
+    .payment-card{
+        width: 95%;
+        padding: 16px;
+    }
 }
