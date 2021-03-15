@@ -7,6 +7,7 @@ import { UserBooks } from "./UserBooks";
 import { UserEvents } from "./UserEvents";
 import { storage } from "../../firebase";
 import FontAwesome from "react-fontawesome";
+import UserEditions from "./UserEditions";
 
 const { TabPane } = Tabs;
 
@@ -166,13 +167,16 @@ export const Profile = ({
         </div>
       </div>
       <section className="contenido">
-        <Tabs defaultActiveKey="1" onChange={callback}>
-          <TabPane tab="Bootcamp" key="1">
+        <Tabs defaultActiveKey="5" onChange={callback}>
+        <TabPane tab="Bootcamps" key="5">
+            <UserEditions />
+          </TabPane>
+          <TabPane tab="Cursos" key="1">
             <UserBootcamp bootcamps={bootcamps} />
           </TabPane>
-          <TabPane tab="Cursos" key="2">
+          {/* <TabPane tab="Cursos" key="2">
             <UserCourses />
-          </TabPane>
+          </TabPane> */}
           <TabPane tab="Libros" key="3">
             <UserBooks />
           </TabPane>

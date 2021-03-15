@@ -5,6 +5,7 @@ import './Button.css';
 
 
 const Button = ({
+    disabled=false,
     style = {},
     variant = 'default', // default | circular
     type = 'button',
@@ -15,6 +16,7 @@ const Button = ({
     }) => {
         return (
             <button 
+                disabled={disabled}
                 style={style}
                 type={type}
                 onClick={onClick}
@@ -27,6 +29,7 @@ const Button = ({
 
 
 Button.propTypes = {
+    disabled: PropTypes.bool,
     style: PropTypes.object,
     variant: PropTypes.string,
     type: PropTypes.string,

@@ -3,7 +3,7 @@ import {Skeleton, Spin} from 'antd'
 import Button from '../common/Button';
 import tag from "../../assets/tag.svg"
 import {useDispatch, useSelector} from 'react-redux'
-import { getEditionBySlugAction, getEditionsAction, getOneEditionAction, validateDiscountCodeAction } from '../../redux/bootcampDuck';
+import { getEditionBySlugAction, getEditionsAction, getOneEditionAction, purchaseEditionAction, validateDiscountCodeAction } from '../../redux/bootcampDuck';
 import TextSkeleton from './internal/TextSkeleton'
 import queryString from 'query-string'
 import toastr from 'toastr'
@@ -11,14 +11,16 @@ import toastr from 'toastr'
 import "./Payment.css"
 import { formatMoney } from '../../tools/formatMoney';
 
-const Payment = ({match, location:{search}}) => {
+const Payment = ({history, match, location:{search}}) => {
     const dispatch = useDispatch()
     const {coupon, editions = [], edition, edition:{bootcamp={}}, fetching} = useSelector(({bootcamps})=>bootcamps)
-
+    const [error, setError] = React.useState(true)
     const [discount, setDiscount] = React.useState(0)
     const [form, setForm] = React.useState({
         coupon:'',
-        months:1
+        monthly_installments:1,
+        cvc:'',
+        phone:''
     })
 
     React.useEffect(()=>{
@@ -35,6 +37,7 @@ const Payment = ({match, location:{search}}) => {
             validateDiscountCode(code)
             // setForm({...form, coupon:code})
         }
+        setConekta()
     },[])
 
     React.useEffect(()=>{
@@ -43,6 +46,17 @@ const Payment = ({match, location:{search}}) => {
         }
         
     }, [editions])
+
+    const setConekta = () => {
+        // conekta
+        let script = document.createElement('script')
+        script.src = "https://cdn.conekta.io/js/latest/conekta.js"
+        script.async = true
+        document.body.appendChild(script)
+        script.onload = () => {
+            window.Conekta.setPublicKey(process.env.REACT_APP_CONEKTA_PUBLIC_KEY)
+        }
+    }
 
     const validateDiscountCode = (code=null) => {
         if(typeof code !== 'string' || code === null) {
@@ -55,7 +69,6 @@ const Payment = ({match, location:{search}}) => {
         dispatch(validateDiscountCodeAction(code))
         .then(res=>{
             if(res){
-                console.log("resul: ", res)
                 if(res.isValid===false) toastr.info('El código ha expirado') 
                 else if(res.isValid===undefined)  toastr.error('Código NO valido')
                 else toastr.success(`Código ${code} válido y aplicado`)
@@ -65,21 +78,83 @@ const Payment = ({match, location:{search}}) => {
     }
 
     const calculateDiscount = () => {
-        if(!edition.price) {
+        if(!edition.price || !Object.keys(coupon).length) {
             return 0
         }
         return coupon.amount ? Number(coupon.amount) : (Number(edition.price) * Number(coupon.value) ) /100  
     }
 
     const handleSubmit = () => {
-        console.log("validate form")
+        console.log("por ahora: ", form)
+        let err = null
+        if(!form.phone || form.phone.length<10) err = 'Ingresa tu número de teléfono de 10 dígitos'
+        if(!form.cvc || form.cvc.length<3) err = 'Ingresa el número de seguridad (CVC)'
+        if(!form.cardDate || form.cardDate.length<4) err = 'Ingresa una fecha válida'
+        if(!form.cardNumber) err = 'Ingresa un número de tarjeta válido'
+        if(!form.cardName) err = 'Ingresa el nombre que aparece en la tarjeta'
+        setError(err)
+        if(!err){
+            console.log("se envía: ", form)
+            makePurchase()
+        }
+        
     }
 
     const handleChange = ({target:{name, value}}) => {
         if(name==='coupon'){
             return setForm({...form, [name]:value.toUpperCase()})
         }
+        if(name==='cvc') {
+            value = value.slice(0,3)
+            setForm({...form, [name]:value})
+        }
+        if(name==='cardDate') {
+            value = String(value).replace('/', '')
+            if(value.length<3) return  setForm({...form, [name]:value})
+            value = value.slice(0,6)
+            return setForm({...form, [name]:`${value.slice(0,2)}/${value.slice(2)}`})
+        }
         setForm({...form, [name]:value})
+    }
+
+
+    const makePurchase = () => {
+        // create form
+        let payload = {
+            "card": {
+                "number": form.cardNumber,
+                "name": form.cardName,
+                "exp_year": form.cardDate.split('/')[1],
+                "exp_month": form.cardDate.split('/')[0],
+                "cvc": form.cvc
+            }
+        }
+        // tokenize
+        window.Conekta.Token.create(
+            payload,
+            conektaSuccessResponseHandler,
+            conektaErrorResponseHandler
+        );
+        // send to backend
+        // loading
+        // redirect
+    }
+
+    const conektaSuccessResponseHandler = token => {
+        console.log("success token: ", token)
+        // action para enviar token
+        dispatch(purchaseEditionAction({ tokenId: token.id, bootcampId: edition._id, ...form }))
+            .then(res => {
+                if(res) {
+                    toastr.success("Pago realizado con éxito.")
+                    history.push('/profile')
+                } 
+                else toastr.error("No se pudo cobrar, intenta de nuevo")
+                // this.props.history.push('/profile')
+            })
+    }
+    const conektaErrorResponseHandler = (response) => {
+        toastr.error(response.message_to_purchaser);
     }
 
 
@@ -98,17 +173,39 @@ const Payment = ({match, location:{search}}) => {
                     <p>
                         <TextSkeleton text={edition.body} />
                     </p>
-                    <input placeholder="Nombre completo"/>    
+                    {/* <input placeholder="Nombre completo"/>     */}
                     <hr/>
                     <h5>
                         Información de tarjeta
                     </h5>
-                    <input placeholder="Nombre del titular de la tarjeta"/>    
-                    <input placeholder="Número de tarjeta"/>    
-                    <input id="inp" placeholder="Fecha de vencimiento"/>    
-                    <input id="inp" style={{marginLeft:"4%"}} placeholder="CVV" />    
+                    {error && <p style={{color:'red'}}>{error}</p>}
+                    <input 
+                        name="phone"
+                        value={form.phone}
+                        onChange={handleChange}
+                        placeholder="Ingresa tu número telefónico"/>   
+                    <input 
+                        name="cardName"
+                        value={form.cardName}
+                        onChange={handleChange}
+                        placeholder="Nombre del titular de la tarjeta"/>    
+                    <input 
+                        name="cardNumber"
+                        value={form.cardNumber}
+                        onChange={handleChange}
+                        placeholder="Número de tarjeta"/>    
+                    <input 
+                        name="cardDate"
+                        value={form.cardDate}
+                        onChange={handleChange}
+                        id="inp" placeholder="Fecha de vencimiento"/>    
+                    <input 
+                        name="cvc"
+                        value={form.cvc}
+                        onChange={handleChange}
+                        id="inp" style={{marginLeft:"4%"}} placeholder="CVC" />    
                     <br/>
-                    <select onChange={handleChange} value={form.months} name="months" placeholder="Nombre completo">
+                    <select onChange={handleChange} value={form.monthly_installments} name="monthly_installments" placeholder="Nombre completo">
                         <option value="1" >Contado</option>
                         <option value="3">3 meses sin intereses</option>
                         <option value="6">6 meses sin intereses</option>
@@ -119,6 +216,7 @@ const Payment = ({match, location:{search}}) => {
                     <br/> 
                     <div style={{textAlign:"center"}}>
                         <Button
+                        // disabled={error}
                         type="submit"
                         text="Pagar"/>  
                     </div>
@@ -144,12 +242,12 @@ const Payment = ({match, location:{search}}) => {
                                 {formatMoney(calculateDiscount())}
                             </p>
                         </div>
-                        {form.months > 1 && <div className="quantity">
+                        {form.monthly_installments > 1 && <div className="quantity">
                             <p>
                                 Tipo de pago:
                             </p>
                             <p style={{color:"#323232"}}>
-                                {form.months} Meses sin intereses
+                                {form.monthly_installments} Meses sin intereses
                             </p>
                         </div>}
                         <hr style={{marginTop:"12px !important"}}/>

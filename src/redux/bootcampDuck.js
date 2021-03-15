@@ -195,6 +195,22 @@ const VALIDATE_DISCOUNT_CODE_SUCCESS = "VALIDATE_DISCOUNT_CODE_SUCCESS"
 //thunks
 
 // 2021
+export const purchaseEditionAction = (form) => (dispatch, getState) => {
+    let { user: { token } } = getState()
+    return axios.post(`${url}/pay/bootcamp/hibrid`, form, { headers: { Authorization: token } })
+        .then(res => {
+            console.log("respuesta: ",res.data)
+            return true
+        })
+        .catch(err => {
+            console.log("catch", err)
+            if (!err.response) return dispatch({ type: VALIDATE_DISCOUNT_CODE_ERROR, payload: "Algo falló" })
+            dispatch({ type: VALIDATE_DISCOUNT_CODE_ERROR, payload: err.response?.data?.message })
+            // toastr.error('No se pudo cobrar')
+            return false
+        })
+}
+
 export const validateDiscountCodeAction = (code) => (dispatch, getState) => {
     let { user: { token } } = getState()
     dispatch({

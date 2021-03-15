@@ -29,10 +29,10 @@ import BootcampDescriptDocker from './components/bootcamp/BootcampDescriptDocker
 import Payment from './components/payment/Payment';
 
 
-let PrivateRoute = ({ component, next, to, ...rest }) => {
+let PrivateRoute = ({ component, next, ...rest }) => {
     let user = localStorage.user
     if (!user) return <Redirect to={`/login?next=${next}`} />
-    return <Route to={to} component={component} {...rest} />
+    return <Route path={next} component={component} {...rest} />
 }
 
 export const Router = () => (
@@ -76,9 +76,9 @@ export const Router = () => (
         {/* <PrivateRoute next="/preorden" to="/preorden" component={PromoCiberMonday} /> */}
         {/* <Route to="/gift" component={BuyForGift} /> */}
         {/* Fixter hibrid relaunch */}
-        <Route path="/promo/id/:id" component={Payment}/>
-        <Route path="/promo/:slug" component={Payment}/>
-        <Route path="/promo/" component={Payment}/>
+        <PrivateRoute next="/promo/id/:id" component={Payment}/>
+        <PrivateRoute next="/promo/:slug" component={Payment}/>
+        <PrivateRoute next="/promo/" component={Payment}/>
 
 
     </Switch>

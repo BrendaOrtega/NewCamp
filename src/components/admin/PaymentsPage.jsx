@@ -193,7 +193,7 @@ const DiscountCodes = ({}) => {
                     <p
                         onClick={()=>{
                             toastr.info(`${cu.name} copiado al portapapeles`)
-                            navigator.clipboard.writeText(cu.name)
+                            navigator.clipboard.writeText(`https://fixter.camp/promo/aprendejs?code=${cu.name}`)
                         }}
                     >{cu.name}</p>
                     <p>{!cu.amount ? `${cu.value}%` : formatMoney( cu.amount)}</p>
