@@ -6,6 +6,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import { getEditionBySlugAction, getEditionsAction, getOneEditionAction, validateDiscountCodeAction } from '../../redux/bootcampDuck';
 import TextSkeleton from './internal/TextSkeleton'
 import queryString from 'query-string'
+import toastr from 'toastr'
 
 import "./Payment.css"
 import { formatMoney } from '../../tools/formatMoney';
@@ -43,12 +44,6 @@ const Payment = ({match, location:{search}}) => {
         
     }, [editions])
 
-    // React.useEffect(()=>{
-    //     if(!Object.keys(coupon).length) return
-    //     const dis = coupon.amount ? coupon.amount : (edition.price * Number(coupon.value)/100)
-    //     setDiscount(dis)
-    // }, [coupon])
-
     const validateDiscountCode = (code=null) => {
         if(typeof code !== 'string' || code === null) {
             if( !form.coupon || form.coupon === ''){
@@ -57,6 +52,14 @@ const Payment = ({match, location:{search}}) => {
             code = form.coupon
         }
         dispatch(validateDiscountCodeAction(code))
+        .then(res=>{
+            if(res){
+                return toastr.success('Código válido y aplicado')
+            }
+            toastr.error('Código NO valido')
+            setForm({...form, coupon:''})
+
+        })
         // if valid
         // setForm({...form, coupon:code})
     }

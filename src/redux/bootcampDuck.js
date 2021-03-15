@@ -206,12 +206,13 @@ export const validateDiscountCodeAction = (code) => (dispatch, getState) => {
                 payload: { ...res.data }
             })
             // getBootcampAction(exam.bootcamp)(dispatch, getState)
-            return res.data
+            return true
         })
         .catch(err => {
+            console.log("catch", err)
             if (!err.response) return dispatch({ type: VALIDATE_DISCOUNT_CODE_ERROR, payload: "Algo falló" })
             dispatch({ type: VALIDATE_DISCOUNT_CODE_ERROR, payload: err.response?.data?.message })
-            return err
+            return false
         })
 }
 
