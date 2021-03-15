@@ -139,12 +139,9 @@ const Payment = ({history, match, location:{search}}) => {
     }
 
     const conektaSuccessResponseHandler = token => {
-        console.log("fuck", coupon)
         const payload = {tokenId: token.id, bootcampId: edition._id, ...form, coupon:coupon.name }
-        console.log("el paylo: ", payload)
-        return
         // action para enviar token
-        dispatch(purchaseEditionAction())
+        dispatch(purchaseEditionAction(payload))
             .then(res => {
                 if(res) {
                     toastr.success("Pago realizado con éxito.")
