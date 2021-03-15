@@ -22,6 +22,7 @@ const Payment = ({history, match, location:{search}}) => {
         cvc:'',
         phone:''
     })
+    const [working, setWorking] = React.useState(false)
 
     React.useEffect(()=>{
         const {id = null, slug = null} = match.params
@@ -117,6 +118,7 @@ const Payment = ({history, match, location:{search}}) => {
 
 
     const makePurchase = () => {
+        setWorking(true)
         // create form
         let payload = {
             "card": {
@@ -143,6 +145,7 @@ const Payment = ({history, match, location:{search}}) => {
         // action para enviar token
         dispatch(purchaseEditionAction(payload))
             .then(res => {
+                setWorking(false)
                 if(res) {
                     toastr.success("Pago realizado con éxito.")
                     history.push('/profile')
@@ -214,7 +217,7 @@ const Payment = ({history, match, location:{search}}) => {
                     <br/> 
                     <div style={{textAlign:"center"}}>
                         <Button
-                        // disabled={error}
+                        disabled={working}
                         type="submit"
                         text="Pagar"/>  
                     </div>
