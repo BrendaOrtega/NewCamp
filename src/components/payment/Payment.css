@@ -93,7 +93,7 @@
     margin-right: 24px;
 }
 
-@media(max-width: 780px) {
+@media(max-width: 960px) {
     .payment-data{
         padding-right: 0px;
     }
