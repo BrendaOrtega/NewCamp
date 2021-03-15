@@ -3,7 +3,7 @@ import {Skeleton, Spin} from 'antd'
 import Button from '../common/Button';
 import tag from "../../assets/tag.svg"
 import {useDispatch, useSelector} from 'react-redux'
-import { getEditionBySlugAction, getEditionsAction, getOneEditionAction } from '../../redux/bootcampDuck';
+import { getEditionBySlugAction, getEditionsAction, getOneEditionAction, validateDiscountCodeAction } from '../../redux/bootcampDuck';
 import TextSkeleton from './internal/TextSkeleton'
 import queryString from 'query-string'
 
@@ -12,9 +12,9 @@ import { formatMoney } from '../../tools/formatMoney';
 
 const Payment = ({match, location:{search}}) => {
     const dispatch = useDispatch()
-    const {discount, editions = [], edition, edition:{bootcamp={}}, fetching} = useSelector(({bootcamps})=>bootcamps)
+    const {coupon, editions = [], edition, edition:{bootcamp={}}, fetching} = useSelector(({bootcamps})=>bootcamps)
 
-    const [coupon, setCoupon] = React.useState(null)
+    const [discount, setDiscount] = React.useState(0)
     const [form, setForm] = React.useState({
         coupon:'',
         months:1
@@ -31,7 +31,8 @@ const Payment = ({match, location:{search}}) => {
             dispatch(getOneEditionAction(id))
         }
         if(!(code === null || code === undefined)){
-            validateDiscountCode(code)
+            // validateDiscountCode(code)
+            setForm({...form, coupon:code})
         }
     },[])
 
@@ -42,13 +43,22 @@ const Payment = ({match, location:{search}}) => {
         
     }, [editions])
 
+    // React.useEffect(()=>{
+    //     if(!Object.keys(coupon).length) return
+    //     const dis = coupon.amount ? coupon.amount : (edition.price * Number(coupon.value)/100)
+    //     setDiscount(dis)
+    // }, [coupon])
+
     const validateDiscountCode = (code=null) => {
         if(typeof code !== 'string' || code === null) {
+            if( !form.coupon || form.coupon === ''){
+                return
+            }
             code = form.coupon
         }
+        dispatch(validateDiscountCodeAction(code))
         // if valid
-        setCoupon(code)
-        setForm({...form, coupon:code})
+        // setForm({...form, coupon:code})
     }
 
     const handleSubmit = () => {
@@ -114,7 +124,7 @@ const Payment = ({match, location:{search}}) => {
                         <div className="quantity">
                             <p>
                                 Descuento
-                                {" "}[{coupon}]
+                                {" "}[{coupon.name}]
                             </p> 
                             <p style={{color:"#323232"}}>
                                 {formatMoney(discount)}

@@ -6,6 +6,8 @@ import styles from './admin.module.css'
 import style from 'react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark'
 import Button from '../common/Button'
 import { Modal, InputNumber, Input, Switch, DatePicker, Form} from 'antd'
+import { formatMoney } from '../../tools/formatMoney'
+import toastr from 'toastr'
 
 // internal
 const NewCodeModal = ({onOk = ()=>false,show=false, onCancel}) => {
@@ -122,6 +124,7 @@ const DiscountCodes = ({}) => {
         const getCoupons = () => {
             return axios.get(`${process.env.REACT_APP_BACKEND_ROUTE}/cupons`, {headers:{Authorization:token}})
             .then(({data})=>{
+                console.log(data)
                 setCoupons(data.reverse())
             })
             .catch(err=>{
@@ -179,6 +182,7 @@ const DiscountCodes = ({}) => {
          <article className={styles.container}>
             <div className={styles.row}>
                 <h4>Código</h4>
+                <h4>Porcentaje / Cantidad</h4>
                 <h4>Caducidad</h4>
                 <h4>Eliminar</h4>
             </div>
@@ -186,7 +190,13 @@ const DiscountCodes = ({}) => {
                 {coupons.map((cu,i)=>(
                     <div key={i}>
                     <div className={styles.row}>
-                    <p>{cu.name}</p>
+                    <p
+                        onClick={()=>{
+                            toastr.info(`${cu.name} copiado al portapapeles`)
+                            navigator.clipboard.writeText(cu.name)
+                        }}
+                    >{cu.name}</p>
+                    <p>{!cu.amount ? `${cu.value}%` : formatMoney( cu.amount)}</p>
                     <p> {cu.validUntil ? moment(cu.validUntil).format('ll'): moment(cu.createdAt).format('ll')} </p>
                     <button 
                         onClick={()=>deleteCode(cu._id)}

@@ -15,24 +15,31 @@ let initial = {
     //2021
     edition:{},
     editions:[],
-    discount:2000
+    coupon:{}
 }
 function reducer(state = initial, action) {
     switch (action.type) {
+        // 2021
+        case VALIDATE_DISCOUNT_CODE_ERROR:
         case GET_EDITIONS_ERROR:
         case GRADE_EXAM_ERROR:
             return { ...state, fetching: false, error: action.payload }
+        case VALIDATE_DISCOUNT_CODE:
+        case GET_EDITION:
+        case GRADE_EXAM:
+            return { ...state, fetching: true }
 
+
+        case VALIDATE_DISCOUNT_CODE_SUCCESS:
+            return {...state, fetching:false, coupon:action.payload}
         case GET_EDITION_SUCCESS:
             return { ...state, fetching:false, edition:action.payload}
         case GET_EDITIONS_SUCCESS:
             return { ...state, fetching:false, editions:action.payload}
-
+        //
 
         case GRADE_EXAM_SUCCESS:
             return { ...state, fetching: false, result: { ...action.payload } }
-        case GRADE_EXAM:
-            return { ...state, fetching: true }
 
         case GET_EXAM_SUCCESS:
             return { ...state, fetching: false, exam: { ...action.payload }, error: null }
@@ -187,12 +194,28 @@ const VALIDATE_DISCOUNT_CODE_SUCCESS = "VALIDATE_DISCOUNT_CODE_SUCCESS"
 //thunks
 
 // 2021
-export const validateDiscountCode = (code) => (dispatch, getState) => {
-
+export const validateDiscountCodeAction = (code) => (dispatch, getState) => {
+    let { user: { token } } = getState()
+    dispatch({
+        type: VALIDATE_DISCOUNT_CODE
+    })
+    return axios.get(`${url}/cupons/${code}/validate`, { headers: { Authorization: token } })
+        .then(res => {
+            dispatch({
+                type: VALIDATE_DISCOUNT_CODE_SUCCESS,
+                payload: { ...res.data }
+            })
+            // getBootcampAction(exam.bootcamp)(dispatch, getState)
+            return res.data
+        })
+        .catch(err => {
+            if (!err.response) return dispatch({ type: VALIDATE_DISCOUNT_CODE_ERROR, payload: "Algo falló" })
+            dispatch({ type: VALIDATE_DISCOUNT_CODE_ERROR, payload: err.response?.data?.message })
+            return err
+        })
 }
 
 export const getEditionBySlugAction = (editionSlug) => (dispatch, getState) => {
-    console.log("slug called")
     let { user: { token } } = getState()
     dispatch({
         type: GET_EDITION
@@ -214,7 +237,6 @@ export const getEditionBySlugAction = (editionSlug) => (dispatch, getState) => {
 }
 
 export const getOneEditionAction = (editionId) => (dispatch, getState) => {
-    console.log("id called")
     let { user: { token } } = getState()
     dispatch({
         type: GET_EDITION
