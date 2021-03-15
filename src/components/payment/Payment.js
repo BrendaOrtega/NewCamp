@@ -85,7 +85,6 @@ const Payment = ({history, match, location:{search}}) => {
     }
 
     const handleSubmit = () => {
-        console.log("por ahora: ", form)
         let err = null
         if(!form.phone || form.phone.length<10) err = 'Ingresa tu número de teléfono de 10 dígitos'
         if(!form.cvc || form.cvc.length<3) err = 'Ingresa el número de seguridad (CVC)'
@@ -94,7 +93,6 @@ const Payment = ({history, match, location:{search}}) => {
         if(!form.cardName) err = 'Ingresa el nombre que aparece en la tarjeta'
         setError(err)
         if(!err){
-            console.log("se envía: ", form)
             makePurchase()
         }
         
@@ -141,9 +139,12 @@ const Payment = ({history, match, location:{search}}) => {
     }
 
     const conektaSuccessResponseHandler = token => {
-        console.log("success token: ", token)
+        console.log("fuck", coupon)
+        const payload = {tokenId: token.id, bootcampId: edition._id, ...form, coupon:coupon.name }
+        console.log("el paylo: ", payload)
+        return
         // action para enviar token
-        dispatch(purchaseEditionAction({ coupon:coupon.name,tokenId: token.id, bootcampId: edition._id, ...form }))
+        dispatch(purchaseEditionAction())
             .then(res => {
                 if(res) {
                     toastr.success("Pago realizado con éxito.")
