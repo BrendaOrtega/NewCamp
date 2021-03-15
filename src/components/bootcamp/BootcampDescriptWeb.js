@@ -28,15 +28,15 @@ class BootcampDescriptWeb extends Component {
               name="keywords"
               content="cursos, capacitación, react, angular, tecnología, programación, javascript, python, php, online, fixtergeek"
           />
-          <title>Bootcamp Desarrollo Web | FixterGeek</title>
+          <title>Aprende a programar con JS | FixterGeek</title>
           <div className="white mobile-display"></div>
           <section className="camp-portada" style={{backgroundImage:`url("https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fbanner-camp.png?alt=media&token=05294482-e977-4f81-9ce1-da7e991dc569")`}}>
             <div className="camp-intro">
-              <h2>Fundamentos de Desarrollo Web</h2>
+              <h2>Aprende a programar con JavaScript</h2>
               <hr className="w-line"/>
               <p>Aprende las bases de la programación y prepárate para incursionar en el mundo del desarrollo Web utilizando uno de los lenguajes más utilizados: JavaScript.</p>
               <br/>
-              <Link to="/apply/?b=5d632e4c339a1b379df68a74">
+              <Link to="/promo/aprendejs">
                 <Button text="Inscribirme"/>
               </Link>
               <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FTemario_Web.pdf?alt=media&token=dc8a1f48-bd90-421a-87fe-1d0ed37e41db" target="blank" rel="noopener noreferrer">
