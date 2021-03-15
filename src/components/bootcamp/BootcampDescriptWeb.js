@@ -7,6 +7,7 @@ import event from "../../assets/event.svg";
 import message from "../../assets/message.svg";
 import graduated from "../../assets/graduated.svg";
 import FontAwesome from "react-fontawesome";
+import TagT from "../common/TagT"
 
 const download = "https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fdownload.svg?alt=media&token=42f25db8-63b8-45ad-a0f8-085bc44c4f4c"
 
@@ -27,7 +28,7 @@ class BootcampDescriptWeb extends Component {
               name="keywords"
               content="cursos, capacitación, react, angular, tecnología, programación, javascript, python, php, online, fixtergeek"
           />
-          <title>Bootcamp Python | FixterGeek</title>
+          <title>Bootcamp Desarrollo Web | FixterGeek</title>
           <div className="white mobile-display"></div>
           <section className="camp-portada" style={{backgroundImage:`url("https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fbanner-camp.png?alt=media&token=05294482-e977-4f81-9ce1-da7e991dc569")`}}>
             <div className="camp-intro">
@@ -38,7 +39,7 @@ class BootcampDescriptWeb extends Component {
               <Link to="/apply/?b=5d632e4c339a1b379df68a74">
                 <Button text="Inscribirme"/>
               </Link>
-              <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FFundamentos_Desarrollo_Web.pdf?alt=media&token=80e68013-45be-429d-b9c8-5b58bc9a3615" target="blank" rel="noopener noreferrer">
+              <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FTemario_Web.pdf?alt=media&token=dc8a1f48-bd90-421a-87fe-1d0ed37e41db" target="blank" rel="noopener noreferrer">
               <button className="btn-ghost"><img style={{marginRight:"12px"}} src={download} alt="download-icon"/>Descargar temario</button>
               </a>
             </div>
@@ -47,114 +48,70 @@ class BootcampDescriptWeb extends Component {
           <section
 
               className="contenedor camp-programa"
-          >
-            <div className="box-programa">
+              >
+              <div className="box-programa">
               <h2> Descripción del curso</h2>
-              <br />
-              <h3>Por qué JavaScript...</h3>
-              <p>
-                JavaScript se encuentra en el top 10 de los lenguajes de
-                programación más utilizados, al aprenderlo, estarás dando tus
-                primeros pasos para convértirte en un desarrollador profesional.
+              <p>En este curso aprenderás cómo funciona Docker, cómo se usa en etapas de desarrollo y producción a través de prácticas de integración y despliegue continuos. Este curso te puede ayudar a solucionar el clásico problema en equipos de trabajo "En mi máquina si funciona" sin importar si tu rol es Frontend, Backend o Científico de Datos; además conocerás como implementar Docker con herramientas como GitHub Actions y AWS.</p>
+                <hr className="g-line"/>
+              <h3>¿Qué aprenderás?</h3>
+              <p>Te olvidarás del clásico "en mi maquina si funciona (trabajo en equipo)", conocerás todas las ventajas de tener toda la configuración en un Dockerfile, 
+                  utilizaremos allgunos frameworks de trabajo como Node y Django que suelen comportarse diferente sobre docker.
               </p>
-              <br />
-              <h3>Experiencia inigualable</h3>
-              <p>
-                En esta nueva modalidad de bootcamp online, te sumergirás en una
-                experiencia única de aprendizaje, en donde conocerás las mejores
-                prácticas del desarrollo para construir tu propio sitio web.
-              </p>
-            </div>
-            <div className="box-data">
+              <hr className="g-line"/>
+              <h3>Herramientas</h3>
+              <TagT text="HTML"/>
+              <TagT text="CSS"/>
+              <TagT text="JavaScript"/>
+              <TagT text="Firebase"/>
+              <TagT text="Webpack"/>
+              <TagT text="Babel"/>
+
+              </div>
+              <div className="box-data">
               <div className="ipad-fl">
                 <div>
-                  <p>Próxima edición</p>
-                  <h3>Ya disponible</h3>
+                  <p>Modalidad</p>
+                  <h3>Híbrida</h3>
 
                   <hr />
                 </div>
                 <div>
-                  <p>Más de 24 hrs de ejercicios en</p>
-                  <h3> 4 semanas</h3>
+                  <p>Clases en vivo</p>
+                  <h3>32 horas</h3>
 
                   <hr />
                 </div>
                 <div>
-                  <p>Aprende con la práctica</p>
-                  <h3>1 examen final</h3>
+                  <p>Fecha de Inicio</p>
+                  <h3>19 de Abril 2021</h3>
                   <hr />
                 </div>
                 <div>
                   <p>
                     Precio <span style={{ fontSize: "10px" }}>(hasta 6 MSI)</span>
                   </p>
-                  <h3>$ 1,999.00</h3>
+                  <h3>$ 12,000.00</h3>
 
                   <hr />
                 </div>
               </div>
-            </div>
-          </section>
-          <section className="sylabuss">
-            <h2 className="subtitulo">¿Qué vas a aprender?</h2>
-            <br/>
-            <div className="modules">
-              <div className="week-card">
-                <div>
-                  <h3>Prework</h3>
-                  <div className="lessions">
-                    <p><span>&bull;</span> Conceptos básicos</p>
-                    <p><span>&bull;</span> Node.Js, NPM y NVM</p>
-                    <p><span>&bull;</span> Git y Github</p>
-                  </div>
-                </div>
               </div>
-              <div className="week-card">
-                <div>
-                  <h3>Semana 1</h3>
-                  <div className="lessions">
-                    <p><span>&bull;</span> HTML </p>
-                    <p><span>&bull;</span> CSS</p>
-                    <p><span>&bull;</span> Editores de código</p>
-                    <p><span>&bull;</span> Fundamentos de JavaScript</p>
-                  </div>
-                </div>
+              </section>
+              <section className="modality">
+              <div>
+                <h2 className="subtitulo">¿Cómo es un curso híbrido?</h2>
+                <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital de estudios para seguir aprendiendo online y profundizando en los temas mas relevantes.</p>
+                <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital de estudios para seguir aprendiendo online y profundizando en los temas mas relevantes.</p>                    
+                <br/>
+                <Link to="/apply/?b=5d632e4c339a1b379df68a74">
+                    <Button text="Inscribirme"/>
+                </Link>
               </div>
-              <div className="week-card">
-                <div>
-                  <h3>Semana 2</h3>
-                  <div className="lessions">
-                    <p><span>&bull;</span> Librerías de estilos </p>
-                    <p><span>&bull;</span> Flexbox</p>
-                    <p><span>&bull;</span> Animaciones y keyframes</p>
-                    <p><span>&bull;</span> CSS Grid</p>
-                  </div>
-                </div>
+              <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0DJnTEAVFJE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <div className="week-card">
-                <div>
-                  <h3>Semana 3</h3>
-                  <div className="lessions">
-                    <p><span>&bull;</span> JavaScript</p>
-                    <p><span>&bull;</span> Estructura de datos</p>
-                    <p><span>&bull;</span> Clases y métodos </p>
-                    <p><span>&bull;</span> Manipulación del DOM</p>
-                  </div>
-                </div>
-              </div>
-              <div className="week-card">
-                <div>
-                  <h3>Semana 4</h3>
-                  <div className="lessions">
-                    <p><span>&bull;</span> Webpack</p>
-                    <p><span>&bull;</span> JavaScript ES6</p>
-                    <p><span>&bull;</span> Babel</p>
-                    <p><span>&bull;</span> Hosting</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+
+              </section>
           <section className="contain">
             <h2 className="subtitulo">Coumunidad y herramientas</h2>
             <p className="text">Nuestros bootcamps y cursos, solo son el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad internacional,

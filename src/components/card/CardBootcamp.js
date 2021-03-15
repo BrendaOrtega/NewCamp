@@ -5,7 +5,7 @@ import img from "../../assets/28698604_1973144766082686_589124668727305128_o.jpg
 import FontAwesome from "react-fontawesome";
 
 
-export const CardBootcamp = ({image, name, descript, lecciones, tiempo, link, link2, action, thumbnail, badge, modalidad, horas, lugar}) => {
+export const CardBootcamp = ({image, name, descript, lecciones, tiempo, link, link2, action, thumbnail, badge, modalidad, horas, lugar, inicio}) => {
 
 
     return (
@@ -22,6 +22,7 @@ export const CardBootcamp = ({image, name, descript, lecciones, tiempo, link, li
                     <p id="datos"> <FontAwesome  name="calendar" />  {tiempo} <span>&bull;</span> {horas} </p>
                     <p id="datos"> <FontAwesome name="copy" />  { lugar || "Examen final"}</p>
                     <p id="datos"> <FontAwesome name="tv" /> {modalidad} </p>
+                    <p id="datos" style={{color:"#CA3E47"}}> <FontAwesome name="flag" /> <strong >{inicio} </strong> </p>
                 </div>
             </div>
         </Link>

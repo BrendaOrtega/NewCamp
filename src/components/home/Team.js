@@ -44,7 +44,7 @@ class Team extends Component {
                         <div className="cuadro" style={{backgroundImage:`url("${brenda}")`}}>
                         </div>
                         <h4>Brenda Ortega</h4>
-                        <p>CEO & UX/UI Designer</p>
+                        <p>CEO & Product Designer</p>
                         <a href="https://github.com/BrendaOrtega" target="_blank" rel="noopener noreferrer">
                             <FontAwesome name="github"/>
                         </a>
