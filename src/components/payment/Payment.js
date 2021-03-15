@@ -143,7 +143,7 @@ const Payment = ({history, match, location:{search}}) => {
     const conektaSuccessResponseHandler = token => {
         console.log("success token: ", token)
         // action para enviar token
-        dispatch(purchaseEditionAction({ tokenId: token.id, bootcampId: edition._id, ...form }))
+        dispatch(purchaseEditionAction({ coupon:coupon.name,tokenId: token.id, bootcampId: edition._id, ...form }))
             .then(res => {
                 if(res) {
                     toastr.success("Pago realizado con éxito.")
