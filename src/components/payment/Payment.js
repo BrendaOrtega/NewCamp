@@ -12,6 +12,7 @@ import "./Payment.css"
 import { formatMoney } from '../../tools/formatMoney';
 
 const Payment = ({history, match, location:{search}}) => {
+    console.log(match)
     const dispatch = useDispatch()
     const {coupon, editions = [], edition, edition:{bootcamp={}}, fetching} = useSelector(({bootcamps})=>bootcamps)
     const [error, setError] = React.useState(true)
@@ -25,6 +26,7 @@ const Payment = ({history, match, location:{search}}) => {
     const [working, setWorking] = React.useState(false)
 
     React.useEffect(()=>{
+        console.log("the match: ", match)
         const {id = null, slug = null} = match.params
         const {code} = queryString.parse(search)       
         if(id === null && slug === null){

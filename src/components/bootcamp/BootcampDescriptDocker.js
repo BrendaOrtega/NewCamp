@@ -37,7 +37,7 @@ class BootcampDescriptDocker extends Component {
               <hr className="w-line"/>
               <p>Aprende lo necesario para implementar Docker en tus proyectos</p>
               <br/>
-              <Link to="/payment">
+              <Link to="/promo/aprende-docker">
                 <Button text="Inscribirme"/>
               </Link>
               <a href="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FTemario_Docker.pdf?alt=media&token=5d858c43-1d9b-4896-b366-99492695ef62" target="blank" rel="noopener noreferrer">
