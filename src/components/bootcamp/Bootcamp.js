@@ -60,7 +60,7 @@ class Bootcamp extends Component {
                                 horas="32hrs en vivo"
                                 link="/bootcamp-descript-web"
                                 modalidad="Modalidad Híbrida"
-                                inicio="Inicia 19 de Abril de 2020"
+                                inicio="Inicia 19 de Abril de 2021"
 
                             />
                              <CardBootcamp
@@ -72,7 +72,7 @@ class Bootcamp extends Component {
                                 horas="32hrs en vivo"
                                 link="/bootcamp-descript-docker"
                                 modalidad="Modalidad Híbrida"
-                                inicio="Inicia 19 de Abril de 2020"
+                                inicio="Inicia 19 de Abril de 2021"
 
                             />
                         {/* <CardBootcamp
