@@ -58,11 +58,13 @@ class BootcampDescriptDocker extends Component {
               <p>Te olvidarás del clásico "en mi maquina si funciona (trabajo en equipo)", conocerás todas las ventajas de tener toda la configuración en un Dockerfile, 
                   utilizaremos allgunos frameworks de trabajo como Node y Django que suelen comportarse diferente sobre docker.
               </p>
+              <div className="optimize">
               <hr className="g-line"/>
               <h3>Herramientas</h3>
               <TagT text="Docker"/>
               <TagT text="Django"/>
               <TagT text="NodeJs"/>
+              </div>
             </div>
             <div className="box-data">
               <div className="ipad-fl">
@@ -96,20 +98,23 @@ class BootcampDescriptDocker extends Component {
           </section>
           <section className="modality">
             <div>
-                <h2 className="subtitulo">¿Cómo es un curso híbrido?</h2>
-                <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital de estudios para seguir aprendiendo online y profundizando en los temas mas relevantes.</p>
-                <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital de estudios para seguir aprendiendo online y profundizando en los temas mas relevantes.</p>                    
+                <h2 className="subtitulo">¿Cómo es un bootcamp híbrido?</h2>
+                <p>El objetivo del curso es que puedas aprender a tu ritmo y a su vez tener un instructor que pueda explicar temas complejos y resolver tus dudas.
+                   Así que bajo esta modalidad, tendrás acceso a los recursos del bootcamp en la plataforma, recursos en video y lecciones practicas, con base en las cuáles
+                   completarás algunas tareas correspondientes a cada tema, y además, tendrás acceso a 32hrs de clases en vivo con tu instructor, distribuidas en 16 sesiones de 2 horas cada una (2 sesiones semanales).
+                </p>
+                <p>Aprovecha lo mejor de dos mundos, aprende el lenguaje o herramienta que te gusta, a tu ritmo de la mano de un instructor con experiencia en el</p>                    
                 <br/>
                 <Link to="/apply/?b=5d632e4c339a1b379df68a74">
                     <Button text="Inscribirme"/>
                 </Link>
             </div>
-            <div>
+            {/* <div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/0DJnTEAVFJE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            </div> */}
 
           </section>
-          <section className="contain">
+          <section className="contain load" >
             <h2 className="subtitulo">Coumunidad y herramientas</h2>
             <p className="text">Nuestros bootcamps y cursos, solo son el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad internacional,
               y tendrás acceso a nuestra plataforma digital para seguir aprendiendo online y profundizando en los temas más relevantes.</p>

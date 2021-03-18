@@ -23,9 +23,7 @@ export const CourseCard = ({image, name, lecciones, tiempo, mensaje}) => {
                         <p>{lecciones} <span>&bull;</span> {tiempo}</p>
                     </div>
                 </div>  </div>
-                <div className="price">
-                    <span> Estreno: {mensaje}</span>
-                </div>
+               
 {/*            </Link>*/}
         </div>
     );

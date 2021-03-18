@@ -409,7 +409,7 @@
 .katia{
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
     .container-summary{
         width: 500px;
     }
@@ -443,11 +443,31 @@
         width: 250px;
     }
     .box-data{
-        padding: 4% 0;
+        padding: 10% 0 4% 0;
+    }
+    .instructor_box{
+        justify-content: flex-start;
     }
 
 
 }
+
+@media (max-width:800px){
+    .ipad-fl div {
+        width: 200px;
+    }
+    .box-data hr{
+        width: 50%;
+    }
+    .contenedor{
+        padding: 32px 5%;
+    }
+    .modality{
+        margin: 40px auto;
+    }
+
+}
+
 @media (max-width: 680px) {
     .container-summary{
         padding: 100px 5% 40px 5%;
