@@ -105,7 +105,7 @@ class BootcampDescriptDocker extends Component {
                 </p>
                 <p>Aprovecha lo mejor de dos mundos, aprende el lenguaje o herramienta que te gusta, a tu ritmo de la mano de un instructor con experiencia en el</p>                    
                 <br/>
-                <Link to="/apply/?b=5d632e4c339a1b379df68a74">
+                <Link to="/promo/aprende-docker">
                     <Button text="Inscribirme"/>
                 </Link>
             </div>
