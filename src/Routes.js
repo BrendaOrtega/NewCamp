@@ -29,21 +29,21 @@ import BootcampDescriptDocker from './components/bootcamp/BootcampDescriptDocker
 import Payment from './components/payment/Payment';
 
 
-let PrivateRoute = ({ component, next, ...rest }) => {
+let PrivateRoute = ({ component, path, ...rest }) => {
     let user = localStorage.user
-    if (!user) return <Redirect to={`/login?next=${next}`} />
-    return <Route path={next} component={component} {...rest} />
+    if (!user) return <Redirect to={`/login?next=${path}`} />
+    return <Route path={path} component={component} {...rest} />
 }
 
 export const Router = () => (
     <Switch>
+             
         {/* Admin */}
         <Route path="/admin" component={AdminPage} />
         <Route path="/promo-diciembre" component={Landing} />
-        <Route exact path="/" component={HomeContainer} />
         <Route exact path="/courses" component={Courses} />
         <Route path="/courses/detail" component={CoursesDetail} />
-
+        <Route exact path="/" component={HomeContainer} />
 
         <Route exact path="/bootcamp" component={Bootcamp} />
         <Route path="/preguntas-frecuentes" component={Ask} />
@@ -76,9 +76,12 @@ export const Router = () => (
         {/* <PrivateRoute next="/preorden" to="/preorden" component={PromoCiberMonday} /> */}
         {/* <Route to="/gift" component={BuyForGift} /> */}
         {/* Fixter hibrid relaunch */}
-        <PrivateRoute next="/promo/id/:id" component={Payment}/>
-        <PrivateRoute next="/promo/:slug" component={Payment}/>
-        <PrivateRoute next="/promo/" component={Payment}/>
+        {/* <PrivateRoute next="/promo/id/:id" component={Payment}/> */}
+   
+        {/* <PrivateRoute next="/promo/" component={Payment}/> */}
+        {/* <PrivateRoute next="/promo/:slug" component={Payment}/> */}
+        <PrivateRoute path="/promo/:slug" component={Payment}/>
+        
 
 
     </Switch>
