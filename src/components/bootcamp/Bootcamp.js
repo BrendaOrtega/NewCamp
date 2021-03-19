@@ -55,7 +55,7 @@ class Bootcamp extends Component {
                                 image={photo1}
                                 badge={web}
                                 name="Aprende a programar con JavaScript"
-                                descript="Aprende las bases del desarrollo web, y maqueta y hostea tu propio sitio web con JavaScript 🚀"
+                                descript="Aprende las bases del desarrollo web, y maqueta tu propio sitio web dinámico con JavaScript 🚀"
                                 tiempo="8 semanas"
                                 horas="32hrs en vivo"
                                 link="/bootcamp-descript-web"
