@@ -55,13 +55,13 @@ class BootcampDescriptWeb extends Component {
                 te abre las muertas a oportunidades laborales y de negocio muy importantes y de forma internacional. Saber programar no es solo resolver algorítmos, si no, saberlo usar con HTML y CSS para construir no solo sitios web si no aplicaciones inteligentes.
                 En este bootcamp, aprenderás no solo como usar el lenguaje de forma correcta, si no que aprenderás los fundamentos para entender como funciona la web y poder utilizar herramientas más complejas tanto como el frontend, como en el backend o mobile.
               </p>
+              <div className="optimize">
                 <hr className="g-line"/>
               <h3>¿Qué aprenderás?</h3>
               <p>Aprenderás la sintaxis de JavaScript, como utilizar correctamente las condicionales y ciclos para construir programas ordenados y eficientes, también aprenderás sobre
                 programación orientada a objetos y programación funcional, para al final, utilizar estos conocimientos junto con HTML y CSS para crear sitios web interactivos.
               </p>
-             
-              <div className="optimize">
+    
                 <hr className="g-line optimize"/>
                 <h3>Herramientas</h3>
                 <TagT text="HTML"/>

@@ -499,4 +499,7 @@
     .flexin{
         justify-content: center;
     }
+    .g-line{
+        margin: 24px 0 0 0;
+    }
 }
