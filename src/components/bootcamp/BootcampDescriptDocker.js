@@ -52,7 +52,7 @@ class BootcampDescriptDocker extends Component {
           >
             <div className="box-programa">
               <h2> Descripción del curso</h2>
-              <p>En este curso aprenderás cómo funciona Docker, cómo se usa en etapas de desarrollo y producción a través de prácticas de integración y despliegue continuos. Este curso te puede ayudar a solucionar el clásico problema en equipos de trabajo "En mi máquina si funciona" sin importar si tu rol es Frontend, Backend o Científico de Datos; además conocerás como implementar Docker con herramientas como GitHub Actions y AWS.</p>
+              <p>En este curso aprenderás como funciona Docker, como se usa en etapas de desarrollo y producción a través de prácticas de integración y despliegue continuos. Este curso te puede ayudar a solucionar el clásico problema en equipos de trabajo "En mi máquina si funciona" sin importar si tu rol es Frontend, Backend o Científico de Datos; además conocerás como implementar Docker con herramientas como GitHub Actions y AWS.</p>
                 <hr className="g-line"/>
                 <div className="optimize">
               <h3>¿Qué aprenderás?</h3>
