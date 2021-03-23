@@ -52,7 +52,7 @@ class BootcampDescriptWeb extends Component {
               <div className="box-programa">
               <h2> Descripción del curso</h2>
               <p>JavaScript se ha colocado como el lenguaje de programación más importante de la historia, actualmente aprender a programar
-                te abre las muertas a oportunidades laborales y de negocio muy importantes y de forma internacional. Saber programar no es solo resolver algorítmos, si no, saberlo usar con HTML y CSS para construir no solo sitios web si no aplicaciones inteligentes.
+                te abre las puertas a oportunidades laborales y de negocio muy importantes y de forma internacional. Saber programar no es solo resolver algorítmos, si no, saberlo usar con HTML y CSS para construir no solo sitios web si no aplicaciones inteligentes.
                 En este bootcamp, aprenderás no solo como usar el lenguaje de forma correcta, si no que aprenderás los fundamentos para entender como funciona la web y poder utilizar herramientas más complejas tanto como el frontend, como en el backend o mobile.
               </p>
               <div className="optimize">
