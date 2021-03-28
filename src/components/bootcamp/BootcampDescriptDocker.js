@@ -159,7 +159,7 @@ class BootcampDescriptDocker extends Component {
               <div className="instructor_info">
                 <h2 style={{fontSize:"24px"}} className="subtitulo">Andrés Quintero</h2>
                 <p>
-                Soy desarrollador autodidacta y he trabajado para Startups y empresas medianas con roles como Ingeniero de Datos e Ingeniero de Software. Me gusta el trabajo colaborativo, compartir conocimiento y aprender a construir una mejor web con equipos de personas increíbles.
+                Soy Software Engineer en PayPal, soy autodidacta y he trabajado para Startups y empresas medianas con roles como Ingeniero de Datos e Ingeniero de Software. Me gusta el trabajo colaborativo, compartir conocimiento y aprender a construir una mejor web con equipos de personas increíbles.
 
                 </p>
                 <div className="redes-instructor">
