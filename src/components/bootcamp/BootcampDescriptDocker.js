@@ -77,8 +77,8 @@ class BootcampDescriptDocker extends Component {
                   <hr />
                 </div>
                 <div>
-                  <p>Clases en vivo</p>
-                  <h3>32 horas</h3>
+                  <p>Clases</p>
+                  <h3>32 horas en vivo + offline</h3>
 
                   <hr />
                 </div>
@@ -105,7 +105,7 @@ class BootcampDescriptDocker extends Component {
                    Así que bajo esta modalidad, tendrás acceso a los recursos del bootcamp en la plataforma, recursos en video y lecciones practicas, con base en las cuáles
                    completarás algunas tareas correspondientes a cada tema, y además, tendrás acceso a 32hrs de clases en vivo con tu instructor, distribuidas en 16 sesiones de 2 horas cada una (2 sesiones semanales).
                 </p>
-                <p>Aprovecha lo mejor de dos mundos, aprende el lenguaje o herramienta que te gusta, a tu ritmo de la mano de un instructor con experiencia en el</p>                    
+                <p>Aprovecha lo mejor de dos mundos, aprende el lenguaje o herramienta que te gusta, a tu ritmo de la mano de un instructor con experiencia en el área.</p>                    
                 <br/>
                 <Link to="/promo/aprende-docker">
                     <Button text="Inscribirme"/>
@@ -117,7 +117,7 @@ class BootcampDescriptDocker extends Component {
 
           </section>
           <section className="contain load" >
-            <h2 className="subtitulo">Coumunidad y herramientas</h2>
+            <h2 className="subtitulo">Comunidad y herramientas</h2>
             <p className="text">Nuestros bootcamps y cursos, solo son el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad internacional,
               y tendrás acceso a nuestra plataforma digital para seguir aprendiendo online y profundizando en los temas más relevantes.</p>
             <br/>
@@ -141,7 +141,7 @@ class BootcampDescriptDocker extends Component {
               </div>
               <div className="adds">
                 <h3><img src={graduated} alt="icon-diploma"/>Diploma</h3>
-                <p>Al concluir el bootcamp y aprobar el examen final, podrás descargar tu reconocimeinto, por haber concluido
+                <p>Al concluir el bootcamp y aprobar el examen final, podrás descargar tu reconocimiento, por haber concluido
                   satisfactoriamente el bootcamp.
                 </p>
               </div>

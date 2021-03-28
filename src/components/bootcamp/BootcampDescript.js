@@ -155,7 +155,7 @@ class BootcampDescript extends Component {
              </div>
            </section>
           <section className="contain">
-              <h2 className="subtitulo">Coumunidad y herramientas</h2>
+              <h2 className="subtitulo">Comunidad y herramientas</h2>
               <p className="text">Nuestros bootcamps y cursos, solo son el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad internacional,
                   y tendrás acceso a nuestra plataforma digital para seguir aprendiendo online y profundizando en los temas más relevantes.</p>
               <br/>
@@ -179,7 +179,7 @@ class BootcampDescript extends Component {
                   </div>
                   <div className="adds">
                       <h3><img src={graduated} alt="icon-diploma"/>Diploma</h3>
-                      <p>Al concluir el bootcamp y aprobar el examen final, podrás descargar tu reconocimeinto, por haber concluido
+                      <p>Al concluir el bootcamp y aprobar el examen final, podrás descargar tu reconocimiento, por haber concluido
                           satisfactoriamente el bootcamp.
                       </p>
                   </div>

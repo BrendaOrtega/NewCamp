@@ -21,12 +21,13 @@ import Backend from "./components/bootcamp/Backend";
 import BootcampPhp from "./components/bootcamp/BootcampPhp";
 import BootcampDescriptReact from "./components/bootcamp/BootcampDescriptReact";
 import BootcampReactPachuca from "./components/bootcamp/BootcampReactPachuca";
-import PromoCiberMonday from './components/bootcamp/PromoCiberMonday';
 import Ask from "./components/home/Ask"
 import ShareLink from './components/profile/ShareLink';
 import Feedback from './components/profile/Feedback';
 import BootcampDescriptDocker from './components/bootcamp/BootcampDescriptDocker';
 import Payment from './components/payment/Payment';
+import { CoursesDetailWeb } from './components/courses/CourseDetailWeb';
+import { CoursesDetailReact } from './components/courses/CourseDetailReact';
 
 
 let PrivateRoute = ({ component, path, ...rest }) => {
@@ -42,7 +43,9 @@ export const Router = () => (
         <Route path="/admin" component={AdminPage} />
         <Route path="/promo-diciembre" component={Landing} />
         <Route exact path="/courses" component={Courses} />
-        <Route path="/courses/detail" component={CoursesDetail} />
+        <Route path="/detail/python" component={CoursesDetail} />
+        <Route path="/detail/web" component={CoursesDetailWeb} />
+        <Route path="/detail/react" component={CoursesDetailReact} />
         <Route exact path="/" component={HomeContainer} />
 
         <Route exact path="/bootcamp" component={Bootcamp} />

@@ -705,6 +705,13 @@ padding-top: 80px;
 .optimize{
     display: inherit;
 }
+@media (max-width: 1100px) {
+    .detail-badge img{
+        margin-left: 40px;
+    }
+}
+
+
 @media (max-width: 800px) {
     .bootcamp-img{
         width: 300px;

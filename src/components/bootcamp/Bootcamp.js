@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Button from "../common/Button"
 import "./Bootcamp.css"
 import {CardBootcamp} from "../card/CardBootcamp";
-import pyth from "../../assets/badgePYTHON_TTLBLCK_Mesa_de_trabajo_1.png";
 import web from "../../assets/badge3D_Mesa_de_trabajo_1.png";
 
 const photo1 = "https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fphoto.jpg?alt=media&token=cbbffbc4-d321-4e8c-bc20-abcc83bc8710"

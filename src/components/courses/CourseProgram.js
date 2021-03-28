@@ -2,7 +2,6 @@ import React from 'react';
 import "./Courses.css"
 import {Collapse} from "antd";
 import {CardVideo} from "../card/CardVideo";
-import {Link} from "react-router-dom";
 
 
 const { Panel } = Collapse;

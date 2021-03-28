@@ -10,7 +10,6 @@ import photo from "../../assets/pexels-photo-3626622.svg";
 import student1 from "../../assets/carlitos.jpg";
 import student2 from "../../assets/jorge.jpg";
 import student3 from "../../assets/ossscar.jpg";
-import { Carousel } from "antd";
 
 let react = require("../../assets/react.png");
 let vue = require("../../assets/vue.png");
@@ -141,9 +140,7 @@ class HomeContainer extends Component {
   };
 
   render() {
-    function onChange(a, b, c) {
-      console.log(a, b, c);
-    }
+   
 
         return (
             <section>

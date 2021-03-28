@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Button from "../common/Button"
+import {Link} from "react-router-dom"
 import "./Courses.css"
 import {CourseCard} from "../card/CourseCard";
 import siete from "../../assets/badget1.png";
 import cinco from "../../assets/badget2.png";
 import seis from "../../assets/badget-3.png";
 import pyth from "../../assets/badgePYTHON_TTLBLCK_Mesa_de_trabajo_1.png";
+import web from "../../assets/badge3D_Mesa_de_trabajo_1.png"
 
 class Courses extends Component {
     componentDidMount () {
@@ -43,12 +44,22 @@ class Courses extends Component {
                 </section>
                 <section id="explorar" className=" gray">
                     <div className="flexin">
+                    <Link to="/detail/python">
                         <CourseCard image={pyth} name="Fundamentos de Programación con Python"
-                                    lecciones="40 lecciones" tiempo="5 horas" 
-                        />
+                                        lecciones="40 lecciones" tiempo="5 horas" />
+                    </Link>
+                    <Link to="/detail/web">
+                        <CourseCard image={web} name="Fundamentos de Desarrollo Web con JavaScript"
+                                        lecciones="65 lecciones" tiempo="6 horas" />
+                    </Link>
+                    <Link to="/detail/react">
                         <CourseCard image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fbadges_Mesa_de_trabajo_1_copia_3.png?alt=media&token=e91625bc-6438-4eb4-9fd0-abe6761bfd25" name="Crea una aplicación web con ReactJs 👾"
-                                    lecciones="45 lecciones" tiempo="4 horas" 
-                        />
+                                        lecciones="45 lecciones" tiempo="4 horas" 
+                            />
+                    </Link>
+                    
+                    
+                       
 
                         </div>
                         <h2 className="title-m">Próximos cursos</h2>

@@ -46,9 +46,10 @@
 /*DETAIL COURSE*/
 .flex{
     display: flex;
-    padding: 120px 10% 30px 10%;
+    padding: 160px 10% 80px 10%;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .detail-descript{
     width: 500px;
@@ -61,16 +62,17 @@
     font-size: 18px;
 }
 .detail-badge{
-    width: 450px;
+    width: 350px;
     flex-grow: 1;
-    text-align: right;
+   
 }
 .detail-badge img{
     width: 200px;
+    margin-left: 320px;
 }
 
 .box-detail{
-    padding: 30px 10%;
+    padding: 30px 10% 80px 10%;
     background-color: #f5f5f5;
 }
 .box-detail h2{
@@ -98,14 +100,14 @@
 }
 .descripcion-text h3{
     font-size: 24px;
-    margin: 24px 0;
+    margin: 24px 0 12px 0;
 }
 .descripcion-text p{
     font-size: 18px;
 }
 .descripcion-autor{
     width: 240px;
-    height: 360px;
+    height: 380px;
     flex-grow: 1;
     margin: 0  0px 0 30px;
     background-color: #ffffff;
@@ -119,6 +121,7 @@
 }
 .descripcion-autor h3{
     font-size: 18px;
+    margin-bottom: 0px;
 }
 .descripcion-autor h4{
     font-size: 14px;
@@ -127,7 +130,7 @@
     font-size: 12px;
 }
 .descripcion-autor span{
-    font-size: 12px;
+    font-size: 16px;
     margin-right: 8px;
 }
 .autor-foto{
@@ -148,13 +151,29 @@
     opacity: .2;
     margin-bottom: 8px;
 }
+.ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box{
+    padding-left: 48px;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header{
+    font-weight: bold;
+}
+#price{
+    color:#323232;
+    font-weight: bold;
+}
 
 
-
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
    .descripcion-text{
        width: 500px;
    }
+
+    .detail-badge img{
+        margin-left: 120px;
+    }
+    .flex{
+        flex-wrap: nowrap;
+    }
 
 }
 
@@ -165,13 +184,24 @@
     .box-steps{
         justify-content: center;
     }
+    .detail-badge{
+        text-align: center;
+    }
     .detail-badge img{
-        width: 240px;
+        width: 30%;
+        margin-left: 0px;
+        margin-bottom: 24px;
+        /* display: none; */
     }
     .descripcion-autor{
        margin: 0px;
         padding: 5% ;
         margin-top: 32px;
+    }
+    
+    .flex{
+        padding: 120px 10% 40px 10%;
+        flex-wrap: wrap-reverse;
     }
 }
 
@@ -190,12 +220,15 @@
         justify-content: center;
     }
     .flex{
-        flex-wrap: wrap;
+        padding: 60px 10% 40px 10%;
         justify-content: center;
     }
     .detail-badge{
         text-align: center;
         margin-top:50px;
+    }
+    .detail-badge img{
+        width: 60%;
     }
     .detail-descript h2{
         font-size: 28px;

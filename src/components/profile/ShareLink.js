@@ -15,11 +15,11 @@ class ShareLink extends Component {
                         <p className="txt">Cuando tu amigo adquiera su primer curso, ambos obtendrán un descuento.</p>
                    
                         <div>
-                            <img src={envelop}/>
+                            <img src={envelop} alt="icon-envelop"/>
                             <p className="promo">Obtén 10% para tu próximo curso.</p>
                         </div>
                         <div>
-                            <img src={tv}/>
+                            <img src={tv} alt="icon-tv"/>
                             <p className="promo">Tu amigo obtiene 10% para su primer curso curso.</p>
                         </div>
                         <div className="link_share">
@@ -27,7 +27,7 @@ class ShareLink extends Component {
                             <button className="btn-copy">Copiar</button>
                         </div>
                         <div style={{display:"flex", justifyContent:"center"}}>
-                            <img src={img}/>
+                            <img src={img} alt="ilustration-success"/>
                         </div>
                     </div>
                 </div>
