@@ -8,18 +8,18 @@ const TableRef = ({referrals}) => {
             <table>
                 <thead>
                     <tr>
-                        <th className="name-ref">Nombre de tu amigo</th>
-                        <th className="date-ref">Fecha de canje</th>
-                        <th className="points-ref">Puntos</th>
+                        <th><p>Nombre de tu amigo</p></th>
+                        <th><p>Fecha de canje</p></th>
+                        <th className="points-ref"><p>Puntos</p></th>
                     </tr>
                 </thead>
                 <tbody>
                     {referrals.map(ref => 
                         {
                         return(<tr key={ref.id}>
-                                <td className="name-ref">{ref.name}</td>
-                                <td className="date-ref">{ref.date}</td>
-                                <td className="points-ref"><strong>{ref.points} puntos</strong></td>
+                                <td><p>{ref.name}</p></td>
+                                <td><p>{ref.date}</p></td>
+                                <td className="points-ref"><p><strong>{ref.points} puntos</strong></p></td>
                             </tr>)
                         }
                     )}

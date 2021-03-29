@@ -194,6 +194,12 @@ table{
 .points-ref{
     text-align: right;
 }
+thead p{
+    margin: 10px 0;
+}
+tbody p{
+    margin: 5px 0;
+}
 @media(max-width:800px){
     .card_share .table-container{
         overflow-x: auto;
