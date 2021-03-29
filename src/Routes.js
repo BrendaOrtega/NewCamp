@@ -26,6 +26,8 @@ import ShareLink from './components/profile/ShareLink';
 import Feedback from './components/profile/Feedback';
 import BootcampDescriptDocker from './components/bootcamp/BootcampDescriptDocker';
 import Payment from './components/payment/Payment';
+import NotFound from './components/notfound/NotFound';
+import SuccesScreen from './components/successcreen/SuccesScreen'
 import { CoursesDetailWeb } from './components/courses/CourseDetailWeb';
 import { CoursesDetailReact } from './components/courses/CourseDetailReact';
 
@@ -72,6 +74,8 @@ export const Router = () => (
         <Route path="/feedback" component={Feedback} />
         <Route path="/null" component={ProfileContainer} />
         {/* Secciones nuevas por bootcamp */}
+        <Route path="/exito" component={SuccesScreen} />
+        <Route path="*" component={NotFound} />
         <Redirect path="/python" to="/bootcamp" />
         {/* Examen */}
         <Route path="/exam/:id" component={ExamPage} />
@@ -84,7 +88,6 @@ export const Router = () => (
         {/* <PrivateRoute next="/promo/" component={Payment}/> */}
         {/* <PrivateRoute next="/promo/:slug" component={Payment}/> */}
         <PrivateRoute path="/promo/:slug" component={Payment}/>
-        
 
 
     </Switch>
