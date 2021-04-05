@@ -86,7 +86,7 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
                 <p><span role="img" aria-label="robot">🤖</span> Perfil</p>
               </Link>
               <Link to="/share-link">
-                <p><span role="img" aria-label="link">>🔗</span>   Compartir con amigos</p>
+                <p><span role="img" aria-label="link">🔗</span>   Compartir con amigos</p>
               </Link>
               <Link to="/feedback">
                 <p><span role="img" aria-label="message">💬</span>  Feedback</p>

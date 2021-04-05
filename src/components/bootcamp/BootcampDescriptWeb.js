@@ -163,10 +163,10 @@ class BootcampDescriptWeb extends Component {
               <div className="instructor_info">
                 <h2 style={{fontSize:"24px"}} className="subtitulo">Héctor Bliss </h2>
                 <p>
-                  Héctor es Couch Js en Laboratoria, en donde enseña programación a muejeres para que puedan introducirse al mercado laboral, y Software Engineer en Jaya, compañía estadounidense
-                  de desarrollo de software, en donde trabaja con empresas internacionales utilizando desde React.Js hasta Ruby On Rails, y desde React Native hasta C#.
+                  Héctor es Tech Lead en Tripadvisor, y ha sido instructor en diversos bootcamps de programación en México, en donde ha enseñado programación desde cero. Ha trabajado como Software Engineer en empresas internacionales en donde trabaja con empresas internacionales utilizando desde React.Js hasta Ruby On Rails, y desde React Native hasta C#.
+                
                 </p>
-                <p>Anteriormente también coloboró como instructor en otros bootcamps en la Ciudad de México como: Ironhack y Dev.f, y con cursos en línea para
+                <p>Anteriormente también coloboró como instructor en otros bootcamps en la Ciudad de México como: Ironhack, Laboratoria y Dev.f, y con cursos en línea para
                   Dev.code. Héctor es un apasionado por la tecnología y la enseñanza, con más de 5 años de experiencia en el área, y cientos de estudiantes a lo
                   largo de su carrera.</p>
                 <p>
