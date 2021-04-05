@@ -62,11 +62,12 @@ class Courses extends Component {
                        
 
                         </div>
-                        <h2 className="title-m">Próximos cursos</h2>
+                        {/* <h2 className="title-m">Próximos cursos</h2>
                         <div className="flexin">
-                        <CourseCard image={siete} name="Tu primer aplicación con Firebase"
-                                    lecciones="12 lecciones" tiempo="35 minutos" mensaje="Junio 2020"
-                        />
+                            <ink>
+                            <CourseCard image={siete} name="Tu primer aplicación con Firebase"
+                                    lecciones="12 lecciones" tiempo="35 minutos" mensaje="Junio 2020"/>
+                            </link>
 
                         <CourseCard image={seis} name="Aprende Redux con React hooks y GraphQL"
                                     lecciones="10 lecciones" tiempo="40 minutos" mensaje="Junio 2020"
@@ -77,7 +78,7 @@ class Courses extends Component {
 
                         <CourseCard image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FCaptura%20de%20Pantalla%202020-05-17%20a%20la(s)%2018.15.28.png?alt=media&token=16b98926-f8e3-4596-b9a1-18e95d705149" name="Estructura de datos complejos con Realtime DB"
                                     lecciones="10 lecciones" tiempo="40 minutos" mensaje="Julio 2020"
-                        />
+                        /> */}
                     
 
 {/*                      
@@ -103,7 +104,7 @@ class Courses extends Component {
                             modalidad="Híbrida"
                             /> */} 
 
-                    </div>
+                    {/* </div> */}
                 </section>
             </section>
         )
