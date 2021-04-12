@@ -112,7 +112,7 @@
 }
 .card_share{
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     background-color: white;
     height: auto;
     text-align: center;
@@ -181,5 +181,27 @@ textarea:focus{
     }
     .box-c{
         width: 90%;
+    }
+}
+
+/* Tableref */
+.card_share .table-container{
+    width: 100%;
+}
+table{
+    width: 100%;
+}
+.points-ref{
+    text-align: right;
+}
+thead p{
+    margin: 10px 0;
+}
+tbody p{
+    margin: 5px 0;
+}
+@media(max-width:800px){
+    .card_share .table-container{
+        overflow-x: auto;
     }
 }
