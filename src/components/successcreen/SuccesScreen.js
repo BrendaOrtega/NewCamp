@@ -15,7 +15,7 @@ const SuccesScreen = ({visible}) => {
 
   return (
     <>
-        <div className="container">
+        <div className={isModalVisible?"container":"container-false"}>
             <Modal title="Congratulations" visible={isModalVisible} onCancel={handleCancel} footer={<Button type="primary" onClick={handleOk} danger>Listo</Button>}  width={900}>
                 <div className="congrats-card">
                     <h3>¡Felicidades!</h3>
