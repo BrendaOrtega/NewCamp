@@ -1,4 +1,3 @@
-import { stringify } from 'query-string';
 import React from 'react';
 import './Profile.css';
 const TableRef = ({referrals}) => {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import "./Profile.css"
-import TableRef from "./TableRef"
+import "./Profile.css";
+import TableRef from "./TableRef";
 const envelop = "https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Ficon1.png?alt=media&token=34163865-30eb-4ca1-a375-cfbbfdcf9872"
 const tv = "https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Ficon2.png?alt=media&token=1e78bd6e-e5df-43b2-be07-43b329ef9290"
 const img = "https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FConnected.svg?alt=media&token=92417c84-635e-4150-96bc-4ee1f4a07ff6"
@@ -57,7 +57,7 @@ class ShareLink extends Component {
                             <img src={img} alt="ilustration-success"/>
                         </div>
                     </div>
-                    <div className="card_share">
+                    <div className="card_share card_table">
                         <TableRef referrals={prueba}/>
                     </div>
                 </div>

@@ -185,14 +185,21 @@ textarea:focus{
 }
 
 /* Tableref */
+.card_table {
+    padding: 20px 5%;
+}
 .card_share .table-container{
     width: 100%;
+    margin: 0;
 }
 table{
     width: 100%;
 }
 .points-ref{
     text-align: right;
+}
+thead{
+    border-bottom: 2px solid #E5E5E5;
 }
 thead p{
     margin: 10px 0;
