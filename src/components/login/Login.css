@@ -128,7 +128,7 @@
     width: 700px;
     height: 100%;
     flex-grow: 1;
-    background:url("../../assets/img-login.png");
+    background-image:url("https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-position: center;
     background-size: cover;
 }
