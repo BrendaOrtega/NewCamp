@@ -93,14 +93,15 @@ function BootcampCard({
           {' '}
           <FontAwesome name="file" /> Exámen final
         </p>
-        <button className="btn-in">
-          {week1 || week0 ? (
-            <span onClick={() => history.push('/bootcamp/detail/' + bootcamp)}>
-              ¡Empezar ya!
-            </span>
-          ) : (
-            'Inscrito'
-          )}
+        <button
+          onClick={
+            week0
+              ? () => history.push('/bootcamp/detail/' + bootcamp)
+              : () => {}
+          }
+          className="btn-in"
+        >
+          {week1 || week0 ? <span>¡Empezar ya!</span> : 'Inscrito'}
         </button>
         {/* {available && (
           <button
