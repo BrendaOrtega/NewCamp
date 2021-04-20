@@ -184,9 +184,24 @@ const BD = ({
                 {' '}
                 <FontAwesome name="calendar" /> 8 semanas{' '}
               </p>
-              <p>
+              {/* <p>
                 {' '}
                 <FontAwesome name="file" /> Exámen final{' '}
+              </p> */}
+              <p>
+                <FontAwesome name="link" />{' '}
+                <a
+                  target="__blank"
+                  href="https://us02web.zoom.us/j/87621788006?pwd=MUhYelIzWW1aV3hKZTN4SURNaUZyQT09"
+                >
+                  Link de Zoom
+                </a>
+              </p>
+              <p>
+                <FontAwesome name="comments" />{' '}
+                <a target="__blank" href="https://discord.gg/yjwTB5SQ">
+                  Chat de Discord
+                </a>
               </p>
             </div>
           </div>
