@@ -26,7 +26,7 @@ function BootcampCard({
   let week1 = false
 
   const boot = React.useMemo(() => object[bootcamp], [object])
-  const week0 = React.useMemo(() => object[bootcamp].weeks[0], [object])
+  const week0 = React.useMemo(() => object[bootcamp]?.weeks[0], [object])
 
   console.log('weeks: ', week0)
 
@@ -73,7 +73,7 @@ function BootcampCard({
         </p>
         <p>
           {' '}
-          <FontAwesome name="user" /> {students.length + 195} Estudiantes
+          <FontAwesome name="user" /> {12} Estudiantes
         </p>
         {/*  <p>
           {" "}
