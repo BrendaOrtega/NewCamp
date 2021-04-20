@@ -96,7 +96,11 @@ function BootcampCard({
         <button
           onClick={
             week0
-              ? () => history.push('/bootcamp/detail/' + bootcamp)
+              ? () =>
+                  history.push(
+                    '/bootcamp/detail/' +
+                      (typeof bootcamp === 'string' ? bootcamp : _id),
+                  )
               : () => {}
           }
           className="btn-in"
