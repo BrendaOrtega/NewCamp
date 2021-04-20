@@ -52,17 +52,21 @@ class BootcampDescriptDocker extends Component {
           >
             <div className="box-programa">
               <h2> Descripción del curso</h2>
-              <p>En este curso aprenderás cómo funciona Docker, cómo se usa en etapas de desarrollo y producción a través de prácticas de integración y despliegue continuos. Este curso te puede ayudar a solucionar el clásico problema en equipos de trabajo "En mi máquina si funciona" sin importar si tu rol es Frontend, Backend o Científico de Datos; además conocerás como implementar Docker con herramientas como GitHub Actions y AWS.</p>
+              <p>En este curso aprenderás como funciona Docker, como se usa en etapas de desarrollo y producción a través de prácticas de integración y despliegue continuos. Este curso te puede ayudar a solucionar el clásico problema en equipos de trabajo "En mi máquina si funciona" sin importar si tu rol es Frontend, Backend o Científico de Datos; además conocerás como implementar Docker con herramientas como GitHub Actions y AWS.</p>
                 <hr className="g-line"/>
+                <div className="optimize">
               <h3>¿Qué aprenderás?</h3>
               <p>Te olvidarás del clásico "en mi maquina si funciona (trabajo en equipo)", conocerás todas las ventajas de tener toda la configuración en un Dockerfile, 
                   utilizaremos allgunos frameworks de trabajo como Node y Django que suelen comportarse diferente sobre docker.
               </p>
+
+          
               <hr className="g-line"/>
               <h3>Herramientas</h3>
               <TagT text="Docker"/>
               <TagT text="Django"/>
               <TagT text="NodeJs"/>
+              </div>
             </div>
             <div className="box-data">
               <div className="ipad-fl">
@@ -73,8 +77,14 @@ class BootcampDescriptDocker extends Component {
                   <hr />
                 </div>
                 <div>
-                  <p>Clases en vivo</p>
-                  <h3>32 horas</h3>
+                  <p>Clases</p>
+                  <h3>32 horas en vivo + offline</h3>
+
+                  <hr />
+                </div>
+                <div>
+                  <p> Duración </p>
+                  <h3>8 semanas</h3>
 
                   <hr />
                 </div>
@@ -96,21 +106,24 @@ class BootcampDescriptDocker extends Component {
           </section>
           <section className="modality">
             <div>
-                <h2 className="subtitulo">¿Cómo es un curso híbrido?</h2>
-                <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital de estudios para seguir aprendiendo online y profundizando en los temas mas relevantes.</p>
-                <p>Nuestro curso de desarrollo web solo es el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad global y tendrás acceso a nuestra plataforma digital de estudios para seguir aprendiendo online y profundizando en los temas mas relevantes.</p>                    
+                <h2 className="subtitulo">¿Cómo es un bootcamp híbrido?</h2>
+                <p>El objetivo del curso es que puedas aprender a tu ritmo y a su vez tener un instructor que pueda explicar temas complejos y resolver tus dudas.
+                   Así que bajo esta modalidad, tendrás acceso a los recursos del bootcamp en la plataforma, recursos en video y lecciones practicas, con base en las cuáles
+                   completarás algunas tareas correspondientes a cada tema, y además, tendrás acceso a 32hrs de clases en vivo con tu instructor, distribuidas en 16 sesiones de 2 horas cada una (2 sesiones semanales).
+                </p>
+                <p>Aprovecha lo mejor de dos mundos, aprende el lenguaje o herramienta que te gusta, a tu ritmo de la mano de un instructor con experiencia en el área.</p>                    
                 <br/>
-                <Link to="/apply/?b=5d632e4c339a1b379df68a74">
+                <Link to="/promo/aprende-docker">
                     <Button text="Inscribirme"/>
                 </Link>
             </div>
-            <div>
+            {/* <div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/0DJnTEAVFJE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            </div> */}
 
           </section>
-          <section className="contain">
-            <h2 className="subtitulo">Coumunidad y herramientas</h2>
+          <section className="contain load" >
+            <h2 className="subtitulo">Comunidad y herramientas</h2>
             <p className="text">Nuestros bootcamps y cursos, solo son el principio. Una vez finalizado el bootcamp, formarás parte de una comunidad internacional,
               y tendrás acceso a nuestra plataforma digital para seguir aprendiendo online y profundizando en los temas más relevantes.</p>
             <br/>
@@ -134,7 +147,7 @@ class BootcampDescriptDocker extends Component {
               </div>
               <div className="adds">
                 <h3><img src={graduated} alt="icon-diploma"/>Diploma</h3>
-                <p>Al concluir el bootcamp y aprobar el examen final, podrás descargar tu reconocimeinto, por haber concluido
+                <p>Al concluir el bootcamp y aprobar el examen final, podrás descargar tu reconocimiento, por haber concluido
                   satisfactoriamente el bootcamp.
                 </p>
               </div>
@@ -152,7 +165,7 @@ class BootcampDescriptDocker extends Component {
               <div className="instructor_info">
                 <h2 style={{fontSize:"24px"}} className="subtitulo">Andrés Quintero</h2>
                 <p>
-                Soy desarrollador autodidacta y he trabajado para Startups y empresas medianas con roles como Ingeniero de Datos e Ingeniero de Software. Me gusta el trabajo colaborativo, compartir conocimiento y aprender a construir una mejor web con equipos de personas increíbles.
+                Soy Software Engineer en PayPal, soy autodidacta y he trabajado para Startups y empresas medianas con roles como Ingeniero de Datos e Ingeniero de Software. Me gusta el trabajo colaborativo, compartir conocimiento y aprender a construir una mejor web con equipos de personas increíbles.
 
                 </p>
                 <div className="redes-instructor">

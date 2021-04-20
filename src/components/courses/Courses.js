@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Button from "../common/Button"
+import {Link} from "react-router-dom"
 import "./Courses.css"
 import {CourseCard} from "../card/CourseCard";
 import siete from "../../assets/badget1.png";
 import cinco from "../../assets/badget2.png";
 import seis from "../../assets/badget-3.png";
 import pyth from "../../assets/badgePYTHON_TTLBLCK_Mesa_de_trabajo_1.png";
+import web from "../../assets/badge3D_Mesa_de_trabajo_1.png"
 
 class Courses extends Component {
     componentDidMount () {
@@ -43,19 +44,30 @@ class Courses extends Component {
                 </section>
                 <section id="explorar" className=" gray">
                     <div className="flexin">
+                    <Link to="/detail/python">
                         <CourseCard image={pyth} name="Fundamentos de Programación con Python"
-                                    lecciones="40 lecciones" tiempo="5 horas" 
-                        />
+                                        lecciones="40 lecciones" tiempo="5 horas" />
+                    </Link>
+                    <Link to="/detail/web">
+                        <CourseCard image={web} name="Fundamentos de Desarrollo Web con JavaScript"
+                                        lecciones="65 lecciones" tiempo="6 horas" />
+                    </Link>
+                    <Link to="/detail/react">
                         <CourseCard image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fbadges_Mesa_de_trabajo_1_copia_3.png?alt=media&token=e91625bc-6438-4eb4-9fd0-abe6761bfd25" name="Crea una aplicación web con ReactJs 👾"
-                                    lecciones="45 lecciones" tiempo="4 horas" 
-                        />
+                                        lecciones="45 lecciones" tiempo="4 horas" 
+                            />
+                    </Link>
+                    
+                    
+                       
 
                         </div>
-                        <h2 className="title-m">Próximos cursos</h2>
+                        {/* <h2 className="title-m">Próximos cursos</h2>
                         <div className="flexin">
-                        <CourseCard image={siete} name="Tu primer aplicación con Firebase"
-                                    lecciones="12 lecciones" tiempo="35 minutos" mensaje="Junio 2020"
-                        />
+                            <ink>
+                            <CourseCard image={siete} name="Tu primer aplicación con Firebase"
+                                    lecciones="12 lecciones" tiempo="35 minutos" mensaje="Junio 2020"/>
+                            </link>
 
                         <CourseCard image={seis} name="Aprende Redux con React hooks y GraphQL"
                                     lecciones="10 lecciones" tiempo="40 minutos" mensaje="Junio 2020"
@@ -66,7 +78,7 @@ class Courses extends Component {
 
                         <CourseCard image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2FCaptura%20de%20Pantalla%202020-05-17%20a%20la(s)%2018.15.28.png?alt=media&token=16b98926-f8e3-4596-b9a1-18e95d705149" name="Estructura de datos complejos con Realtime DB"
                                     lecciones="10 lecciones" tiempo="40 minutos" mensaje="Julio 2020"
-                        />
+                        /> */}
                     
 
 {/*                      
@@ -92,7 +104,7 @@ class Courses extends Component {
                             modalidad="Híbrida"
                             /> */} 
 
-                    </div>
+                    {/* </div> */}
                 </section>
             </section>
         )

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Button from "../common/Button"
 import "./Bootcamp.css"
 import {CardBootcamp} from "../card/CardBootcamp";
-import pyth from "../../assets/badgePYTHON_TTLBLCK_Mesa_de_trabajo_1.png";
 import web from "../../assets/badge3D_Mesa_de_trabajo_1.png";
 
 const photo1 = "https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fphoto.jpg?alt=media&token=cbbffbc4-d321-4e8c-bc20-abcc83bc8710"
@@ -54,8 +52,8 @@ class Bootcamp extends Component {
                             <CardBootcamp
                                 image={photo1}
                                 badge={web}
-                                name="Fundamentos de Desarrollo Web con JavaScript"
-                                descript="Aprende las bases del desarrollo web, y maqueta y hostea tu propio sitio web con JavaScript 🚀"
+                                name="Aprende a programar con JavaScript"
+                                descript="Aprende las bases del desarrollo web, y maqueta tu propio sitio web dinámico con JavaScript 🚀"
                                 tiempo="8 semanas"
                                 horas="32hrs en vivo"
                                 link="/bootcamp-descript-web"
@@ -67,7 +65,7 @@ class Bootcamp extends Component {
                                 image="https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fpexels-photo-325229.jpeg?alt=media&token=6be10647-10bf-4fd1-89f2-dfaf9a664359"
                                 badge={web}
                                 name="Aprende microservicios con Docker"
-                                descript="Aprende a utilizarlo en etapas de desarrollo y producción siguiendo practicas de integración continua y despliegue continuo. 💻"
+                                descript="aprende como funciona Docker, como se usa en etapas de desarrollo y producción a través de prácticas de integración continua.  💻"
                                 tiempo="8 semanas"
                                 horas="32hrs en vivo"
                                 link="/bootcamp-descript-docker"

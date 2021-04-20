@@ -1,10 +1,10 @@
 .course-card{
     width: 320px;
-    height: 340px;
+    height: 310px;
     background-color: white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     color:#666;
-    padding: 3% 2% 1% 2%;
+    padding: 3% 2% 2% 2%;
     box-sizing: border-box;
     transition: all 1s ease;
     margin: 20px 0;
@@ -33,7 +33,7 @@
     align-items: center;
 }
 .badge{
-   height: 90%;
+   height: 180px;
     margin-top: -16px;
 
 }

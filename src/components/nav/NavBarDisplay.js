@@ -19,9 +19,6 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
     });
   };
 
-  function toggleMenu(){
-
-  }
 
   return (
     <div
@@ -86,13 +83,13 @@ export const NavBarDisplay = ({ loggedIn, logOut }) => {
             </Link>
             <div id="user-drop" className="dropdown-content">
               <Link to="/profile">
-                <p>🤖 Perfil</p>
+                <p><span role="img" aria-label="robot">🤖</span> Perfil</p>
               </Link>
               <Link to="/share-link">
-                <p>🔗  Compartir con amigos</p>
+                <p><span role="img" aria-label="link">🔗</span>   Compartir con amigos</p>
               </Link>
               <Link to="/feedback">
-                <p>💬  Feedback</p>
+                <p><span role="img" aria-label="message">💬</span>  Feedback</p>
               </Link>
               <p onClick={logOut} className="linea">
                 Cerrar Sesión

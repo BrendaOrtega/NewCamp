@@ -1,7 +1,6 @@
 import React from 'react';
 import "./CourseCard.css"
 import {Link} from "react-router-dom";
-import img from "../../assets/28698604_1973144766082686_589124668727305128_o.jpg";
 import FontAwesome from "react-fontawesome";
 
 

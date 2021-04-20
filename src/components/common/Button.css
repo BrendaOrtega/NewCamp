@@ -40,7 +40,7 @@
 }
 
 .btn-apply{
-    width: 180px;
+    width: 300px;
     height: 50px;
     background-color: white;
     border: 1px solid #A72E36;
@@ -91,4 +91,5 @@
     font-size: 16px;
     border: none;
     margin-right: 16px;
+    margin-top: 16px;
 }
