@@ -19,7 +19,32 @@ a{
 .redes-instructor a:hover{
   color:#962f35;
 }
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+  background-color: #ffebee !important;
+}
+.ant-menu-item-selected, .ant-menu-submenu-selected{
+  color:#ca3e47 !important;
+}
 
+.ant-menu-submenu-arrow::after{
+  color:#ca3e47 !important;
+}
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after{
+  border-right: 3px solid #ca3e47 !important;
+}
+.ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover{
+  color:#ca3e47 !important;
+}
+.link-tools a{
+  color:#BB333C !important;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.link-tools span{
+  color:#BB333C !important;
+
+}
 /*
 body{
   font-family: Avenir;

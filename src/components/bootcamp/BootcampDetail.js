@@ -189,7 +189,7 @@ const BD = ({
                 <FontAwesome name="file" /> Exámen final{' '}
               </p> */}
               {bootcamp.zoomLink && (
-                <p>
+                <p className="link-tools">
                   <FontAwesome name="link" />{' '}
                   <a target="__blank" href={bootcamp.zoomLink}>
                     Link de Zoom
@@ -197,7 +197,7 @@ const BD = ({
                 </p>
               )}
               {bootcamp.discordLink && (
-                <p>
+                <p className="link-tools">
                   <FontAwesome name="comments" />{' '}
                   <a target="__blank" href={bootcamp.discordLink}>
                     Chat de Discord
