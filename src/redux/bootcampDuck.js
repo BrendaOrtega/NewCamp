@@ -721,6 +721,7 @@ export function getWeekAdminAction(id) {
 
 export function getBootcampAction(id) {
   return (dispatch, getState) => {
+    if (!id) return dispatch({ type: GET_SINGLE_BOOTCAMP_ERROR })
     let {
       user: { token },
     } = getState()
@@ -744,8 +745,8 @@ export function getBootcampAction(id) {
           type: GET_SINGLE_BOOTCAMP_ERROR,
           payload: err.response.data.message,
         })
-        localStorage.removeItem('user')
-        dispatch({ type: 'LOGOUT' })
+        // localStorage.removeItem('user')
+        // dispatch({ type: 'LOGOUT' })
         return err
       })
   }
