@@ -94,7 +94,7 @@ class BootcampDescriptWeb extends Component {
                 </div>
                 <div>
                   <p>Fecha de Inicio</p>
-                  <h3>19 de Abril 2021</h3>
+                  <h3>06 de Diciembre 2021</h3>
                   <hr />
                 </div>
                 <div>
