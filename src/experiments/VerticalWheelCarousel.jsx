@@ -88,9 +88,9 @@ const VerticalWheelCarousel = (props) => {
     // console.log(window.WURFL) <= device detection
     return (
         <div className={`${styles.container} `}
-            style={{
-                flex: flex === 'xl' ? 1.5 : 1
-            }}
+            // style={{
+            //     flex: flex === 'xl' ? 1.5 : 1
+            // }}
             ref={ref}
             onMouseOver={onMouseOver}
             onMouseOut={onMouseOut}
