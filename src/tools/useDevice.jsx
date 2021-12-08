@@ -14,7 +14,6 @@ const useDevice = () => {
 
     window.onresize = function () {
         const isMobile = window.innerWidth < 720
-        console.log(window.innerWidth, isMobile)
         setDevice({
             isSmartPhone: navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i),
             width: window.innerWidth, height: window.innerHeight, type: isMobile ? 'Mobile' : 'Desktop'
