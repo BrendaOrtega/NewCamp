@@ -39,8 +39,10 @@ const VerticalWheelCarousel = (props) => {
         const group2 = document.querySelector('#second-column')
         group.style.top = `${top.current}px`
         group2.style.top = `${top.current}px`
-        animationFrameId.current = window.requestAnimationFrame(animate)
-        return () => window.cancelAnimationFrame(animationFrameId.current)
+        // animationFrameId.current = window.requestAnimationFrame(animate)
+        animationFrameId.current = setTimeout(animate, 1000 / 60)
+        // return () => window.cancelAnimationFrame(animationFrameId.current)
+        return () => clearTimeout(animationFrameId.current)
     }
 
     React.useLayoutEffect(() => {
@@ -69,7 +71,8 @@ const VerticalWheelCarousel = (props) => {
 
     const onMouseOver = (event) => {
         if (device.type === 'Mobile') { return }
-        window.cancelAnimationFrame(animationFrameId.current)
+        // window.cancelAnimationFrame(animationFrameId.current)
+        clearTimeout(animationFrameId.current)
 
     }
     const onMouseOut = () => {
@@ -83,7 +86,6 @@ const VerticalWheelCarousel = (props) => {
     })
 
     // console.log(window.WURFL) <= device detection
-    console.log(device?.type)
     return (
         <div className={`${styles.container} `}
             style={{
