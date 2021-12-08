@@ -30,6 +30,12 @@ import { CoursesDetailWeb } from './components/courses/CourseDetailWeb';
 import { CoursesDetailReact } from './components/courses/CourseDetailReact';
 import VerticalWheelCarousel from './experiments/VerticalWheelCarousel';
 
+import img1 from './assets/_DSC0390.30157168.jpeg'
+import img2 from './assets/14424919_1302624863134683_7580892335062101088_o.jpg'
+import img3 from './assets/17492500_1522831704447330_3133267459982867769_o.jpg'
+import img4 from './assets/17834072_1542858145778019_3295799447117516700_o.jpg'
+import img5 from './assets/28698604_1973144766082686_589124668727305128_o.jpg'
+import img6 from './assets/21105859_1384283821667002_3656915529923068437_n.jpg'
 
 let PrivateRoute = ({ component, path, ...rest }) => {
     let user = localStorage.user

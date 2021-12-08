@@ -1,0 +1,77 @@
+@keyframes moveUp {
+    100%{
+        transform: translateY(calc(-100% * 2.8));
+    }
+}
+
+.container{
+    flex:1;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    display: flex;
+    /* gap:1rem; */
+    padding: 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+
+.container .overlay {
+    width:100%;
+    height: 100px;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 9;
+    background-image: linear-gradient(white, transparent);
+}
+
+.group {
+    cursor: pointer;
+    box-sizing: border-box;
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    transition:all .3s linear;
+}
+
+/* .container:hover .one {
+    animation: none;
+} */
+
+.group .picture {
+    height: 350px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all .5s ease;
+}
+
+.group .picture:hover {
+    transform:scale(1.05);
+    perspective: 800px;
+}
+
+.group .picture:hover img {
+    transform:scale(1);
+}
+
+.picture img {
+    transition: all .8s ease;
+    height: 100%;
+    object-fit: cover;
+    object-position: -50px 10%;
+    transform: translate3d(0, 0, 0) scale(1.2);
+}
+
+.group.one {
+    position: relative;
+    transform:translateY(-150px);
+}
+
+.group.two {
+    padding-left: 12px;
+    position: relative;
+}
