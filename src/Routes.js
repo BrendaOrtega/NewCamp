@@ -28,6 +28,7 @@ import BootcampDescriptDocker from './components/bootcamp/BootcampDescriptDocker
 import Payment from './components/payment/Payment';
 import { CoursesDetailWeb } from './components/courses/CourseDetailWeb';
 import { CoursesDetailReact } from './components/courses/CourseDetailReact';
+import VerticalWheelCarousel from './experiments/VerticalWheelCarousel';
 
 
 let PrivateRoute = ({ component, path, ...rest }) => {
@@ -36,9 +37,22 @@ let PrivateRoute = ({ component, path, ...rest }) => {
     return <Route path={path} component={component} {...rest} />
 }
 
+const Experimentcomponent = () => {
+
+    const imgs = [
+        img1, img2, img3, img4, img5,
+        img6,
+    ]
+
+    return <div style={{ width: '100%', height: '100vh', display: 'flex', alignItems: 'center' }}>
+        <VerticalWheelCarousel sources={imgs} />
+        <h1 style={{ flex: 2, textAlign: 'center' }}>Title for the hero</h1>
+    </div>
+}
+
 export const Router = () => (
     <Switch>
-             
+
         {/* Admin */}
         <Route path="/admin" component={AdminPage} />
         <Route path="/promo-diciembre" component={Landing} />
@@ -47,6 +61,7 @@ export const Router = () => (
         <Route path="/detail/web" component={CoursesDetailWeb} />
         <Route path="/detail/react" component={CoursesDetailReact} />
         <Route exact path="/" component={HomeContainer} />
+        <Route exact path='/brendi' component={Experimentcomponent} />
 
         <Route exact path="/bootcamp" component={Bootcamp} />
         <Route path="/preguntas-frecuentes" component={Ask} />
@@ -54,8 +69,8 @@ export const Router = () => (
         <Route path="/bootcamp-descript-docker" component={BootcampDescriptDocker} />
         <Route path="/bootcamp-descript-web" component={BootcampDescriptWeb} />
         <Route path="/bootcamp-backend-nodejs" component={Backend} />
-        <Route path="/bootcamp-react-redux" component={BootcampDescriptReact}/>
-        <Route path="/bootcamp-react-pachuca" component={BootcampReactPachuca}/>
+        <Route path="/bootcamp-react-redux" component={BootcampDescriptReact} />
+        <Route path="/bootcamp-react-pachuca" component={BootcampReactPachuca} />
 
         <Route path="/bootcamp-php" component={BootcampPhp} />
         <Route path="/bootcamp/detail/:id" component={BootcampDetail} />
@@ -65,8 +80,8 @@ export const Router = () => (
         <Route path="/login" component={Login} />
         <Route path="/registro" component={Registro} />
         <Route path="/apply" component={Apply} />
-       
-        <Redirect path="/preorden" to="/bootcamp"/>
+
+        <Redirect path="/preorden" to="/bootcamp" />
         <Route path="/profile" component={ProfileContainer} />
         <Route path="/share-link" component={ShareLink} />
         <Route path="/feedback" component={Feedback} />
@@ -80,11 +95,11 @@ export const Router = () => (
         {/* <Route to="/gift" component={BuyForGift} /> */}
         {/* Fixter hibrid relaunch */}
         {/* <PrivateRoute next="/promo/id/:id" component={Payment}/> */}
-   
+
         {/* <PrivateRoute next="/promo/" component={Payment}/> */}
         {/* <PrivateRoute next="/promo/:slug" component={Payment}/> */}
-        <PrivateRoute path="/promo/:slug" component={Payment}/>
-        
+        <PrivateRoute path="/promo/:slug" component={Payment} />
+
 
 
     </Switch>
