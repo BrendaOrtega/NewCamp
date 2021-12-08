@@ -62,7 +62,7 @@
     transition: all .8s ease;
     height: 100%;
     object-fit: cover;
-    object-position: -50px 10%;
+    object-position: -50px 20%;
     transform: translate3d(0, 0, 0) scale(1.2);
 }
 
