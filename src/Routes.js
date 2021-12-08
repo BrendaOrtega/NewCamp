@@ -51,7 +51,7 @@ const Experimentcomponent = () => {
         img6,
     ]
 
-    return <div style={{ width: '100%', height: '90vh', display: 'flex', alignItems: 'center' }}>
+    return <div style={{ width: '100%', height: '90vh', display: 'flex', alignItems: 'center', maxWidth: 1440, margin: '0 auto' }}>
         <VerticalWheelCarousel flex="xl" sources={imgs} />
         <h1 className="desktopOnly" style={{ flex: 2, textAlign: 'center' }}>Title for the hero</h1>}
     </div>
