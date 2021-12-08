@@ -1,4 +1,5 @@
 import * as React from 'react'
+import useDevice from '../tools/useDevice'
 
 import styles from './VerticalWheelCarousel.module.css'
 
@@ -6,6 +7,11 @@ const VerticalWheelCarousel = (props) => {
     const { sources, flex = 1 } = props
     const top = React.useRef(0)
     const ref = React.useRef()
+
+    const animationFrameId = React.useRef()
+
+    const device = useDevice()
+    // const device = useDevice()
     // const style = useSpring({
     //     from: { top: 0 },
     //     to: { top: -1895 },
@@ -14,12 +20,9 @@ const VerticalWheelCarousel = (props) => {
     //     pause
     // })
 
-    let myReq
     let direction = 'up'
 
     const animate = () => {
-        // console.log("Running", top)
-
         if (direction === 'up') {
             top.current--
             if (top.current < -(sources.length * 100)) {
@@ -36,8 +39,8 @@ const VerticalWheelCarousel = (props) => {
         const group2 = document.querySelector('#second-column')
         group.style.top = `${top.current}px`
         group2.style.top = `${top.current}px`
-        myReq = window.requestAnimationFrame(animate)
-        return () => window.cancelAnimationFrame(myReq)
+        animationFrameId.current = window.requestAnimationFrame(animate)
+        return () => window.cancelAnimationFrame(animationFrameId.current)
     }
 
     React.useLayoutEffect(() => {
@@ -65,20 +68,24 @@ const VerticalWheelCarousel = (props) => {
     }
 
     const onMouseOver = (event) => {
-        window.cancelAnimationFrame(myReq)
+        if (device.type === 'Mobile') { return }
+        window.cancelAnimationFrame(animationFrameId.current)
+
     }
     const onMouseOut = () => {
+        if (device.type === 'Mobile') { return }
         animate()
     }
 
     window.addEventListener('mousemove', e => {
+        if (device.type === 'Mobile') { return }
         followMouse(e.clientY / window.innerHeight - 0.5)
-        // followMouse(-(e.clientY / (ref.current.height) - 0.5))
-        // followMouse((e.clientY - ref.current.height / 2) / (ref.current.height / 2) * -30)
     })
 
+    // console.log(window.WURFL) <= device detection
+    console.log(device?.type)
     return (
-        <div className={styles.container}
+        <div className={`${styles.container} `}
             style={{
                 flex: flex === 'xl' ? 1.5 : 1
             }}

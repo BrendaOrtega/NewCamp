@@ -36,6 +36,7 @@ import img3 from './assets/17492500_1522831704447330_3133267459982867769_o.jpg'
 import img4 from './assets/17834072_1542858145778019_3295799447117516700_o.jpg'
 import img5 from './assets/28698604_1973144766082686_589124668727305128_o.jpg'
 import img6 from './assets/21105859_1384283821667002_3656915529923068437_n.jpg'
+import useDevice from './tools/useDevice';
 
 let PrivateRoute = ({ component, path, ...rest }) => {
     let user = localStorage.user
@@ -50,9 +51,9 @@ const Experimentcomponent = () => {
         img6,
     ]
 
-    return <div style={{ width: '100%', height: '100vh', display: 'flex', alignItems: 'center' }}>
-        <VerticalWheelCarousel sources={imgs} />
-        <h1 style={{ flex: 2, textAlign: 'center' }}>Title for the hero</h1>
+    return <div style={{ width: '100%', height: '90vh', display: 'flex', alignItems: 'center' }}>
+        <VerticalWheelCarousel flex="xl" sources={imgs} />
+        <h1 className="desktopOnly" style={{ flex: 2, textAlign: 'center' }}>Title for the hero</h1>}
     </div>
 }
 
