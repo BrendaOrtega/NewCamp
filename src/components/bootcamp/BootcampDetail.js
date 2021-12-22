@@ -58,7 +58,7 @@ let morosos = {
 
 const { TabPane } = Tabs
 
-function callback(key) {}
+function callback(key) { }
 const BD = ({
   user,
   uHomeworks,
@@ -217,7 +217,7 @@ const BD = ({
               forceSubMenuRender={true}
               mode={'inline'}
 
-              // onSelect={(e) => console.log(e)}
+            // onSelect={(e) => console.log(e)}
             >
               {bootcamp.weeks.map((w, i) => {
                 let available = moment(w.startDate) < moment()

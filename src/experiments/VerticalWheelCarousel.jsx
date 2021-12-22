@@ -40,6 +40,7 @@ const VerticalWheelCarousel = (props) => {
     const style = ({ transform: isOver ? offset.to(translate) : spring.number.to(translate) })
 
     const followMouse = (e) => {
+        // if (device.type === 'Mobile') { return }
         const posY = e?.clientY
         const offset = window.pageYOffset - posY;
         if (isNaN(offset)) { return }
@@ -55,7 +56,7 @@ const VerticalWheelCarousel = (props) => {
     }
 
     const onMouseOver = (event) => {
-        // api.pause()
+        // if (device.type === 'Mobile') { return }
         setIsOver(true)
     }
     const onMouseOut = () => {

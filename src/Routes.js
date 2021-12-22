@@ -37,6 +37,7 @@ import img4 from './assets/17834072_1542858145778019_3295799447117516700_o.jpg'
 import img5 from './assets/28698604_1973144766082686_589124668727305128_o.jpg'
 import img6 from './assets/21105859_1384283821667002_3656915529923068437_n.jpg'
 import useDevice from './tools/useDevice';
+import DiciplineChallenge from './components/temp/DiciplineChallenge';
 
 let PrivateRoute = ({ component, path, ...rest }) => {
     let user = localStorage.user
@@ -106,6 +107,8 @@ export const Router = () => (
         {/* <PrivateRoute next="/promo/" component={Payment}/> */}
         {/* <PrivateRoute next="/promo/:slug" component={Payment}/> */}
         <PrivateRoute path="/promo/:slug" component={Payment} />
+        {/* Sólo enero 2022 */}
+        <PrivateRoute path="/discipline-challenge" component={DiciplineChallenge} />
 
 
 
