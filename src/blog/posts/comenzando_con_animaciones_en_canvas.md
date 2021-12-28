@@ -1,9 +1,9 @@
 # Comenzando con animaciones en canvas
-<img style="max-width: 100%;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fak.picdn.net%2Fshutterstock%2Fvideos%2F3152752%2Fthumb%2F1.jpg&f=1&nofb=1" />
+<img style="max-width: 100%;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpaperup.com%2Fuploads%2Fwallpapers%2F2013%2F02%2F05%2F35575%2F9ec017d54ecd74c55c44cfad7111f9d6.jpg&f=1&nofb=1" />
 
 ## Vamos directo al código
 
-Hay muchas formas de empezar pero yo prefiero hacerlo todo en el mismo archivo, así que en vez de colocar la etiqueta `canvas` y sus atributos directamente en el archivo `.html`, vamos a hacer con el archivo de JavaScript `.js`
+Hay muchas formas de empezar pero yo prefiero hacerlo todo en el mismo archivo, así que en vez de colocar la etiqueta `canvas` y sus atributos directamente en el archivo `.html`, vamos a hacerlo con el archivo de JavaScript `.js`
 
 ```javascript
 const canvas = document.createElement('canvas')

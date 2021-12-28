@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+.blogList {
+    font-family: 'Raleway', sans-serif;
+    padding:4rem 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    max-width: 1400px;
+    gap: 15px;
+}
+
 .container {
     font-family: 'Raleway', sans-serif;
     padding:4rem 0;
@@ -19,6 +33,7 @@
 
 .reader {
     width: 704px;
+    font-size: 1rem;
 }
 
 /* Mobile */
@@ -27,6 +42,6 @@
         font-size: 2rem;
     }
     .reader {
-        width: 320px;
+        width: 100%;
     }
 }
