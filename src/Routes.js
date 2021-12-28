@@ -38,6 +38,8 @@ import img5 from './assets/28698604_1973144766082686_589124668727305128_o.jpg'
 import img6 from './assets/21105859_1384283821667002_3656915529923068437_n.jpg'
 import useDevice from './tools/useDevice';
 import DiciplineChallenge from './components/temp/DiciplineChallenge';
+import BlogReader from './blog/BlogReader';
+import Blog from './blog/Blog';
 
 let PrivateRoute = ({ component, path, ...rest }) => {
     let user = localStorage.user
@@ -60,6 +62,9 @@ const Experimentcomponent = () => {
 
 export const Router = () => (
     <Switch>
+        {/* Blog  */}
+        <Route path="/blog/:slug" component={BlogReader} />
+        <Route path="/blog" component={Blog} />
 
         {/* Admin */}
         <Route path="/admin" component={AdminPage} />
