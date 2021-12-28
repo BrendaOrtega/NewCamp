@@ -1,5 +1,5 @@
 # Comenzando con animaciones en canvas
-<img style="max-width: 100%;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpaperup.com%2Fuploads%2Fwallpapers%2F2013%2F02%2F05%2F35575%2F9ec017d54ecd74c55c44cfad7111f9d6.jpg&f=1&nofb=1" />
+<img loading="lazy" style="max-width: 100%;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpaperup.com%2Fuploads%2Fwallpapers%2F2013%2F02%2F05%2F35575%2F9ec017d54ecd74c55c44cfad7111f9d6.jpg&f=1&nofb=1" />
 
 ## Vamos directo al código
 
