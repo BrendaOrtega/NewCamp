@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./Footer.css"
 import FontAwesome from "react-fontawesome"
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Footer extends Component {
     render() {
@@ -23,6 +23,9 @@ class Footer extends Component {
                         <Link to="/preguntas-frecuentes">
                             <p>Preguntas Frecuentes</p>
                         </Link>
+                        <Link to="/pricing">
+                            <p>Precios</p>
+                        </Link>
 
                     </div>
                     <div className="rec">
@@ -37,16 +40,16 @@ class Footer extends Component {
                     <div className="redes">
                         <h3>Síguenos</h3>
                         <a href="https://www.facebook.com/fixterme/" target="blank" rel="noopener noreferrer">
-                            <FontAwesome name="facebook"/>
+                            <FontAwesome name="facebook" />
                         </a>
                         <a href="https://wa.me/5217757609276" target="blank" rel="noopener noreferrer">
-                            <FontAwesome name="whatsapp"/>
+                            <FontAwesome name="whatsapp" />
                         </a>
                         <a href="https://www.youtube.com/channel/UC2cNZUym14-K-yGgOEAFh6g" target="blank" rel="noopener noreferrer">
-                            <FontAwesome name="youtube"/>
+                            <FontAwesome name="youtube" />
                         </a>
                         <a href="https://www.instagram.com/fixtergeek/?hl=es-la" target="blank" rel="noopener noreferrer">
-                            <FontAwesome name="instagram"/>
+                            <FontAwesome name="instagram" />
                         </a>
 
                     </div>

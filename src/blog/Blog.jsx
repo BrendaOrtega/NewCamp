@@ -18,7 +18,7 @@ const PostCard = ({ title, slug, img, description, onClick }) => <Card
     style={{ maxWidth: 360 }}
     hoverable
     onClick={onClick}
-    cover={<img alt="blog post" src={img} />}
+    cover={<img loading="lazy" alt="blog post" src={img} />}
 >
     <Meta title={title} description={description} />
 </Card>
@@ -29,7 +29,7 @@ const Blog = ({ history }) => {
     }
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>Fixter Blog</h1>
+            <h1 className={styles.title}>Fixter Blog. Aprende algo nuevo hoy.</h1>
             <div className={styles.blogList}>
                 {posts.map(post => <PostCard onClick={() => redirectToPost(post.slug)} {...post} />)}
             </div>

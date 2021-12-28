@@ -40,10 +40,11 @@ import useDevice from './tools/useDevice';
 import DiciplineChallenge from './components/temp/DiciplineChallenge';
 import BlogReader from './blog/BlogReader';
 import Blog from './blog/Blog';
+import PricingPage from './components/subscriptions/PricingPage';
 
 let PrivateRoute = ({ component, path, ...rest }) => {
     let user = localStorage.user
-    if (!user) return <Redirect to={`/login?next=${path}`} />
+    if (!user) return <Redirect to={`/login=${path}`} />
     return <Route path={path} component={component} {...rest} />
 }
 
@@ -65,6 +66,9 @@ export const Router = () => (
         {/* Blog  */}
         <Route path="/blog/:slug" component={BlogReader} />
         <Route path="/blog" component={Blog} />
+
+        {/* Pricing and subscription */}
+        <Route path="/pricing" component={PricingPage} />
 
         {/* Admin */}
         <Route path="/admin" component={AdminPage} />

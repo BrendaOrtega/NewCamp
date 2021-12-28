@@ -1,0 +1,154 @@
+.pe {
+    margin:0;
+ }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: ProximaNovaB;
+    font-size: 1.1rem;
+    padding-top: 60px;
+    text-align: center;
+    color:#304659;
+    padding-bottom: 50px;
+
+}
+
+.pro {
+    color:#CA3E47;
+}
+
+.subtitle { 
+    color:#3B5266;
+    font-family: ProximaRegular;
+}
+
+.toggle {
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    text-transform: uppercase;
+    color:grey;
+}
+
+.highlighted {
+    color: #304659;
+    font-weight: bold;
+}
+
+.save {
+    color:#CA3E47;
+}
+
+.card { 
+    width: 500px;
+    box-shadow: 1px 1px 50px grey;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.mascot {
+    position: absolute;
+    right: -550px;
+    top: 100px;
+    width:600px;
+}
+
+.monthlyPrice { 
+    font-size: 70px;
+}
+
+.extraInfo {
+    font-family: ProximaThin;
+    font-weight: bold;
+}
+
+.lineThrough {
+    color:grey;
+    text-decoration: line-through;
+}
+
+.button {
+    background-color: #CA3E47;
+    padding: 10px 20px 10px 20px;
+    color:white;
+    border: none;
+    font-size: 1.3rem;
+    width: 300px;
+    cursor: pointer;
+    transition: all .3s;
+    margin: 20px 0;
+}
+
+.button:hover {
+    box-shadow: 2px 3px 4px #304659;
+}
+
+.icons { 
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+}
+
+.iconGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.icon {
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #CA3E47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.comment {
+    padding: 40px 0;
+    font-size: 1.5rem;
+    max-width: 700px;
+}
+
+@media (max-width:700px) {
+    .container h1 {
+        font-size:1.5rem;
+    }
+
+    .toggle {
+        gap: 1px;
+    }
+
+    .card {
+        width: 80%;
+    }
+    
+    .button {
+        width: 220px;
+        font-size: 1rem;
+    }
+
+    .icons {
+        width: 100%;
+    }
+
+    .iconGroup {
+        font-size: .8rem;
+    }
+
+    .mascot {
+        display: none;
+    }
+}
