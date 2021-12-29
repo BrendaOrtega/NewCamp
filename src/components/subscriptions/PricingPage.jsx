@@ -6,7 +6,17 @@ import axios from 'axios'
 
 const PricingPage = ({ history }) => {
     const [loading, setLoading] = React.useState(false)
-    const { token } = useSelector(({ user }) => user)
+    const { token, role } = useSelector(({ user }) => user)
+
+    React.useEffect(() => {
+        console.log(window.location)
+        const url = new URL(
+            window.location.href
+        );
+        if (role === 'PLUS' || url.searchParams.get('success')) {
+            history.push('/profile')
+        }
+    }, [])
 
     const routeToCheckout = async (yearly, priceId) => {
         setLoading(true)
@@ -17,6 +27,8 @@ const PricingPage = ({ history }) => {
             // history.push('/pricing/anual')
             window.location.replace(`${process.env.REACT_APP_BACKEND_ROUTE}/create-checkout-session/yearly?id=${priceId}&token=${token}`)
             // window.location.replace(`http://localhost:8000/create-checkout-session/yearly?id=${priceId}&token=${token}`)
+        } else {
+            window.location.replace(`${process.env.REACT_APP_BACKEND_ROUTE}/create-checkout-session/monthly?id=${priceId}&token=${token}`)
         }
     }
     return (

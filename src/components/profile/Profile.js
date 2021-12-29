@@ -8,6 +8,7 @@ import { UserEvents } from "./UserEvents";
 import { storage } from "../../firebase";
 import FontAwesome from "react-fontawesome";
 import UserEditions from "./UserEditions";
+import { useSelector } from "react-redux";
 
 const { TabPane } = Tabs;
 
@@ -31,7 +32,7 @@ export const Profile = ({
   changePass,
   updatePassword,
 }) => {
-  // console.log(bootcamps)
+  const { token } = useSelector(({ user }) => user)
 
   let input = useRef();
   let [profile, setProfile] = useState({});
@@ -132,6 +133,13 @@ export const Profile = ({
               </p>
 
               <span style={styles.email}>{email}</span>
+              <br />
+              <button onClick={() => {
+                window.location.replace(`${process.env.REACT_APP_BACKEND_ROUTE}/billing?token=${token}`)
+                // window.location.replace(`http://localhost:8000/billing?token=${token}`)
+              }}>
+                Administrar membresía PLUS
+              </button>
             </div>
           )}
 
@@ -168,7 +176,7 @@ export const Profile = ({
       </div>
       <section className="contenido">
         <Tabs defaultActiveKey="5" onChange={callback}>
-        <TabPane tab="Bootcamps" key="5">
+          <TabPane tab="Bootcamps" key="5">
             <UserEditions />
           </TabPane>
           <TabPane tab="Cursos" key="1">

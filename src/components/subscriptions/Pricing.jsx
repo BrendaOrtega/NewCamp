@@ -21,7 +21,7 @@ const Pricing = ({ loading, onYearly, onMonthly }) => {
     return (
         <div className={styles.container}>
             <h1>
-                {yearly ? <p className={styles.pe} >¡Consigue fixter.camp  < Plus />  gratis por 30 días!</p> : <p className={styles.pe}>Aprende a programar ¡hoy mismo!</p>}
+                {yearly ? <p className={styles.pe} >¡Prueba fixter.camp  < Plus />  gratis por 30 días!</p> : <p className={styles.pe}>Aprende a programar ¡hoy mismo!</p>}
             </h1>
             <p className={styles.subtitle}>
                 Sube el nivel de tus habilidades técnicas y de programación con cursos avanzados, proyectos reales y mucho más.
@@ -107,17 +107,17 @@ const Pricing = ({ loading, onYearly, onMonthly }) => {
             <Collapse style={{ textAlign: 'left', width: '80%' }} defaultActiveKey={['1']}>
                 <Panel header="¿Existe alguna pelnalización por cancelar?" key="1">
                     <p>
-                        Para nada, no existe ninguna penalización por cancelar tu suscripción PRO, puedes cancelar fixter.camp PRO en cualquier momento y seguirás teniendo acceso el tiempo que ya hayas pagado.
+                        Para nada, no existe ninguna penalización por cancelar tu suscripción PLUS, puedes cancelar fixter.camp PLUS en cualquier momento y seguirás teniendo acceso el tiempo que ya hayas pagado.
                     </p>
                 </Panel>
                 <Panel header="¿Cómo funcionan los 30 días gratis?" key="2">
                     <p>
-                        Al suscribirte a fixter.camp PRO por pago anual (12 meses) recibes un mes entero grátis, así que solo estarías pagando 11 meses de $199, $2,189 en total
+                        Al suscribirte a fixter.camp PLUS por pago anual recibes un mes entero grátis, incluso puedes cancelar antes de los 30 días gratis y no se te hará cargo alguno.
                     </p>
                 </Panel>
                 <Panel header="¿Cual es la diferencia entre la membresía mensual y la anual?" key="3">
                     <p>
-                        fixter.camp PRO está disponible en suscripción mensual y anual, los dos tipos de suscripción te dan acceso ilimitado a todos los cursos, material extra, ejercicios y proyectos reales.
+                        fixter.camp PLUS está disponible en suscripción mensual y anual, los dos tipos de suscripción te dan acceso ilimitado a todos los cursos, material extra, ejercicios y proyectos reales.
                         La suscripción mensual se renova automáticamente cada mes, mientras que la suscripción anual se renueva automáticamente cada 12 meses.
                     </p>
                 </Panel>
