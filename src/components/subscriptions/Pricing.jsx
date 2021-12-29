@@ -43,7 +43,7 @@ const Pricing = ({ loading, onYearly, onMonthly }) => {
                 <p className={styles.extraInfo}>
                     {
                         yearly ?
-                            <span><span className={styles.lineThrough} >$3,588</span> $2,189 único pago por 12 meses</span> : <span> pago mensual</span>
+                            <span><span className={styles.lineThrough} >$3,588</span> $2,388 único pago por 12 meses</span> : <span> pago mensual</span>
                     }
                 </p>
                 {loading ? <Spin /> : <button

@@ -7,10 +7,14 @@ let initial = {
 }
 function reducer(state = initial, action) {
     switch (action.type) {
+
+        case GET_SELF:
         case UPDATE_PASSWORD:
             return { ...state, fetching: true }
+        case GET_SELF_ERROR:
         case UPDATE_PASSWORD_ERROR:
             return { ...state, fetching: false, error: action.payload }
+        case GET_SELF_SUCCESS:
         case UPDATE_PASSWORD_SUCCESS:
             return { ...state, fetching: false, ...action.payload, error: null }
 
@@ -62,6 +66,10 @@ function reducer(state = initial, action) {
 }
 
 // constants
+const GET_SELF = 'GET_SELF'
+const GET_SELF_SUCCESS = 'GET_SELF_SUCCESS'
+const GET_SELF_ERROR = 'GET_SELF_ERROR'
+
 const UPDATE_HOMEWORK = "UPDATE_HOMEWORK"
 
 const UPDATE_PASSWORD = "UPDATE_PASSWORD"
@@ -92,6 +100,23 @@ const LOGOUT = "LOGOUT"
 
 
 // thunks
+export function getSelfAction() {
+    return (dispatch, getState) => {
+        dispatch({ type: GET_SELF })
+        const { user: { token } } = getState()
+        return axios.get(`${baseURL}/self`, { headers: { Authorization: token } })
+            .then(({ data }) => {
+                dispatch({ type: GET_SELF_SUCCESS, payload: { ...data } })
+                return data
+            })
+            .catch(err => {
+                if (!err || !err.response) return dispatch({ type: GET_SELF_ERROR, payload: "Sucedió un error inesperado" })
+                dispatch({ type: GET_SELF_ERROR, payload: err.response?.data?.message })
+                return err
+            })
+    }
+}
+
 export function updatePasswordAction(newPass) {
     return (dispatch, getState) => {
         let { user: { token } } = getState()

@@ -32,7 +32,7 @@ export const Profile = ({
   changePass,
   updatePassword,
 }) => {
-  const { token } = useSelector(({ user }) => user)
+  const { token, role } = useSelector(({ user }) => user)
 
   let input = useRef();
   let [profile, setProfile] = useState({});
@@ -134,12 +134,12 @@ export const Profile = ({
 
               <span style={styles.email}>{email}</span>
               <br />
-              <button onClick={() => {
+              {role === 'PLUS' || role === 'ADMIN' && <button onClick={() => {
                 window.location.replace(`${process.env.REACT_APP_BACKEND_ROUTE}/billing?token=${token}`)
                 // window.location.replace(`http://localhost:8000/billing?token=${token}`)
               }}>
                 Administrar membresía PLUS
-              </button>
+              </button>}
             </div>
           )}
 
