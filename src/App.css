@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "ProximaRegular";
+  src: url("./assets/fonts/Regular.otf");
+}
+@font-face {
+  font-family: "ProximaThin";
+  src: url("./assets/fonts/Thin.otf");
+}
+@font-face {
+  font-family: "ProximaNovaB";
+  src: url("./assets/fonts/NovaBold.otf");
+}
+a{
+  cursor: pointer;
+}
+.redes-instructor a{
+  color: rgba(0, 0, 0, 0.4);
+}
+.redes-instructor a:hover{
+  color:#962f35;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+  background-color: #ffebee !important;
+}
+.ant-menu-item-selected, .ant-menu-submenu-selected{
+  color:#ca3e47 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-menu-submenu-arrow::after{
+  color:#ca3e47 !important;
+}
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after{
+  border-right: 3px solid #ca3e47 !important;
+}
+.ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover{
+  color:#ca3e47 !important;
+}
+.link-tools a{
+  color:#BB333C !important;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.link-tools span{
+  color:#BB333C !important;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

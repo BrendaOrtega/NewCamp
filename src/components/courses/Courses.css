@@ -1,0 +1,246 @@
+.intro-courses{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.courses-descript{
+    width: 400px;
+    flex-grow: 1;
+    background-image: url('../../assets/banner_section_Mesa de trabajo 1 copia.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    box-sizing: border-box;
+    margin-top: 70px;
+
+}
+.courses-descript p{
+    font-size: 18px;
+    margin-top: -20px;
+}
+.cc-image{
+    width: 500px;
+    height: 100%;
+    flex-grow: 2;
+    background-image: url('../../assets/_DSC0390.30157168.jpeg');
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+
+}
+.box-courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.catalogo{
+    padding: 50px 10%;
+    box-sizing: border-box;
+}
+
+
+/*DETAIL COURSE*/
+.flex{
+    display: flex;
+    padding: 160px 10% 80px 10%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.detail-descript{
+    width: 500px;
+    flex-grow: 1;
+}
+.detail-descript h2{
+    font-size: 36px;
+}
+.detail-descript p{
+    font-size: 18px;
+}
+.detail-badge{
+    width: 350px;
+    flex-grow: 1;
+   
+}
+.detail-badge img{
+    width: 200px;
+    margin-left: 320px;
+}
+
+.box-detail{
+    padding: 30px 10% 80px 10%;
+    background-color: #f5f5f5;
+}
+.box-detail h2{
+    font-size: 24px;
+}
+#box-videos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.course-descript{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.descripcion-text{
+    width: 700px;
+    flex-grow: 2;
+}
+.descripcion-text iframe{
+    width: 100%;
+    height: 380px;
+}
+.descripcion-text h3{
+    font-size: 24px;
+    margin: 24px 0 12px 0;
+}
+.descripcion-text p{
+    font-size: 18px;
+}
+.descripcion-autor{
+    width: 240px;
+    height: 380px;
+    flex-grow: 1;
+    margin: 0  0px 0 30px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    padding: 2%;
+    box-sizing: border-box;
+}
+.descripcion-autor h3, h4 .descripcion-text h3{
+    color:#323232;
+}
+.descripcion-autor h3{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.descripcion-autor h4{
+    font-size: 14px;
+}
+.descripcion-autor p{
+    font-size: 12px;
+}
+.descripcion-autor span{
+    font-size: 16px;
+    margin-right: 8px;
+}
+.autor-foto{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
+.divider{
+    width: 100%;
+    margin: 0 auto;
+    height: 1px;
+    border: none;
+    background-color:#a7a7a7 ;
+    opacity: .2;
+    margin-bottom: 8px;
+}
+.ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box{
+    padding-left: 48px;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header{
+    font-weight: bold;
+}
+#price{
+    color:#323232;
+    font-weight: bold;
+}
+
+
+@media (max-width: 1200px) {
+   .descripcion-text{
+       width: 500px;
+   }
+
+    .detail-badge img{
+        margin-left: 120px;
+    }
+    .flex{
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media (max-width: 890px) {
+    .cc-image{
+        width: 300px;
+    }
+    .box-steps{
+        justify-content: center;
+    }
+    .detail-badge{
+        text-align: center;
+    }
+    .detail-badge img{
+        width: 30%;
+        margin-left: 0px;
+        margin-bottom: 24px;
+        /* display: none; */
+    }
+    .descripcion-autor{
+       margin: 0px;
+        padding: 5% ;
+        margin-top: 32px;
+    }
+    
+    .flex{
+        padding: 120px 10% 40px 10%;
+        flex-wrap: wrap-reverse;
+    }
+}
+
+
+@media(max-width: 550px) {
+    .cc-image{
+        height: 200px;
+    }
+
+    .catalogo{
+        margin-top: 32px;
+        height: auto;
+        padding: 0 5%;
+    }
+    .box-courses{
+        justify-content: center;
+    }
+    .flex{
+        padding: 60px 10% 40px 10%;
+        justify-content: center;
+    }
+    .detail-badge{
+        text-align: center;
+        margin-top:50px;
+    }
+    .detail-badge img{
+        width: 60%;
+    }
+    .detail-descript h2{
+        font-size: 28px;
+    }
+    .detail-descript p{
+        font-size: 16px;
+    }
+    .descripcion-text iframe{
+        height: 240px;
+    }.intro-courses{
+
+         height: auto;
+     }
+
+}

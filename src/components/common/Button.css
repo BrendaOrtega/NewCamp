@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+.btn-explore{
+    width: 180px;
+    height: 40px;
+    background-color: #A72E36;
+    border: none;
+
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    transition:all .5s ease;
+    font-size: 18px;
+    font-family: Avenir;
+}
+
+.btn-explore-circular{
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+}
+
+.btn-explore:disabled{
+    background-color:#ccc;
+    cursor:not-allowed;
+}
+
+.btn-explore span{
+    margin-right: 5px;
+}
+
+.btn-explore:hover{
+    box-shadow: inset 0 -70px 0 0 #962f35;
+}
+.btn-explore:hover:disabled{
+    box-shadow: inset 0 -70px 0 0 #ccc;
+}
+
+.btn-explore:active{
+    box-shadow: inset 0 -70px 0 0 #EEECEC;
+}
+
+.btn-apply{
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #A72E36;
+   /* text-transform: uppercase;*/
+    color: #ca3e47;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 1s ease;
+    font-size: 18px;
+    font-family: Avenir;
+}
+.btn-apply span{
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+.btn-apply:hover{
+    background-color:#A72E36;
+    color:white;
+
+}
+.btn-user{
+    background-color: #5b5764;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #5b5764;
+  /*  text-transform: uppercase;*/
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 1s ease;
+    font-size: 16px;
+    font-family: Avenir;
+}
+
+.btn-user:hover{
+    background-color: #45424c;
+}
+
+
+/* TAG */
+.tool-tag{
+    padding: 0 16px;
+    height: 32px;
+    background-color: #EEECEC;
+    color: black;
+    border-radius: 16px;
+    font-size: 16px;
+    border: none;
+    margin-right: 16px;
+    margin-top: 16px;
+}

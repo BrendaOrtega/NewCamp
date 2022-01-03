@@ -1,0 +1,141 @@
+.nav{
+    width: 80%;
+    /* margin-left: 10%; */
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    font-family: Avenir;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 9999;
+
+}
+.line{
+    height: 40px;
+    width: 1px;
+    background-color: rgb(204,204,204);
+    opacity: .2;
+    border: none;
+}
+.logo{
+    height: 60px;
+}
+.pestanas{
+    display: flex;
+    align-items: center;
+}
+.pestanas p{
+    margin: 0 24px;
+    cursor: pointer;
+}
+.btn-aply{
+    width: 160px;
+    height: 40px;
+    background-color: #ca3e47;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 1s ease;
+    font-size: 14px;
+    margin: 0 20px;
+}
+
+.btn-aply:hover{
+    background-color:#962f35;
+
+}
+.nav a{
+    color:#f6f6f6;
+}
+.nav a:active{
+    color:#ca3e47;
+}
+.red-line{
+    background-color: #ca3e47;
+    border: none;
+    height: 2px;
+    width: 0px;
+    transition: all 1s ease;
+    margin: 3px auto;
+}
+.nav a:hover{
+    color: white;
+}
+.nav a:hover .red-line{
+    width: 40px;
+}
+.movil{
+    display: none;
+}
+.dropdown {
+    position: relative;
+
+}
+
+.dropdown-content.active{
+    display: inherit;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    right: -22px;
+    top: 24px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    right: -22px;
+    top: 24px;
+}
+.dropdown-content p{
+    font-size: 16px;
+    color:#525252;
+    margin: 0;
+    padding: 8px 12px;
+}
+.linea{
+    border-top: 1px solid rgba(204,204,204,.3);
+
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.avatar{
+    width: 54px;
+    height: 54px;
+    margin-left: 24px;
+}
+#user-drop{
+    top: 54px;
+    right: 0px;
+}
+
+@media(max-width: 555px){
+    .web{
+        display: none;
+    }
+    .movil{
+        display: inherit;
+        color:#767676;
+        margin-right: 8px;
+        font-size: 24px;
+    }
+    .dropdown{
+        display: inline-block;
+    }
+}

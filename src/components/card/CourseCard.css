@@ -1,0 +1,106 @@
+.course-card{
+    width: 320px;
+    height: 310px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    color:#666;
+    padding: 3% 2% 2% 2%;
+    box-sizing: border-box;
+    transition: all 1s ease;
+    margin: 20px 0;
+    font-family: Avenir;
+    border-radius: 8px;
+    margin: 12px 24px;
+}
+.opacidad{
+    opacity: .9;
+    transition: all 1s ease;
+}
+.course-card a, .course-card:hover a{
+    color:inherit;
+}
+.course-card hr{
+    background-color: #cccccc;
+    height: 1px;
+    border: none;
+    opacity: .4;
+}
+.box-badge{
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.badge{
+   height: 180px;
+    margin-top: -16px;
+
+}
+
+.box-curso{
+    display: flex;
+    height:auto;
+    align-items: center;
+}
+.author-photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+.autor-info{
+    margin-left: 20px;
+}
+.autor-info h4{
+    font-size: 18px;
+    margin: 0 0 4px 0;
+}
+.autor-info p{
+    font-size: 12px;
+    margin: 0;
+
+}
+.autor-info span{
+    color:#ca3e47;
+}
+.price{
+    background-color:#333333;
+    font-weight: 600;
+    color:white;
+    width: 180px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 1%;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.course-card:hover{
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: scale(1);
+
+}
+
+
+@media (max-width: 890px) {
+    .course-card{
+        margin: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .course-card{
+        height: auto;
+        padding: 5%;
+    }
+}

@@ -1,0 +1,94 @@
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #323232;
+
+    box-sizing: border-box;
+    border-top: 1px solid rgba(204,204,204,.2);
+    font-family: "Avenir";
+
+}
+.box-footer{
+    padding: 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box-one{
+     width: 240px;
+   }
+
+.footer h2, .footer h3{
+    color: rgba(204,204,204,.5);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "ProximaRegular";
+}
+.footer p{
+    color: rgba(204,204,204,.5);
+    font-size: 16px;
+    transition: all 1s ease;
+}
+.footer p:hover{
+    color: white;
+}
+.footer img{
+    height: 120px;
+    opacity: .8;
+}
+.redes{
+    color: rgba(204,204,204,.5);
+    font-size: 24px;
+}
+.redes span{
+    margin: 0 10px 0 0;
+}
+.redes a{
+    color: rgba(204,204,204,.5);
+}
+.redes a:hover{
+    color: white;
+}
+.copy{
+    border-top: 1px solid rgba(204,204,204,.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+.copy p{
+    margin: 0px;
+
+}
+
+
+
+@media (max-width: 790px) {
+    .box-one{
+        display: none;
+    }
+
+    .redes{
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 480px) {
+    .footer div {
+        width: initial;
+    }
+}
+
+@media(max-width: 320px) {
+    .footer h2, .footer h3{
+        color: rgba(204,204,204,.5);
+        font-size: 18px;
+    }
+    .footer p{
+        color: rgba(204,204,204,.5);
+        font-size: 14px;
+    }
+}

@@ -2,16 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import * as serviceWorker from './serviceWorker';
+import 'antd/dist/antd.css';
+import { Provider } from 'react-redux'
+import { BrowserRouter as Router } from 'react-router-dom'
+import createStore from './redux/store'
+import 'toastr/build/toastr.css'
+import 'github-markdown-css'
+import { ChakraProvider } from '@chakra-ui/react'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+const WithRoute = () => (
+    <Provider store={createStore()}>
+        <Router>
+            <ChakraProvider>
+                <App />
+            </ChakraProvider>
+        </Router>
+    </Provider>
+)
+
+ReactDOM.render(<WithRoute />, document.getElementById('root'));
+serviceWorker.unregister();

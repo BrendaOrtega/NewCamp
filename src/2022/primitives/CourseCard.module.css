@@ -1,0 +1,28 @@
+.container { 
+    max-width: 325px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.image {
+    width: 220px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    margin:0;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.available {
+    font-weight: bold;
+    font-family: Avenir;
+    font-size: 14px;
+    color:#93282F;
+}

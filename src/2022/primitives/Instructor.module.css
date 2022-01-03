@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    gap:12px;
+    align-items: center;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.extraInfo {
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    gap:16px;
+    flex-wrap: wrap;
+}
+
+.iconGroup {
+    display: flex;
+    align-items: center;
+    gap:4px;
+}
+
+.share {
+    display: flex;
+    gap:24px;
+}
+
+.shareText {
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap:6px;
+    cursor: pointer;
+    transition: all .3s ease;
+    padding:8px;
+}
+
+.shareText:hover {
+    background: #F9FAFB;
+}
+
+.shareText:active {
+    background: #F9FADF;
+}

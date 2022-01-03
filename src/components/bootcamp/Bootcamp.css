@@ -1,0 +1,883 @@
+
+
+.bootcamp{
+    background-color: #f2f2f2;
+}
+.bootcamps{
+    width: 100%;
+    height: 450px;
+    background-image: url('../../assets/bootcamp-img.svg');
+    background-size: cover;
+    background-position:bottom;
+}
+.cover2{
+    width: 100%;
+    height: 100%;
+   
+    box-sizing: border-box;
+    background: rgba(0,0,0,.4);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.search-box{
+    background-color: aqua;   
+    width: 60%;
+    margin: 0 auto;
+}
+.search-bar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+.search-input{
+    width: 80%;
+    height: 60px;
+    border: 1px solid white;
+    padding-left: 12px;
+    box-shadow: 0 5px 8px 1px rgb(215 215 215 / 50%);
+}
+.search-input::placeholder{
+    color: #cccccc;
+}
+.btn-search{
+    width: 20%;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    background-color: #A72E36;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.invite-aply{
+    color:white;
+    font-size: 20px;
+    font-family: "ProximaRegular";
+}
+.white-subtitulos{
+    font-size: 36px;
+    font-family: "ProximaRegular";
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.gray{
+    padding: 5% 10%;
+    background-color: #f2f2f2;
+}
+
+.camp-portada{
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position:top;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.camp-intro{
+    width: 80%;
+    color: white;
+    text-align: left;
+}
+.w-line{
+    width: 8%;
+    margin-left: 0px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: white;
+}
+.camp-intro h2{
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 12px;
+    font-family: "ProximaNovaB";
+    line-height: 120%;
+    color: white;
+}
+.camp-intro p{
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.btn-ghost{
+    margin-left: 24px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    font-family: "Avenir";
+    color:white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.sylabuss{
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 80px 10%;
+}
+
+.week-card{
+    width: 240px;
+    height: 240px;
+    background-color: #962f35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    box-sizing: border-box;
+    color: white;
+    margin: 0 12px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+.lessions{
+    display: none;
+    opacity: 0;
+    transition:all 3s ease;
+}
+
+
+.week-card:hover .lessions{
+    display: block;
+    opacity: .7;
+    transition-delay: 4s;
+
+
+}
+.modules{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.week-card h3{
+    color: white;
+    font-size: 24px;
+    font-family: "ProximaNovaB";
+}
+
+.contain{
+    width: 100%;
+    padding: 80px 10%;
+    background-color: white;
+}
+
+.fbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.adds{
+    font-size: 16px;
+    width: 550px;
+    margin: 10px;
+
+}
+.adds img{
+    height: 36px;
+    margin-right: 16px;
+
+}
+.adds h3{
+    font-family: ProximaRegular;
+    font-weight: bolder;
+    font-size: 24px;
+}
+.instructor_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.instructor_photo{
+    border: 12px solid white;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+
+
+}
+.instructor_photo img{
+    width: 100%;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.instructor_photo img:hover{
+    transform: scale(1.3);
+}
+.instructor_info{
+    width: 600px;
+    flex-grow: 1;
+    padding: 0 4%;
+}
+.redes-instructor span{
+    margin-right: 16px;
+    font-size: 24px;
+}
+
+
+
+.modality{
+    width: 80%;
+    margin: 108px auto;
+    display: flex;
+}
+.modality div{
+    width: 100%;
+    font-size: 16px;
+}
+.modality iframe{
+    margin-left: 64px;
+}
+
+
+
+
+
+
+
+
+
+
+.intro-bootcamp{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.bootcamp-descript{
+    width: 400px;
+    flex-grow: 1;
+    background-image: url('../../assets/banner_section_Mesa de trabajo 1 copia.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    box-sizing: border-box;
+    margin-top: 70px;
+
+}
+.bootcamp-descript p{
+    font-size: 18px;
+    margin-top: -20px;
+}
+.bootcamp-img{
+    width: 500px;
+    height: 100%;
+    flex-grow: 2;
+    background-image: url('../../assets/25438830_1861335307263633_2930730188315941572_o.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.bootcamp-img2{
+    width: 500px;
+    height: 100%;
+    flex-grow: 2;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fkatia.jpeg?alt=media&token=ea4101cf-b302-4f18-b291-08c718fd4b89');
+    background-size: cover;
+    background-position:right;
+    /* background-attachment: fixed; */
+}
+.summary{
+    padding: 16px 2% 0px 2%;
+    box-sizing: border-box;
+
+}
+.summary p{
+    font-size: 16px;
+}
+.summary h4{
+    font-size: 18px;
+}
+.ant-tabs-nav .ant-tabs-tab-active{
+    color:#ca3e47 !important;
+}
+.ant-tabs .ant-tabs-ink-bar{
+    background-color: #ca3e47;
+}
+.ant-tabs-nav .ant-tabs-tab:hover{
+    color:#ca3e47 !important;
+}
+
+.textos{
+    color:#525252;
+    font-size: 18px;
+}
+.summary span{
+    color:#ca3e47;
+}
+
+.how{
+    width: 100%;
+    padding: 50px 10%;
+    background-color: #f5f5f5;
+}
+.box-steps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.steps{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.step-img{
+    height: 150px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 20px 0 0;
+}
+.photo1{
+    background-image: url("../../assets/ember.jpg");
+}
+.photo2{
+    background-image: url("../../assets/git.jpg");
+}
+.photo3{
+    background-image: url("../../assets/reto.jpg");
+
+}
+.photo4{
+    background-image: url("../../assets/17492500_1522831704447330_3133267459982867769_o.jpg")
+}
+.circle-white{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 175px;
+    top:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-white img{
+    width: 60%;
+}
+.step-descript{
+    width: 200px;
+    margin: 0 0 0 20px;
+}
+.invite{
+    width: 100%;
+    padding: 50px 10%;
+    text-align: center;
+}
+.invite p{
+    font-size: 18px;
+}
+.apply{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+.apply-box{
+    width: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 2% 3% 2% 3%;
+    background-color: white;
+    margin-top: 70px;
+    min-height: 400px;
+}
+.apply .ant-btn-primary{
+    margin: 0 10px;
+}
+.ant-steps-item-process .ant-steps-item-icon{
+    background: #ca3e47 !important;
+}
+.ant-steps-item-process .ant-steps-item-icon, .ant-steps-item-finish .ant-steps-item-icon{
+    border-color: #ca3e47 !important;
+}
+.ant-btn-primary{
+    background-color: #ca3e47 !important;
+    border-color: #ca3e47 !important;
+}
+.ant-steps-item-icon > .ant-steps-icon{
+    color: #ca3e47 !important;
+}
+.ant-steps-item-finish > .ant-steps-item-content > .ant-steps-item-title::after{
+    background-color: #ca3e47 !important;
+
+}
+
+
+.ant-btn:hover, .ant-btn:focus{
+    color: #ccc !important;
+    border-color: #ca3e47 !important;
+
+}
+.step{
+    margin: 30px 0;
+}
+.ant-input:hover{
+    border-color: #ca3e47 !important;
+
+}
+.pay-fl{
+    display: flex;
+    justify-content: space-between;
+}
+.pay-fl label{
+    width: 30%;
+}
+
+/*
+CARD*/
+
+.deactivated{
+    pointer-events: none;
+    background-color:lightgray;
+    color:white;
+}
+
+.card-l{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: auto;
+    min-height: 120px;
+    background-color: white;
+
+    /*
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+    */
+    /*box-shadow: 4px 4px 8px -4px rgba(0,0,0,0.08);*/
+    -webkit-box-shadow: 4px 4px 17px -2px rgba(204,204,204,0.4);
+    -moz-box-shadow: 4px 4px 17px -2px rgba(204,204,204,0.4);
+    box-shadow: 4px 4px 17px -2px rgba(204,204,204,0.4);
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 2%;
+    box-sizing: border-box;
+    transition: all 1s ease;
+    cursor: pointer;
+
+}
+.nn{
+    width: 280px;
+}
+
+.card-task{
+    width: 250px;
+    min-height: 120px;
+    background-color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.complete{
+    width: 100%;
+    height: 40px;
+    background-color: #f5f5f5;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.complete p{
+    margin: 0;
+}
+
+.card-l h2{
+    font-size: 16px !important;
+}
+.card-l p{
+    font-size: 14px;
+}
+
+.box-lessons{
+    width: 100%;
+    padding: 0;
+}
+.btn-see{
+   /* width: 120px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #ca3e47;*/
+    text-transform: uppercase;
+    color: #ca3e47;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 1s ease;
+    font-size: 14px;
+    margin: 0 20px;
+
+}
+.card-l:hover, .card-task:hover{
+   box-shadow:0 14px 25px rgba(0,0,0,0.16);
+
+}
+
+
+/*CAMP*/
+.camp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 80px 5% 50px 5%;
+}
+.camp-descript{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 300px;
+    padding: 2%;
+    box-sizing: border-box;
+}
+.camp-info{
+    padding-bottom: 15px;
+    min-height: 404px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    color:#666;
+    box-sizing: border-box;
+    transition: all 1s ease;
+    font-family: Avenir;
+    border-radius: 8px;
+}
+.camp-dates{
+    width: 100%;
+    min-height:200px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    color:#666;
+    box-sizing: border-box;
+    transition: all 1s ease;
+    font-family: Avenir;
+    border-radius: 8px;
+    margin-top: 24px;
+
+}
+.camp-dates div{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 4%;
+    cursor: pointer;
+}
+.camp-dates div span{
+    opacity: .5;
+}
+
+.camp-dates div p{
+    margin: 0;
+}
+
+.camp-dates-week{
+    transition:all .3s ease;
+}
+
+.camp-dates-week:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+.camp-dates-week.active{
+    background-color: #ca3e47;
+    color:white;
+}
+
+.camp-banner{
+    width: 100%;
+    height: 80px;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+.camp-task{
+    width: 600px;
+    flex-grow: 1;
+    padding: 2% 0 0% 0%;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    color:#666;
+    transition: all 1s ease;
+    font-family:"ProximaRegular";
+    border-radius: 8px;
+    margin-top: 24px;
+    overflow-y: scroll;
+}
+.btn-in{
+    outline: none;
+    width: 100%;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid #ca3e47;
+    cursor: pointer;
+    color:white;
+    transition: all 1s ease;
+    background-color: #ca3e47;
+}
+.btn-in:hover{
+    box-shadow: inset 0 -70px 0 0 #962f35;
+}
+
+.btn-pre{
+    transition:all .3s ease;
+    outline: none;
+    width: 100%;
+    height: 32px;
+    background-color: white;
+    border-radius: 16px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    color:#ca3e47;
+    margin-top: 10px;
+    transition: all 1s ease;
+}
+.btn-pre-exam{
+    transition:all .3s ease;
+    outline: none;
+    width: 100%;
+    height: 32px;
+    background-color: white;
+    border-radius: 16px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    color:#767676;
+    margin-top: 10px;
+}
+.btn-pre-exam:hover{
+    border-color: #ca3e47;
+    color:#ca3e47;
+}
+.btn-pre:hover{
+     background-color: #cccccc;
+     color:white;
+ }
+.window-chat{
+    padding: 0 2%;
+    box-sizing: border-box;
+
+}
+
+.tab-pad{
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+}
+#back-background{
+background-image: url("https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2Fphoto.jpg?alt=media&token=cbbffbc4-d321-4e8c-bc20-abcc83bc8710");
+      }
+#php-background{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/fixter-67253.appspot.com/o/assets%2F14435022_1302624693134700_4836530304569751852_o.jpg?alt=media&token=c54eb24c-0233-459b-9a88-ecd83d84a0e5");
+}
+
+.preorder-form{
+padding-top: 80px;
+
+}
+.preorder-form .ant-input{
+    margin: 8px 0 16px 0;
+}
+.preorder-form .ant-form-item{
+    margin-bottom: 0px;
+}
+.optimize{
+    display: inherit;
+}
+
+
+@media (max-width: 800px) {
+    .bootcamp-img{
+        width: 300px;
+    }
+    .box-steps{
+        justify-content: center;
+    }
+    .apply{
+        height: auto;
+    }
+    .apply-box{
+        width: 70%;
+        height: auto;
+        margin: 100px 0 30px 0;
+    }
+    .camp-descript{
+        display: flex;
+        width: 100%;
+        padding: 2% 0px;
+    }
+    .camp-dates, .camp-info{
+        width: 320px;
+    }
+    .camp-dates{
+        margin-top: 0px;
+    }
+    .camp-intro h2{
+        font-size: 36px;
+    }
+    .camp-intro{
+        width: 80%;
+        font-size: 16px;
+    }
+    .camp-portada{
+        height: 40vh;
+        font-size: 16px;
+    }
+    .box-programa h2{
+        font-size: 24px;
+    }
+    .modules{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .week-card{
+        width: 180px;
+        margin: 12px;
+    }
+    .adds h3{
+        font-size: 20px;
+    }
+    .instructor_box{
+        justify-content: inherit;
+    }
+    .instructor_photo{
+        margin-bottom: 24px;
+    }
+    .instructor_info{
+        padding: 0;
+    }
+
+
+
+}
+
+
+@media (max-width: 550px) {
+    .camp-portada{
+        height: 95vh;
+        padding-top: 0px;
+
+    }
+    .week-card{
+        width: 100%;
+    }
+    .camp-intro{
+        width: 100%;
+    }
+    .btn-ghost{
+        margin-left: 0px;
+        margin-top: 24px;
+    }
+    .intro-bootcamp{
+        height: auto;
+    }
+    .bootcamp-img{
+        height: 200px;
+    }
+    .search-box{
+    width: 80%;
+    }
+    .search-input{
+        width: 70%;
+    }
+    .btn-search{
+        width: 30%;
+    }
+    .optimize{
+        display: none;
+    }
+
+    
+   /* #tp{
+        margin-top: 0px !important;
+    }
+    .summary{
+        margin-top: 32px;
+        height: auto;
+        padding: 0 5%;
+    }
+    .summary p{
+        font-size: 14px;
+    }
+    .summary h4, .invite p{
+        font-size: 16px;
+    }
+    .subtitulos{
+        margin-bottom: 20px;
+    }
+    .steps{
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .how, .invite{
+        padding: 30px 10%;
+    }
+    .step-img{
+        margin: 0;
+        width: 250px;
+    }
+    .step-descript{
+        width: 250px;
+        margin: 5px 0 0 0;
+    }
+    .card-l{
+        flex-wrap: wrap;
+        padding:5% ;
+        margin-bottom: 20px;
+    }
+    .btn-see{
+        margin: 20px 0 0 0;
+    }
+    .apply-box{
+        width: 90%;
+        padding: 5%;
+        box-sizing: border-box;
+    }
+
+    .step{
+        margin: 20px 0;
+    }
+    .steps-content{
+        padding-bottom: 0px;
+    }
+    .ant-form-item-control{
+        line-height: 20px !important;
+    }
+    .white-subtitulos{
+        font-size: 24px;
+    }
+    .invite-aply{
+        font-size:16px ;
+        margin-top: 24px;
+
+    }
+    .invite-aply button{
+        margin-top: 12px;
+    }
+    .gray{
+        padding: 5% 0%;
+    }*/
+
+
+}
