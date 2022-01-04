@@ -9,10 +9,14 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import createStore from './redux/store'
 import 'toastr/build/toastr.css'
 import 'github-markdown-css'
-import { ChakraProvider, extendTheme, withDefaultColorScheme, withDefaultVariant } from '@chakra-ui/react'
-import { mode } from '@chakra-ui/theme-tools';
+import { ChakraProvider, CSSReset, extendTheme, withDefaultColorScheme, withDefaultVariant } from '@chakra-ui/react'
 
 const theme = extendTheme({
+    styles: {
+        global: props => ({
+            bg: props.colorMode === 'dark' ? 'red' : '#323232',
+        })
+    },
     components: {
         Input: {
             variants: {
@@ -25,6 +29,11 @@ const theme = extendTheme({
                 }
             }
         },
+        // Menu: {
+        //     baseStyle: props => ({
+        //         bg: props.colorMode === 'dark' ? 'red' : '#323232',
+        //     })
+        // },
         Button: {
             baseStyle: {
                 _focus: {
@@ -34,7 +43,10 @@ const theme = extendTheme({
             variants: {
                 solid: {
                     color: 'white',
-                }
+                },
+                link: props => ({
+                    color: props.colorMode === 'dark' ? '#fff' : '#000',
+                })
             },
         },
         Heading: {
@@ -44,6 +56,10 @@ const theme = extendTheme({
         }
     },
     colors: {
+        gray: {
+            800: '#323232',
+            700: '#323232',
+        },
         brand: {
             50: '#CA3E47',
             100: '#BB333C',
