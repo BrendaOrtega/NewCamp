@@ -21,6 +21,7 @@ import { CourseViewer } from '2022/pages/courseViewer';
 import NotFoundPage from '2022/pages/NotFoundPage';
 import VerticalWheelCarousel from 'experiments/VerticalWheelCarousel'
 import { AdminPage } from '2022/admin'
+import { Login, Signup } from '2022/pages/auth'
 
 const PlusOrEnrolledRoute = ({ children }) => {
     const user = localStorage.user
@@ -50,9 +51,11 @@ export const Router = () => {
         <Route path="/courses/:slug" element={<CourseDetail2022 />} />
         <Route path="/courses" element={<CourseList history={{ push: navigate }} />} />
 
-        {/* <Route path="/login" component={Login} />
-            <Route path="/registro" component={Registro} /> */}
-        {/* <Route path="/profile" component={ProfileContainer} /> */}
+        {/* Auth routes */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Signup />} />
+
+        {/* Subscriptions */}
         <Route path="/pricing" element={<PricingPage />} />
 
         {/* Admin */}

@@ -5,6 +5,11 @@ import { Button, Divider, Input } from 'antd';
 import { MenuOutlined, SearchOutlined } from '@ant-design/icons';
 import { CourseSearch } from '2022/primitives';
 import { NavLink } from 'react-router-dom'
+import {
+    Button as ChakraButton,
+    //  Switch,
+    useColorMode, useColorModeValue
+} from '@chakra-ui/react';
 //Assets
 import logo from "assets/geek_completo.png";
 import avatar from 'assets/img-login.png'
@@ -18,6 +23,8 @@ import { Link } from 'react-router-dom';
 //Redux
 import { useDispatch, useSelector } from 'react-redux';
 import { logOutAction } from 'redux/userDuck';
+import { BsFillSunFill } from 'react-icons/bs';
+import { GiMoonBats } from 'react-icons/gi';
 // instances
 
 //components
@@ -41,6 +48,9 @@ const MenuItem = ({ onClick, icon, text }) => <button
 
 const Nav = ({ history }) => {
     // hooks
+    const bgColor = useColorModeValue('#fff', 'transparent')
+    const { toggleColorMode, colorMode } = useColorMode()
+
     const dispatch = useDispatch()
     const { user } = useSelector((state) => state)
     const [toggle, setToggle] = React.useState()
@@ -67,9 +77,11 @@ const Nav = ({ history }) => {
     }
 
     return (
-        <nav className={classNames(styles.container, {
-            [styles.transparent]: toggle
-        })}>
+        <nav
+            style={{ backgroundColor: bgColor }}
+            className={classNames(styles.container, {
+                [styles.transparent]: toggle
+            })}>
             <NavLink to="/" className={classNames(styles.child1)}>
                 <img className={classNames(styles.logo)} src={logo} alt="brand logo" />
             </NavLink>
@@ -136,6 +148,12 @@ const Nav = ({ history }) => {
                         </Button>
                     </Link>
                 </div>}
+                <ChakraButton onClick={toggleColorMode}>
+                    {colorMode === 'light' ? <GiMoonBats /> : <BsFillSunFill />}
+                </ChakraButton>
+                {/* <Switch isChecked={colorMode === 'dark'} colorScheme="blackAlpha.50">
+
+                </Switch> */}
                 <div
                     onClick={toggleMenu}
                     className={classNames(styles.hamburguer)}>
@@ -184,7 +202,7 @@ const Nav = ({ history }) => {
                 </div>
             </div>
 
-        </nav>
+        </nav >
     )
 }
 
