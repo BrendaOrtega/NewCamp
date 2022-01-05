@@ -13,6 +13,11 @@
 a{
   cursor: pointer;
 }
+
+a:hover {
+  color: inherit;
+}
+
 .redes-instructor a{
   color: rgba(0, 0, 0, 0.4);
 }

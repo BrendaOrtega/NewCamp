@@ -1,7 +1,7 @@
 import { Button, Checkbox, Flex, FormControl, FormLabel, GridItem, Heading, Input, Select, SimpleGrid, Spacer, Text, Textarea, useColorMode, useColorModeValue, VStack } from '@chakra-ui/react'
 import * as React from 'react'
 import { MdBuild } from 'react-icons/md'
-import { PageContainer } from '.'
+import PageContainer from '2022/pages/PageContainer'
 
 const AdminPage = () => {
     const { toggleColorMode } = useColorMode()

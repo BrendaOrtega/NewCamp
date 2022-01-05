@@ -10,6 +10,8 @@ import createStore from './redux/store'
 import 'toastr/build/toastr.css'
 import 'github-markdown-css'
 import { ChakraProvider, CSSReset, extendTheme, withDefaultColorScheme, withDefaultVariant } from '@chakra-ui/react'
+import { mode } from "@chakra-ui/theme-tools"
+
 
 const theme = extendTheme({
     styles: {
@@ -18,35 +20,56 @@ const theme = extendTheme({
         })
     },
     components: {
+        Link: {
+            baseStyle: {
+                textDecoration: 'none',
+            }
+        },
         Input: {
             variants: {
                 filled: {
                     field: {
                         _focus: {
-                            borderColor: 'brand.500',
+                            borderWidth: '3px',
+                            borderColor: '#B7B7B7',
                         }
                     }
                 }
             }
         },
-        // Menu: {
-        //     baseStyle: props => ({
-        //         bg: props.colorMode === 'dark' ? 'red' : '#323232',
-        //     })
-        // },
         Button: {
             baseStyle: {
                 _focus: {
-                    boxShadow: '0 0 0 3px #6B1D23',
+                    boxShadow: '0 0 0 3px #B7B7B7',
                 }
             },
             variants: {
+                outline: props => ({
+                    _hover: {
+                        bg: mode(`gray.100`, `whiteAlpha.200`)(props),
+                    },
+                    _active: {
+                        bg: mode(`gray.100`, `whiteAlpha.200`)(props),
+                    }
+                }),
+                ghost: {
+                    _hover: {
+                        bg: 'transparent',
+                    },
+                    _active: {
+                        bg: 'transparent',
+                    }
+                },
                 solid: {
                     color: 'white',
                 },
                 link: props => ({
                     color: props.colorMode === 'dark' ? '#fff' : '#000',
-                })
+                    _focus: {
+                        boxShadow: 'none',
+                    }
+                }),
+
             },
         },
         Heading: {
@@ -56,6 +79,21 @@ const theme = extendTheme({
         }
     },
     colors: {
+        local: {
+            500: '#F2994A', // light
+            200: '#F2994A', //dark
+            300: '#F4AD6E', // hover dark (lighter)
+            600: '#D98942', // hover light (darker)
+        },
+        google: {
+            200: '#58A55C', //dark
+            300: '#79B77C', // dark hover
+            500: '#58A55C', //light
+            600: '#4F9452' // light hover
+        },
+        facebook: {
+            200: '#3479EA',
+        },
         gray: {
             800: '#323232',
             700: '#323232',

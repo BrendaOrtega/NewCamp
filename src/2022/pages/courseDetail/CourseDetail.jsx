@@ -1,6 +1,6 @@
 import * as React from 'react'
 import classNames from 'classnames'
-import { Button, Divider } from 'antd'
+import { Divider } from 'antd'
 import { Nav } from '2022/parts/nav'
 import { useSelector } from 'react-redux'
 import { Footer } from '2022/parts/footer'
@@ -11,6 +11,7 @@ import colorRobot from 'assets/icons/colorRobot.svg'
 
 import styles from './CourseDetail.module.css'
 import Instructor from '2022/primitives/Instructor'
+import { Button, Heading } from '@chakra-ui/react'
 
 
 const fullDescription = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor eros, morbi morbi massa aenean tortor gravida ultrices consectetur. Mollis sodales in ut risus vel accumsan, mauris, tempus magna. Et vel scelerisque leo, duis. Gravida arcu sollicitudin tincidunt varius. Blandit aliquam eu, pulvinar volutpat lectus in molestie sit dapibus. Quam eget suspendisse adipiscing massa diam pellentesque mi. Tristique suspendisse arcu rutrum vitae, lectus eleifend sed arcu.
@@ -19,12 +20,17 @@ Hac purus orci justo at. Semper sapien, at massa nunc adipiscing enim. Neque lac
 
 const CourseDetail = ({ slug = 'instroduccion_a_firebase' }) => {
     const aprender = 'lorem ipusm achichincle mujigato, lorem ipusm achichincle mujigato, lorem ipusm achichincle mujigato, lorem ipusm achichincle mujigato, lorem ipusm achichincle mujigato'
+
+    React.useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+    }, [])
+
     return (<>
         <section style={{ paddingLeft: 16, paddingRight: 16, paddingTop: 160, maxWidth: 1200, margin: '0 auto' }}>
             <Nav />
-            <h2 className={classNames(styles.mainTitle)}>
+            <Heading >
                 Fundamentos de Programación con Python
-            </h2>
+            </Heading>
             <section className={classNames(styles.container)}>
                 <div className={classNames(styles.child1)}>
                     <Instructor
@@ -39,7 +45,7 @@ const CourseDetail = ({ slug = 'instroduccion_a_firebase' }) => {
                     <img className={classNames(styles.image)} src={rocket} alt="course pic" />
                     <Link to={`/courses/${slug}/viewer`}>
                         <Button
-                            type="primary"
+                            colorScheme="brand"
                         >
                             {'</>'} Ver curso
                         </Button>

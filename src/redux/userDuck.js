@@ -3,7 +3,7 @@ import { baseURL } from './baseURL'
 
 let initial = {
     loggedIn: false,
-    bootcamps: []
+    bootcamps: [],
 }
 function reducer(state = initial, action) {
     switch (action.type) {
@@ -291,11 +291,11 @@ export function loginAction(auth) {
             .then(res => {
                 localStorage.user = JSON.stringify({ ...res.data.user, token: res.data.token })
                 dispatch({ type: LOGIN_SUCCESS, payload: { ...res.data.user, token: res.data.token } })
-                return res
+                return { error: null, success: true }
             })
-            .catch(() => {
+            .catch(error => {
                 dispatch({ type: LOGIN_ERROR, payload: "El usuario o contraseña son incorrectos" })
-                return
+                return { error, success: false }
             })
     }
 }

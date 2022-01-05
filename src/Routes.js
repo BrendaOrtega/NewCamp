@@ -21,7 +21,7 @@ import { CourseViewer } from '2022/pages/courseViewer';
 import NotFoundPage from '2022/pages/NotFoundPage';
 import VerticalWheelCarousel from 'experiments/VerticalWheelCarousel'
 import { AdminPage } from '2022/admin'
-import { Login, Signup } from '2022/pages/auth'
+import { Login, Profile, Signup } from '2022/pages/auth'
 
 const PlusOrEnrolledRoute = ({ children }) => {
     const user = localStorage.user
@@ -54,6 +54,7 @@ export const Router = () => {
         {/* Auth routes */}
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Signup />} />
+        <Route path="/perfil" element={<Profile />} />
 
         {/* Subscriptions */}
         <Route path="/pricing" element={<PricingPage />} />

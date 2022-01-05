@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { FaFacebookF, FaGoogle } from 'react-icons/fa'
 import { FiMail } from 'react-icons/fi'
-import { PageContainer } from '2022/admin'
+import PageContainer from '2022/pages/PageContainer'
 import { Image, Button, Heading, Text, useColorModeValue, VStack, FormControl, FormLabel, Input } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 
@@ -56,7 +56,7 @@ const Signup = () => {
                         >
                             Crear cuenta
                         </Button>
-                        <Link to="/login">
+                        <Link style={{ color: 'inherit' }} to="/login">
                             <Text>
                                 ¿Ya tienes cuenta? <strong>Inicia sesión</strong>
                             </Text>

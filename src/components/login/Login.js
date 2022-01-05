@@ -68,7 +68,7 @@ class Login extends Component {
                     <div className="login-box">
                         <div>
                             <h3 className="sub">Iniciar Sesión</h3>
-                                <br/>
+                            <br />
 
                             <Form className="login-form">
                                 {/* <div className="redes_login">
@@ -83,7 +83,7 @@ class Login extends Component {
                                     <hr className="line_log" /> or <hr className="line_log" />
                                 </div> */}
                                 <Form.Item>
-                                    <label style={{fontSize:"18px"}} htmlFor="">Email</label>
+                                    <label style={{ fontSize: "18px" }} htmlFor="">Email</label>
                                     <Input
                                         value={auth.email}
                                         name="email"
@@ -92,9 +92,9 @@ class Login extends Component {
                                         placeholder="ejemplo@fixter.org"
                                     />
                                 </Form.Item>
-                                <br/>
+                                <br />
                                 <Form.Item>
-                                    <label style={{fontSize:"18px"}} htmlFor="">Contraseña</label>
+                                    <label style={{ fontSize: "18px" }} htmlFor="">Contraseña</label>
                                     <Input
                                         value={auth.password}
                                         onChange={this._onChange}
@@ -104,14 +104,14 @@ class Login extends Component {
                                         placeholder="Al menos 8 dígitos"
                                     />
                                 </Form.Item>
-                                <br/>
-                                <Form.Item style={{ textAlign: "center", marginTop:"24px" }}>
+                                <br />
+                                <Form.Item style={{ textAlign: "center", marginTop: "24px" }}>
 
                                     <a onClick={() => this.setState({ modal: true })} className="login-form-forgot" href="#">
                                         <p className="forget">¿Olvidaste tu contraseña?</p>
                                     </a>
                                     <br />
-                                    <br/>
+                                    <br />
                                     <div>
                                         <button
                                             onClick={this.signIn}

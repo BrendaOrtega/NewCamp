@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import image404 from 'assets/404.svg'
 import { Nav } from '2022/parts/nav'
+import { Heading } from '@chakra-ui/react'
 
 const NotFoundPage = () => <div style={{
     display: 'flex',
@@ -12,7 +13,7 @@ const NotFoundPage = () => <div style={{
     height: '80vh',
 }}>
     <Nav />
-    <h1 style={{ textAlign: 'center', fontSize: 32, fontWeight: 'bold' }}>404 Página no encontrada.</h1>
+    <Heading >404 Página no encontrada.</Heading>
     <img width={320} src={image404} alt="404 robot" />
 </div>
 
