@@ -4,7 +4,10 @@ import {
     Heading,
     Text,
     Button,
-    Container, useMediaQuery, Image
+    Container,
+    Image,
+    useColorMode,
+
 } from '@chakra-ui/react'
 //assets
 import addFriend from 'assets/icons/addFriend.png'
@@ -13,10 +16,11 @@ import confetti from 'assets/icons/confetti.png'
 import recent from 'assets/icons/recent.png'
 
 const Experience = () => {
-    const [isTablet] = useMediaQuery('(min-width: 768px)')
+    const { colorMode } = useColorMode()
     return (
         <Flex
-            marginTop={20}
+            bg={colorMode === 'dark' ? "#2D2D2D" : "#FBFBFB"}
+            py={20}
             w="100%"
             alignItems="center"
             justifyContent="center"

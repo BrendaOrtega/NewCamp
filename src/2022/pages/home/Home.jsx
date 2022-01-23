@@ -4,6 +4,9 @@ import { Footer } from '2022/parts/footer'
 import { Container } from '@chakra-ui/react'
 import Hero from './Hero'
 import Experience from './Experience'
+import Curriculum from './Curriculum'
+import Testimonials from './Testimonials'
+import Test from './Test'
 
 const HomePage = ({ children }) => {
     return (<>
@@ -16,6 +19,9 @@ const HomePage = ({ children }) => {
             <Nav />
             <Hero />
             <Experience />
+            <Curriculum />
+            <Testimonials />
+            <Test />
         </Container>
         {/* <Footer /> */}
     </>
