@@ -30,9 +30,10 @@ const HomePage = ({ children }) => {
                 <Curriculum />
             </AnimatedSection>
 
-            <AnimatedSection from="right">
+            <AnimatedSection from="left">
                 <Testimonials />
             </AnimatedSection>
+
             <AnimatedSection>
                 <Test />
             </AnimatedSection>

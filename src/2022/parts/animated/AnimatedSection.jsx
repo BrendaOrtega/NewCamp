@@ -1,9 +1,13 @@
 import { useInView } from 'react-intersection-observer'
 import { motion, useAnimation } from 'framer-motion'
+import { useMediaQuery } from '@chakra-ui/react'
 
 const AnimatedSection = ({ loop = true, from = 'bottom', ...props }) => {
+    const [isTablet] = useMediaQuery('(min-width: 768px)')
     const animationControl = useAnimation()
     const { inView, entry, ref } = useInView();
+
+    // if (!isTablet) { return <div {...props}></div> }
 
     const initial = {}
     const final = {}
