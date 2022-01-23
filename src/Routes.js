@@ -14,6 +14,7 @@ import Blog from './blog/Blog';
 import PricingPage from './components/subscriptions/PricingPage';
 
 //new camp 2021
+import Home from '2022/pages/home/Home'
 import { Nav } from '2022/parts/nav'
 import { CourseDetail as CourseDetail2022 } from '2022/pages/courseDetail'
 import { CourseList } from '2022/pages/courseList'
@@ -46,7 +47,7 @@ const Experimentcomponent = () => {
 export const Router = () => {
     const navigate = useNavigate()
     return <Routes>
-        <Route exact path="/" element={<CourseDetail2022 />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/courses/:slug/viewer" element={<PlusOrEnrolledRoute><CourseViewer /></PlusOrEnrolledRoute>} />
         <Route path="/courses/:slug" element={<CourseDetail2022 />} />
         <Route path="/courses" element={<CourseList history={{ push: navigate }} />} />
