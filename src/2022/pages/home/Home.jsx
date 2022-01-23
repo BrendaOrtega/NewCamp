@@ -7,8 +7,10 @@ import Experience from './Experience'
 import Curriculum from './Curriculum'
 import Testimonials from './Testimonials'
 import Test from './Test'
+import AnimatedSection from '2022/parts/animated/AnimatedSection'
 
 const HomePage = ({ children }) => {
+
     return (<>
         <Container
             minH="50vh"
@@ -17,11 +19,23 @@ const HomePage = ({ children }) => {
             maxW="container.xl"
         >
             <Nav />
-            <Hero />
-            <Experience />
-            <Curriculum />
-            <Testimonials />
-            <Test />
+            <AnimatedSection loop={false}>
+                <Hero />
+            </AnimatedSection>
+            <AnimatedSection>
+                <Experience />
+            </AnimatedSection>
+
+            <AnimatedSection from="left">
+                <Curriculum />
+            </AnimatedSection>
+
+            <AnimatedSection from="right">
+                <Testimonials />
+            </AnimatedSection>
+            <AnimatedSection>
+                <Test />
+            </AnimatedSection>
         </Container>
         {/* <Footer /> */}
     </>

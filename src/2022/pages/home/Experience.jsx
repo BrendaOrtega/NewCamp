@@ -29,7 +29,8 @@ const Experience = () => {
         >
             <Heading
                 textAlign="center"
-                fontWeight="normal" >
+            // fontWeight="normal" 
+            >
                 A life-changing experience
             </Heading>
             <Text
